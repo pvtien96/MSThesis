@@ -15,45 +15,45 @@ The style file: plain.bst
 Database file #1: main.bib
 Warning--empty booktitle in Bertasius
 Warning--empty publisher in Recognition
-You've used 26 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            683 strings with 9761 characters,
-and the built_in function-call counts, 10785 in all, are:
-= -- 1033
-> -- 533
-< -- 14
-+ -- 213
-- -- 184
-* -- 737
-:= -- 1670
-add.period$ -- 82
-call.type$ -- 26
-change.case$ -- 169
+            708 strings with 10948 characters,
+and the built_in function-call counts, 13314 in all, are:
+= -- 1259
+> -- 736
+< -- 13
++ -- 293
+- -- 256
+* -- 929
+:= -- 2140
+add.period$ -- 102
+call.type$ -- 33
+change.case$ -- 226
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 458
-empty$ -- 829
-format.name$ -- 184
-if$ -- 2371
+cite$ -- 35
+duplicate$ -- 521
+empty$ -- 969
+format.name$ -- 256
+if$ -- 2861
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 26
-newline$ -- 135
-num.names$ -- 50
-pop$ -- 201
+int.to.str$ -- 33
+missing$ -- 32
+newline$ -- 169
+num.names$ -- 66
+pop$ -- 249
 preamble$ -- 2
-purify$ -- 145
+purify$ -- 194
 quote$ -- 0
-skip$ -- 367
+skip$ -- 428
 stack$ -- 0
-substring$ -- 614
-swap$ -- 172
-text.length$ -- 14
+substring$ -- 692
+swap$ -- 177
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
+type$ -- 130
 warning$ -- 2
-while$ -- 78
-width$ -- 28
-write$ -- 295
+while$ -- 96
+width$ -- 35
+write$ -- 367
 (There were 2 warnings)

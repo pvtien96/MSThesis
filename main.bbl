@@ -2,12 +2,6 @@
   \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
 \begin{thebibliography}{10}
 
-\bibitem{article-full}
-L[eslie]~A. Aamport.
-\newblock The gnats and gnus document preparation system.
-\newblock {\em \mbox{G-Animal's} Journal}, 41(7):73+, July 1986.
-\newblock This is a full ARTICLE entry.
-
 \bibitem{7410583}
 S.~{Bambach}, S.~{Lee}, D.~J. {Crandall}, and C.~{Yu}.
 \newblock Lending a hand: Detecting hands and recognizing activities in complex
@@ -43,12 +37,22 @@ Alejandro Betancourt, Pietro Morerio, Emilia Barakova, Lucio Marcenaro,
 \newblock Left/right hand segmentation in egocentric videos.
 \newblock {\em Comput. Vis. Image Underst.}, 154(C):73–81, January 2017.
 
+\bibitem{DBLP:journals/corr/BewleyGORU16}
+Alex Bewley, ZongYuan Ge, Lionel Ott, Fabio Ramos, and Ben Upcroft.
+\newblock Simple online and realtime tracking.
+\newblock {\em CoRR}, abs/1602.00763, 2016.
+
 \bibitem{cai2016understanding}
 Minjie Cai, Kris~M Kitani, and Yoichi Sato.
 \newblock Understanding hand-object manipulation with grasp types and object
   attributes.
 \newblock In {\em Robotics: Science and Systems}, volume~3. Ann Arbor,
   Michigan;, 2016.
+
+\bibitem{DBLP:journals/corr/abs-1808-07256}
+Karanbir~Singh Chahal and Kuntal Dey.
+\newblock A survey of modern object detection literature using deep learning.
+\newblock {\em CoRR}, abs/1808.07256, 2018.
 
 \bibitem{wearable}
 Aiden Doherty, Steve Hodges, Abby King, Alan Smeaton, Emma Berry, Chris Moulin,
@@ -68,6 +72,18 @@ Alireza Fathi, Ali Farhadi, and James~M. Rehg.
 \newblock In {\em Proceedings of the 2011 International Conference on Computer
   Vision}, ICCV '11, page 407–414, USA, 2011. IEEE Computer Society.
 
+\bibitem{DBLP:journals/corr/HuangRSZKFFWSG016}
+Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
+  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama, and
+  Kevin Murphy.
+\newblock Speed/accuracy trade-offs for modern convolutional object detectors.
+\newblock {\em CoRR}, abs/1611.10012, 2016.
+
+\bibitem{10.1115/1.3662552}
+R.~E. Kalman.
+\newblock {A New Approach to Linear Filtering and Prediction Problems}.
+\newblock {\em Journal of Basic Engineering}, 82(1):35--45, 03 1960.
+
 \bibitem{6232429}
 T.~{Kanade} and M.~{Hebert}.
 \newblock First-person vision.
@@ -81,13 +97,6 @@ G.~{Kapidis}, R.~{Poppe}, E.~{Van Dam}, L.~{Noldus}, and R.~{Veltkamp}.
   Computing, Internet of People and Smart City Innovation
   (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)}, pages 922--929, 2019.
 
-\bibitem{book-crossref}
-Donald~E. Knuth.
-\newblock {\em Seminumerical Algorithms}, volume~2 of {\em The Art of Computer
-  Programming}.
-\newblock Addison-Wesley, second edition, {\noopsort{1973c}}1981.
-\newblock This is a cross-referencing BOOK entry.
-
 \bibitem{VOT_TPAMI}
 Matej Kristan, Jiri Matas, Ale\v{s} Leonardis, Tomas Vojir, Roman Pflugfelder,
   Gustavo Fernandez, Georg Nebehay, Fatih Porikli, and Luka \v{C}ehovin.
@@ -95,6 +104,16 @@ Matej Kristan, Jiri Matas, Ale\v{s} Leonardis, Tomas Vojir, Roman Pflugfelder,
   trackers.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   38(11):2137--2155, Nov 2016.
+
+\bibitem{10.1145/3065386}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock {\em Commun. ACM}, 60(6):84–90, May 2017.
+
+\bibitem{doi:10.1002/nav.3800020109}
+H.~W. Kuhn.
+\newblock The hungarian method for the assignment problem.
+\newblock {\em Naval Research Logistics Quarterly}, 2(1‐2):83--97, 1955.
 
 \bibitem{6247820}
 Y.~J. {Lee}, J.~{Ghosh}, and K.~{Grauman}.
@@ -123,6 +142,12 @@ Y.~{Li}, {Zhefan Ye}, and J.~M. {Rehg}.
 \newblock In {\em 2015 IEEE Conference on Computer Vision and Pattern
   Recognition (CVPR)}, pages 287--295, 2015.
 
+\bibitem{DBLP:journals/corr/abs-1708-02002}
+Tsung{-}Yi Lin, Priya Goyal, Ross~B. Girshick, Kaiming He, and Piotr
+  Doll{\'{a}}r.
+\newblock Focal loss for dense object detection.
+\newblock {\em CoRR}, abs/1708.02002, 2017.
+
 \bibitem{7780578}
 M.~{Ma}, H.~{Fan}, and K.~M. {Kitani}.
 \newblock Going deeper into first-person activity recognition.
@@ -141,22 +166,32 @@ Thi Nguyen, Jean-Christophe Nebel, and Francisco Flórez-Revuelta.
   Using Hands Detected by a Deep Convolutional Network}, pages 390--398.
 \newblock 06 2018.
 
-\bibitem{proceedings-minimal}
-{\em Proc. Fifteenth Annual Symposium on the Theory of Computing}, 1983.
-
-\bibitem{phdthesis-full}
-F.~Phidias Phony-Baloney.
-\newblock {\em Fighting Fire with Fire: Festooning {F}rench Phrases}.
-\newblock {PhD} dissertation, Fanstord University, Department of French,
-  June-August 1988.
-\newblock This is a full PHDTHESIS entry.
-
 \bibitem{6091176}
 D.~{Townsend}, F.~{Knoefel}, and R.~{Goubran}.
 \newblock Privacy versus autonomy: A tradeoff model for smart home monitoring
   technologies.
 \newblock In {\em 2011 Annual International Conference of the IEEE Engineering
   in Medicine and Biology Society}, pages 4749--4752, 2011.
+
+\bibitem{ultralytics}
+Ultralytics.
+\newblock Ultralytics.
+\newblock https://www.ultralytics.com., 2019.
+
+\bibitem{DBLP:journals/corr/abs-1812-00442}
+Nicolai Wojke and Alex Bewley.
+\newblock Deep cosine metric learning for person re-identification.
+\newblock {\em CoRR}, abs/1812.00442, 2018.
+
+\bibitem{DBLP:journals/corr/WojkeBP17}
+Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
+\newblock Simple online and realtime tracking with a deep association metric.
+\newblock {\em CoRR}, abs/1703.07402, 2017.
+
+\bibitem{wu2019detectron2}
+Yuxin Wu, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick.
+\newblock Detectron2.
+\newblock https://github.com/facebookresearch/detectron2, 2019.
 
 \bibitem{7780657}
 R.~{Yonetani}, K.~M. {Kitani}, and Y.~{Sato}.

@@ -4,8 +4,12 @@
 %% You can process specific files by typing their names in at the 
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
-\chapter{Methodology and Datasets}
+\chapter{Methodology and Datasets}\label{chap:method}
 \section{Tracking by detection approach}
+Tracking multiple objects is the task of assigning unique and consistent identifiers to multiple objects in a video series. This article investigates an object tracking technique called "tracking by detection". Tracking through detection is a two-stage process: the object detection algorithm first detects the objects present in the frame; then the detection is done. These objects are then linked to those that have been tracked through a tracking algorithm. Usually, the object detection algorithm and tracking algorithm are completely separate from each other, so they can be analyzed separately.
+Object detection is the process of detecting specific categories of objects in an image, examples of these categories are things such as pedestrian or car. The purpose of the object detection algorithm is to locate and classify objects belonging to any popular category. Therefore, for each detected object, the object detection algorithm produces an estimate of the object's location, size, and category. The position and size of the detected object are usually represented by a bounding box, which is a rectangular box surrounding the object. The range of the detected object can also be defined by a segmentation mask, which is a pixel-level mask of the object.
+Due to recent advances in the field of image classification, target detection has made considerable progress. This progress is attributed to a breakthrough in how to use CNN for image classification \cite{10.1145/3065386}. The target detection algorithm considered in this paper usually consists of a CNN designed for image classification, and then has an algorithm-specific additional structure around the CNN. CNN is called the backbone of the algorithm, and the algorithm-specific structure is called the meta-architecture. By convention, this paper will identify object detection algorithm through its meta-architecture. CNN-based object detection algorithm can be divided into two different groups: single-stage and two-stage detectors \cite{DBLP:journals/corr/abs-1808-07256}. The two-stage detector first is possible bounding boxes by segmenting the image into regions of interest, and then CNN classifies these regions in the second stage. The single-stage detector is bounding box and class estimates in a single forward pass of the image through the CNN. Traditionally, two-stage detectors have achieved higher accuracy at the expense of speed compared to single-stage detectors. However, the recently introduced loss function Focal loss \cite{DBLP:journals/corr/abs-1708-02002} makes the accuracy of a single-stage detector close to that of a two-stage detector. The trade-off between speed and accuracy is the main design choice, as studied in the paper \cite{DBLP:journals/corr/HuangRSZKFFWSG016}.
+The tracking algorithm in the "tracking by detection" framework is responsible for assigning unique identifiers to the tracked objects and establishing object associations between frames. This article focuses on target detection algorithm, and only considers two different tracking algorithm: SORT and DeepSORT SORT stands for simple online and real-time tracking. It is a deliberately simple tracking algorithm that uses a Kalman filter \cite{10.1115/1.3662552} to estimate the future position of an object, and uses the Hungarian method \cite{doi:10.1002/nav.3800020109} for frame-to-frame correlation. Deep SORT is an extension of SORT that incorporates appearance information when performing object association between frames.
 \section{Object detection and segmentation algorithms}
 \subsection{RCNN model family}
 \subsection{YOLO model family}
@@ -15,5 +19,5 @@
 \section{Egocentric vision datasets}
 \subsection{GTEA family datatsets}
 \subsection{EgoHands dataset}
-\subsection{Micand32 dataset}
+\subsection{Micand32 dataset} \label{subsec:micand32}
 something

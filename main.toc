@@ -9,42 +9,42 @@
 \contentsline {subsection}{\numberline {1.3.1}Video object recoginiton and tracking related works}{21}
 \contentsline {subsection}{\numberline {1.3.2}Hand recognition related works}{22}
 \contentsline {section}{\numberline {1.4}Problem formulation and assumptions}{24}
-\contentsline {chapter}{\numberline {2}Methodology and Datasets}{25}
-\contentsline {section}{\numberline {2.1}Tracking by detection approach}{26}
-\contentsline {section}{\numberline {2.2}Object detection and segmentation algorithms}{26}
-\contentsline {subsection}{\numberline {2.2.1}RCNN model family}{26}
-\contentsline {subsection}{\numberline {2.2.2}YOLO model family}{26}
-\contentsline {section}{\numberline {2.3}Object tracking algorithms}{26}
-\contentsline {subsection}{\numberline {2.3.1}SORT}{26}
-\contentsline {subsection}{\numberline {2.3.2}DeepSORT}{26}
-\contentsline {section}{\numberline {2.4}Egocentric vision datasets}{26}
-\contentsline {subsection}{\numberline {2.4.1}GTEA family datatsets}{26}
-\contentsline {subsection}{\numberline {2.4.2}EgoHands dataset}{26}
-\contentsline {subsection}{\numberline {2.4.3}Micand32 dataset}{26}
-\contentsline {chapter}{\numberline {3}Proposed Framework}{27}
-\contentsline {section}{\numberline {3.1}Proposed framework: tracking by detection}{27}
-\contentsline {section}{\numberline {3.2}Training stage}{27}
-\contentsline {subsection}{\numberline {3.2.1}Training detection and segmentation models}{27}
-\contentsline {section}{\numberline {3.3}Training Deep Appearance Descriptor for DeepSORT}{27}
-\contentsline {section}{\numberline {3.4}Inference stage}{27}
-\contentsline {section}{\numberline {3.5}Evaluation stage}{27}
-\contentsline {chapter}{\numberline {4}Experiments}{29}
-\contentsline {section}{\numberline {4.1}Evaluation criteria}{30}
-\contentsline {subsection}{\numberline {4.1.1}Object detection metrics}{30}
-\contentsline {subsection}{\numberline {4.1.2}Object tracking metrics}{30}
-\contentsline {section}{\numberline {4.2}Experimental results}{30}
-\contentsline {subsection}{\numberline {4.2.1}Egocentric hand detection and segmentation result}{30}
-\contentsline {subsection}{\numberline {4.2.2}Egocentric hand tracking result}{30}
-\contentsline {section}{\numberline {4.3}Discussions}{30}
-\contentsline {subsection}{\numberline {4.3.1}Object detection: tradeoff between accuracy and speed}{30}
-\contentsline {subsection}{\numberline {4.3.2}The superiority of DeepSORT over SORT}{30}
-\contentsline {subsection}{\numberline {4.3.3}Impact of detection method over tracking result}{30}
-\contentsline {subsection}{\numberline {4.3.4}Complexsity of 4 type of patients’s actions}{30}
-\contentsline {subsection}{\numberline {4.3.5}Challenging cases}{30}
-\contentsline {chapter}{\numberline {5}Conclusion}{31}
-\contentsline {section}{\numberline {5.1}Conclusions}{31}
-\contentsline {subsection}{\numberline {5.1.1}Accomplishment}{31}
-\contentsline {subsection}{\numberline {5.1.2}Drawback}{31}
-\contentsline {section}{\numberline {5.2}Future works}{31}
-\contentsline {chapter}{\numberline {A}Tables}{33}
-\contentsline {chapter}{\numberline {B}Figures}{35}
+\contentsline {chapter}{\numberline {2}Methodology and Datasets}{27}
+\contentsline {section}{\numberline {2.1}Tracking by detection approach}{27}
+\contentsline {section}{\numberline {2.2}Object detection and segmentation algorithms}{29}
+\contentsline {subsection}{\numberline {2.2.1}RCNN model family}{29}
+\contentsline {subsection}{\numberline {2.2.2}YOLO model family}{29}
+\contentsline {section}{\numberline {2.3}Object tracking algorithms}{29}
+\contentsline {subsection}{\numberline {2.3.1}SORT}{29}
+\contentsline {subsection}{\numberline {2.3.2}DeepSORT}{29}
+\contentsline {section}{\numberline {2.4}Egocentric vision datasets}{29}
+\contentsline {subsection}{\numberline {2.4.1}GTEA family datatsets}{29}
+\contentsline {subsection}{\numberline {2.4.2}EgoHands dataset}{29}
+\contentsline {subsection}{\numberline {2.4.3}Micand32 dataset}{29}
+\contentsline {chapter}{\numberline {3}Proposed Framework}{31}
+\contentsline {section}{\numberline {3.1}Proposed framework: tracking by detection}{31}
+\contentsline {section}{\numberline {3.2}Training stage}{33}
+\contentsline {subsection}{\numberline {3.2.1}Training detection and segmentation models}{34}
+\contentsline {section}{\numberline {3.3}Training Deep Appearance Descriptor for DeepSORT}{35}
+\contentsline {section}{\numberline {3.4}Inference stage}{35}
+\contentsline {section}{\numberline {3.5}Evaluation stage}{35}
+\contentsline {chapter}{\numberline {4}Experiments}{37}
+\contentsline {section}{\numberline {4.1}Evaluation criteria}{38}
+\contentsline {subsection}{\numberline {4.1.1}Object detection metrics}{38}
+\contentsline {subsection}{\numberline {4.1.2}Object tracking metrics}{38}
+\contentsline {section}{\numberline {4.2}Experimental results}{38}
+\contentsline {subsection}{\numberline {4.2.1}Egocentric hand detection and segmentation result}{38}
+\contentsline {subsection}{\numberline {4.2.2}Egocentric hand tracking result}{38}
+\contentsline {section}{\numberline {4.3}Discussions}{38}
+\contentsline {subsection}{\numberline {4.3.1}Object detection: tradeoff between accuracy and speed}{38}
+\contentsline {subsection}{\numberline {4.3.2}The superiority of DeepSORT over SORT}{38}
+\contentsline {subsection}{\numberline {4.3.3}Impact of detection method over tracking result}{38}
+\contentsline {subsection}{\numberline {4.3.4}Complexsity of 4 types of patients's actions}{38}
+\contentsline {subsection}{\numberline {4.3.5}Challenging cases}{38}
+\contentsline {chapter}{\numberline {5}Conclusion}{39}
+\contentsline {section}{\numberline {5.1}Conclusions}{39}
+\contentsline {subsection}{\numberline {5.1.1}Accomplishment}{39}
+\contentsline {subsection}{\numberline {5.1.2}Drawback}{39}
+\contentsline {section}{\numberline {5.2}Future works}{39}
+\contentsline {chapter}{\numberline {A}Tables}{41}
+\contentsline {chapter}{\numberline {B}Figures}{43}
