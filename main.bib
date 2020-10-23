@@ -1,0 +1,511 @@
+@preamble{ "\newcommand{\noopsort}[1]{} "
+	# "\newcommand{\printfirst}[2]{#1} "
+	# "\newcommand{\singleletter}[1]{#1} "
+	# "\newcommand{\switchargs}[2]{#2#1} " }
+
+@ARTICLE{article-minimal,
+   author = {L[eslie] A. Aamport},
+   title = {The Gnats and Gnus Document Preparation System},
+   journal = {\mbox{G-Animal's} Journal},
+   year = 1986,
+}
+
+@ARTICLE{article-full,
+   author = {L[eslie] A. Aamport},
+   title = {The Gnats and Gnus Document Preparation System},
+   journal = {\mbox{G-Animal's} Journal},
+   year = 1986,
+   volume = 41,
+   number = 7,
+   pages = "73+",
+   month = jul,
+   note = "This is a full ARTICLE entry",
+}
+
+The KEY field is here to override the KEY field in the journal being
+cross referenced (so is the NOTE field, in addition to its imparting
+information).
+
+@ARTICLE{article-crossref,
+   crossref = {WHOLE-JOURNAL},
+   key = "",
+   author = {L[eslie] A. Aamport},
+   title = {The Gnats and Gnus Document Preparation System},
+   pages = "73+",
+   note = "This is a cross-referencing ARTICLE entry",
+}
+
+@ARTICLE{whole-journal,
+   key = "GAJ",
+   journal = {\mbox{G-Animal's} Journal},
+   year = 1986,
+   volume = 41,
+   number = 7,
+   month = jul,
+   note = {The entire issue is devoted to gnats and gnus
+		(this entry is a cross-referenced ARTICLE (journal))},
+}
+
+@INBOOK{inbook-minimal,
+   author = "Donald E. Knuth",
+   title = "Fundamental Algorithms",
+   publisher = "Addison-Wesley",
+   year = "{\noopsort{1973b}}1973",
+   chapter = "1.2",
+}
+
+@INBOOK{inbook-full,
+   author = "Donald E. Knuth",
+   title = "Fundamental Algorithms",
+   volume = 1,
+   series = "The Art of Computer Programming",
+   publisher = "Addison-Wesley",
+   address = "Reading, Massachusetts",
+   edition = "Second",
+   month = "10~" # jan,
+   year = "{\noopsort{1973b}}1973",
+   type = "Section",
+   chapter = "1.2",
+   pages = "10--119",
+   note = "This is a full INBOOK entry",
+}
+
+@INBOOK{inbook-crossref,
+   crossref = "whole-set",
+   title = "Fundamental Algorithms",
+   volume = 1,
+   series = "The Art of Computer Programming",
+   edition = "Second",
+   year = "{\noopsort{1973b}}1973",
+   type = "Section",
+   chapter = "1.2",
+   note = "This is a cross-referencing INBOOK entry",
+}
+
+@BOOK{book-minimal,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   publisher = "Addison-Wesley",
+   year = "{\noopsort{1973c}}1981",
+}
+
+@BOOK{book-full,
+   author = "Donald E. Knuth",
+   title = "Seminumerical Algorithms",
+   volume = 2,
+   series = "The Art of Computer Programming",
+   publisher = "Addison-Wesley",
+   address = "Reading, Massachusetts",
+   edition = "Second",
+   month = "10~" # jan,
+   year = "{\noopsort{1973c}}1981",
+   note = "This is a full BOOK entry",
+}
+
+@BOOK{book-crossref,
+   crossref = "whole-set",
+   title = "Seminumerical Algorithms",
+   volume = 2,
+   series = "The Art of Computer Programming",
+   edition = "Second",
+   year = "{\noopsort{1973c}}1981",
+   note = "This is a cross-referencing BOOK entry",
+}
+
+@BOOK{whole-set,
+   author = "Donald E. Knuth",
+   publisher = "Addison-Wesley",
+   title = "The Art of Computer Programming",
+   series = "Four volumes",
+   year = "{\noopsort{1973a}}{\switchargs{--90}{1968}}",
+   note = "Seven volumes planned (this is a cross-referenced set of BOOKs)",
+}
+
+@BOOKLET{booklet-minimal,
+   key = "Kn{\printfirst{v}{1987}}",
+   title = "The Programming of Computer Art",
+}
+
+@BOOKLET{booklet-full,
+   author = "Jill C. Knvth",
+   title = "The Programming of Computer Art",
+   howpublished = "Vernier Art Center",
+   address = "Stanford, California",
+   month = feb,
+   year = 1988,
+   note = "This is a full BOOKLET entry",
+}
+
+@INCOLLECTION{incollection-minimal,
+   author = "Daniel D. Lincoll",
+   title = "Semigroups of Recurrences",
+   booktitle = "High Speed Computer and Algorithm Organization",
+   publisher = "Academic Press",
+   year = 1977,
+}
+
+@INCOLLECTION{incollection-full,
+   author = "Daniel D. Lincoll",
+   title = "Semigroups of Recurrences",
+   editor = "David J. Lipcoll and D. H. Lawrie and A. H. Sameh",
+   booktitle = "High Speed Computer and Algorithm Organization",
+   number = 23,
+   series = "Fast Computers",
+   chapter = 3,
+   type = "Part",
+   pages = "179--183",
+   publisher = "Academic Press",
+   address = "New York",
+   edition = "Third",
+   month = sep,
+   year = 1977,
+   note = "This is a full INCOLLECTION entry",
+}
+
+@INCOLLECTION{incollection-crossref,
+   crossref = "whole-collection",
+   author = "Daniel D. Lincoll",
+   title = "Semigroups of Recurrences",
+   pages = "179--183",
+   note = "This is a cross-referencing INCOLLECTION entry",
+}
+
+@BOOK{whole-collection,
+   editor = "David J. Lipcoll and D. H. Lawrie and A. H. Sameh",
+   title = "High Speed Computer and Algorithm Organization",
+   booktitle = "High Speed Computer and Algorithm Organization",
+   number = 23,
+   series = "Fast Computers",
+   publisher = "Academic Press",
+   address = "New York",
+   edition = "Third",
+   month = sep,
+   year = 1977,
+   note = "This is a cross-referenced BOOK (collection) entry",
+}
+
+@MANUAL{manual-minimal,
+   key = "Manmaker",
+   title = "The Definitive Computer Manual",
+}
+
+@MANUAL{manual-full,
+   author = "Larry Manmaker",
+   title = "The Definitive Computer Manual",
+   organization = "Chips-R-Us",
+   address = "Silicon Valley",
+   edition = "Silver",
+   month = apr # "-" # may,
+   year = 1986,
+   note = "This is a full MANUAL entry",
+}
+
+@MASTERSTHESIS{mastersthesis-minimal,
+   author = "{\'{E}}douard Masterly",
+   title = "Mastering Thesis Writing",
+   school = "Stanford University",
+   year = 1988,
+}
+
+@MASTERSTHESIS{mastersthesis-full,
+   author = "{\'{E}}douard Masterly",
+   title = "Mastering Thesis Writing",
+   school = "Stanford University",
+   type = "Master's project",
+   address = "English Department",
+   month = jun # "-" # aug,
+   year = 1988,
+   note = "This is a full MASTERSTHESIS entry",
+}
+
+@MISC{misc-minimal,
+   key = "Missilany",
+   note = "This is a minimal MISC entry",
+}
+
+@MISC{misc-full,
+   author = "Joe-Bob Missilany",
+   title = "Handing out random pamphlets in airports",
+   howpublished = "Handed out at O'Hare",
+   month = oct,
+   year = 1984,
+   note = "This is a full MISC entry",
+}
+
+@STRING{STOC-key = "OX{\singleletter{stoc}}"}
+
+@STRING{ACM = "The OX Association for Computing Machinery"}
+
+@STRING{STOC = " Symposium on the Theory of Computing"}
+
+@INPROCEEDINGS{inproceedings-minimal,
+   author = "Alfred V. Oaho and Jeffrey D. Ullman and Mihalis Yannakakis",
+   title = "On Notions of Information Transfer in {VLSI} Circuits",
+   booktitle = "Proc. Fifteenth Annual ACM" # STOC,
+   year = 1983,
+}
+
+@INPROCEEDINGS{inproceedings-full,
+   author = "Alfred V. Oaho and Jeffrey D. Ullman and Mihalis Yannakakis",
+   title = "On Notions of Information Transfer in {VLSI} Circuits",
+   editor = "Wizard V. Oz and Mihalis Yannakakis",
+   booktitle = "Proc. Fifteenth Annual ACM" # STOC,
+   number = 17,
+   series = "All ACM Conferences",
+   pages = "133--139",
+   month = mar,
+   year = 1983,
+   address = "Boston",
+   organization = ACM,
+   publisher = "Academic Press",
+   note = "This is a full INPROCEDINGS entry",
+}
+
+@INPROCEEDINGS{inproceedings-crossref,
+   crossref = "whole-proceedings",
+   author = "Alfred V. Oaho and Jeffrey D. Ullman and Mihalis Yannakakis",
+   title = "On Notions of Information Transfer in {VLSI} Circuits",
+   organization = "",
+   pages = "133--139",
+   note = "This is a cross-referencing INPROCEEDINGS entry",
+}
+
+@PROCEEDINGS{proceedings-minimal,
+   key = STOC-key,
+   title = "Proc. Fifteenth Annual" # STOC,
+   year = 1983,
+}
+
+@PROCEEDINGS{proceedings-full,
+   editor = "Wizard V. Oz and Mihalis Yannakakis",
+   title = "Proc. Fifteenth Annual" # STOC,
+   number = 17,
+   series = "All ACM Conferences",
+   month = mar,
+   year = 1983,
+   address = "Boston",
+   organization = ACM,
+   publisher = "Academic Press",
+   note = "This is a full PROCEEDINGS entry",
+}
+
+@PROCEEDINGS{whole-proceedings,
+   key = STOC-key,
+   organization = ACM,
+   title = "Proc. Fifteenth Annual" # STOC,
+   address = "Boston",
+   year = 1983,
+   booktitle = "Proc. Fifteenth Annual ACM" # STOC,
+   note = "This is a cross-referenced PROCEEDINGS",
+}
+
+@PHDTHESIS{phdthesis-minimal,
+   author = "F. Phidias Phony-Baloney",
+   title = "Fighting Fire with Fire: Festooning {F}rench Phrases",
+   school = "Fanstord University",
+   year = 1988,
+}
+
+@PHDTHESIS{phdthesis-full,
+   author = "F. Phidias Phony-Baloney",
+   title = "Fighting Fire with Fire: Festooning {F}rench Phrases",
+   school = "Fanstord University",
+   type = "{PhD} Dissertation",
+   address = "Department of French",
+   month = jun # "-" # aug,
+   year = 1988,
+   note = "This is a full PHDTHESIS entry",
+}
+
+@TECHREPORT{techreport-minimal,
+   author = "Tom Terrific",
+   title = "An {$O(n \log n / \! \log\log n)$} Sorting Algorithm",
+   institution = "Fanstord University",
+   year = 1988,
+}
+
+@TECHREPORT{techreport-full,
+   author = "Tom T{\'{e}}rrific",
+   title = "An {$O(n \log n / \! \log\log n)$} Sorting Algorithm",
+   institution = "Fanstord University",
+   type = "Wishful Research Result",
+   number = "7",
+   address = "Computer Science Department, Fanstord, California",
+   month = oct,
+   year = 1988,
+   note = "This is a full TECHREPORT entry",
+}
+
+@UNPUBLISHED{unpublished-minimal,
+   author = "Ulrich {\"{U}}nderwood and Ned {\~N}et and Paul {\={P}}ot",
+   title = "Lower Bounds for Wishful Research Results",
+   note = "Talk at Fanstord University (this is a minimal UNPUBLISHED entry)",
+}
+
+@UNPUBLISHED{unpublished-full,
+   author = "Ulrich {\"{U}}nderwood and Ned {\~N}et and Paul {\={P}}ot",
+   title = "Lower Bounds for Wishful Research Results",
+   month = nov # ", " # dec,
+   year = 1988,
+   note = "Talk at Fanstord University (this is a full UNPUBLISHED entry)",
+}
+
+@MISC{random-note-crossref,
+   key = {Volume-2},
+   note = "Volume~2 is listed under Knuth \cite{book-full}"
+}
+@inproceedings{10.1109/ICCV.2011.6126269,
+	author = {Fathi, Alireza and Farhadi, Ali and Rehg, James M.},
+	title = {Understanding Egocentric Activities},
+	year = {2011},
+	isbn = {9781457711015},
+	publisher = {IEEE Computer Society},
+	address = {USA},
+	url = {https://doi.org/10.1109/ICCV.2011.6126269},
+	doi = {10.1109/ICCV.2011.6126269},
+	abstract = {We present a method to analyze daily activities, such as meal preparation, using video from an egocentric camera. Our method performs inference about activities, actions, hands, and objects. Daily activities are a challenging domain for activity recognition which are well-suited to an egocentric approach. In contrast to previous activity recognition methods, our approach does not require pre-trained detectors for objects and hands. Instead we demonstrate the ability to learn a hierarchical model of an activity by exploiting the consistent appearance of objects, hands, and actions that results from the egocentric context. We show that joint modeling of activities, actions, and objects leads to superior performance in comparison to the case where they are considered independently. We introduce a novel representation of actions based on object-hand interactions and experimentally demonstrate the superior performance of our representation in comparison to standard activity representations such as bag of words.},
+	booktitle = {Proceedings of the 2011 International Conference on Computer Vision},
+	pages = {407–414},
+	numpages = {8},
+	series = {ICCV '11}
+}
+@INPROCEEDINGS{5995444,  author={A. {Fathi} and X. {Ren} and J. M. {Rehg}},  booktitle={CVPR 2011},   title={Learning to recognize objects in egocentric activities},   year={2011},  volume={},  number={},  pages={3281-3288},  doi={10.1109/CVPR.2011.5995444}}
+@INPROCEEDINGS{6247820,  author={Y. J. {Lee} and J. {Ghosh} and K. {Grauman}},  booktitle={2012 IEEE Conference on Computer Vision and Pattern Recognition},   title={Discovering important people and objects for egocentric video summarization},   year={2012},  volume={},  number={},  pages={1346-1353},  doi={10.1109/CVPR.2012.6247820}}
+@INPROCEEDINGS{7780657,  author={R. {Yonetani} and K. M. {Kitani} and Y. {Sato}},  booktitle={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   title={Recognizing Micro-Actions and Reactions from Paired Egocentric Videos},   year={2016},  volume={},  number={},  pages={2629-2638},  doi={10.1109/CVPR.2016.288}}
+@article{wearable,
+	author = {Doherty, Aiden and Hodges, Steve and King, Abby and Smeaton, Alan and Berry, Emma and Moulin, Chris and Lindley, Siân and Kelly, Paul and Foster, Charles},
+	year = {2013},
+	month = {03},
+	pages = {320-3},
+	title = {Wearable cameras in health: The state of the art and future possibilities},
+	volume = {44},
+	journal = {American journal of preventive medicine},
+	doi = {10.1016/j.amepre.2012.11.008}
+}
+@INPROCEEDINGS{6091176,  author={D. {Townsend} and F. {Knoefel} and R. {Goubran}},  booktitle={2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society},   title={Privacy versus autonomy: A tradeoff model for smart home monitoring technologies},   year={2011},  volume={},  number={},  pages={4749-4752},  doi={10.1109/IEMBS.2011.6091176}}
+@inproceedings{10.1145/3041164.3041185,
+	author = {Leelasawassuk, Teesid and Damen, Dima and Mayol-Cuevas, Walterio},
+	title = {Automated Capture and Delivery of Assistive Task Guidance with an Eyewear Computer: The GlaciAR System},
+	year = {2017},
+	isbn = {9781450348355},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3041164.3041185},
+	doi = {10.1145/3041164.3041185},
+	abstract = {In this paper we describe and evaluate an assistive mixed reality system that aims to augment users in tasks by combining automated and unsupervised information collection with minimally invasive video guides. The result is a fully self-contained system that we call GlaciAR (Glass-enabled Contextual Interactions for Augmented Reality). It operates by extracting contextual interactions from observing users performing actions. GlaciAR is able to i) automatically determine moments of relevance based on a head motion attention model, ii) automatically produce video guidance information, iii) trigger these guides based on an object detection method, iv) learn without supervision from observing multiple users and v) operate fully on-board a current eyewear computer (Google Glass). We describe the components of GlaciAR together with user evaluations on three tasks. We see this work as a first step toward scaling up the notoriously difficult authoring problem in guidance systems and an exploration of enhancing user natural abilities via minimally invasive visual cues.},
+	booktitle = {Proceedings of the 8th Augmented Human International Conference},
+	articleno = {16},
+	numpages = {9},
+	keywords = {assistive computing, eyewear computing, task guidance, augmented reality},
+	location = {Silicon Valley, California, USA},
+	series = {AH '17}
+}
+@ARTICLE{6232429,  author={T. {Kanade} and M. {Hebert}},  journal={Proceedings of the IEEE},   title={First-Person Vision},   year={2012},  volume={100},  number={8},  pages={2442-2453},  doi={10.1109/JPROC.2012.2200554}}
+@inbook{Recognition,
+	author = {Nguyen, Thi and Nebel, Jean-Christophe and Flórez-Revuelta, Francisco},
+	year = {2018},
+	month = {06},
+	pages = {390-398},
+	title = {Recognition of Activities of Daily Living from Egocentric Videos Using Hands Detected by a Deep Convolutional Network},
+	isbn = {978-3-319-92999-6},
+	doi = {10.1007/978-3-319-93000-8_44}
+}
+@inproceedings{Bertasius,
+	author = {Bertasius, Gedas and Park, Hyun and Yu, Stella and Shi, Jianbo},
+	year = {2017},
+	month = {07},
+	pages = {},
+	title = {First-Person Action-Object Detection with EgoNet},
+	doi = {10.15607/RSS.2017.XIII.012}
+}
+@INPROCEEDINGS{7780454,  author={F. {Perazzi} and J. {Pont-Tuset} and B. {McWilliams} and L. {Van Gool} and M. {Gross} and A. {Sorkine-Hornung}},  booktitle={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   title={A Benchmark Dataset and Evaluation Methodology for Video Object Segmentation},   year={2016},  volume={},  number={},  pages={724-732},  doi={10.1109/CVPR.2016.85}}
+@article {VOT_TPAMI,
+	author = {Matej Kristan and Jiri Matas and Ale\v{s} Leonardis and Tomas Vojir and Roman Pflugfelder and Gustavo Fernandez and Georg Nebehay and Fatih Porikli and Luka \v{C}ehovin},
+	journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+	title={A Novel Performance Evaluation Methodology for Single-Target Trackers},
+	year={2016}, month={Nov}, volume={38}, number={11}, pages={2137-2155},
+	doi={10.1109/TPAMI.2016.2516982}, ISSN={0162-8828}
+}
+@article{DBLP:journals/corr/MilanL0RS16,
+	author    = {Anton Milan and
+	Laura Leal{-}Taix{\'{e}} and
+	Ian D. Reid and
+	Stefan Roth and
+	Konrad Schindler},
+	title     = {{MOT16:} {A} Benchmark for Multi-Object Tracking},
+	journal   = {CoRR},
+	volume    = {abs/1603.00831},
+	year      = {2016},
+	url       = {http://arxiv.org/abs/1603.00831},
+	archivePrefix = {arXiv},
+	eprint    = {1603.00831},
+	timestamp = {Mon, 13 Aug 2018 16:47:32 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/MilanL0RS16.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@INPROCEEDINGS{7298625,  author={Y. {Li} and  {Zhefan Ye} and J. M. {Rehg}},  booktitle={2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   title={Delving into egocentric actions},   year={2015},  volume={},  number={},  pages={287-295},  doi={10.1109/CVPR.2015.7298625}}
+@INPROCEEDINGS{7780578,  author={M. {Ma} and H. {Fan} and K. M. {Kitani}},  booktitle={2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},   title={Going Deeper into First-Person Activity Recognition},   year={2016},  volume={},  number={},  pages={1894-1903},  doi={10.1109/CVPR.2016.209}}
+@article{DBLP:journals/corr/BertasiusPYS16,
+	author    = {Gedas Bertasius and
+	Hyun Soo Park and
+	Stella X. Yu and
+	Jianbo Shi},
+	title     = {First Person Action-Object Detection with EgoNet},
+	journal   = {CoRR},
+	volume    = {abs/1603.04908},
+	year      = {2016},
+	url       = {http://arxiv.org/abs/1603.04908},
+	archivePrefix = {arXiv},
+	eprint    = {1603.04908},
+	timestamp = {Mon, 13 Aug 2018 16:48:58 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/BertasiusPYS16.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@inproceedings{cai2016understanding,
+	title={Understanding Hand-Object Manipulation with Grasp Types and Object Attributes.},
+	author={Cai, Minjie and Kitani, Kris M and Sato, Yoichi},
+	booktitle={Robotics: Science and Systems},
+	volume={3},
+	year={2016},
+	organization={Ann Arbor, Michigan;}
+}
+@article{DBLP:journals/corr/abs-1806-06157,
+	author    = {Fabien Baradel and
+	Natalia Neverova and
+	Christian Wolf and
+	Julien Mille and
+	Greg Mori},
+	title     = {Object Level Visual Reasoning in Videos},
+	journal   = {CoRR},
+	volume    = {abs/1806.06157},
+	year      = {2018},
+	url       = {http://arxiv.org/abs/1806.06157},
+	archivePrefix = {arXiv},
+	eprint    = {1806.06157},
+	timestamp = {Mon, 13 Aug 2018 16:48:26 +0200},
+	biburl    = {https://dblp.org/rec/journals/corr/abs-1806-06157.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+@INPROCEEDINGS{6619302,  author={C. {Li} and K. M. {Kitani}},  booktitle={2013 IEEE Conference on Computer Vision and Pattern Recognition},   title={Pixel-Level Hand Detection in Ego-centric Videos},   year={2013},  volume={},  number={},  pages={3570-3577},  doi={10.1109/CVPR.2013.458}}
+@INPROCEEDINGS{6910041,  author={A. {Betancourt} and M. M. {Lopez} and C. S. {Regazzoni} and M. {Rauterberg}},  booktitle={2014 IEEE Conference on Computer Vision and Pattern Recognition Workshops},   title={A Sequential Classifier for Hand Detection in the Framework of Egocentric Vision},   year={2014},  volume={},  number={},  pages={600-605},  doi={10.1109/CVPRW.2014.92}}
+@article{10.1016/j.cviu.2016.09.005,
+	author = {Betancourt, Alejandro and Morerio, Pietro and Barakova, Emilia and Marcenaro, Lucio and Rauterberg, Matthias and Regazzoni, Carlo},
+	title = {Left/Right Hand Segmentation in Egocentric Videos},
+	year = {2017},
+	issue_date = {January 2017},
+	publisher = {Elsevier Science Inc.},
+	address = {USA},
+	volume = {154},
+	number = {C},
+	issn = {1077-3142},
+	url = {https://doi.org/10.1016/j.cviu.2016.09.005},
+	doi = {10.1016/j.cviu.2016.09.005},
+	abstract = {Wearable cameras allow people to record their daily activities from a user-centered (First Person Vision) perspective. Due to their favorable location, wearable cameras frequently capture the hands of the user, and may thus represent a promising user-machine interaction tool for different applications. Existent First Person Vision methods handle hand segmentation as a background-foreground problem, ignoring two important facts: i) hands are not a single "skin-like" moving element, but a pair of interacting cooperative entities, ii) close hand interactions may lead to hand-to-hand occlusions and, as a consequence, create a single hand-like segment. These facts complicate a proper understanding of hand movements and interactions. Our approach extends traditional background-foreground strategies, by including a hand-identification step (left-right) based on a Maxwell distribution of angle and position. Hand-to-hand occlusions are addressed by exploiting temporal superpixels. The experimental results show that, in addition to a reliable left/right hand-segmentation, our approach considerably improves the traditional background-foreground hand-segmentation.},
+	journal = {Comput. Vis. Image Underst.},
+	month = jan,
+	pages = {73–81},
+	numpages = {9},
+	keywords = {Hand-identification, First person vision, Hand-segmentation, Egocentric vision}
+}
+@INPROCEEDINGS{7410583,  author={S. {Bambach} and S. {Lee} and D. J. {Crandall} and C. {Yu}},  booktitle={2015 IEEE International Conference on Computer Vision (ICCV)},   title={Lending A Hand: Detecting Hands and Recognizing Activities in Complex Egocentric Interactions},   year={2015},  volume={},  number={},  pages={1949-1957},  doi={10.1109/ICCV.2015.226}}
+@INPROCEEDINGS{9060114,  author={G. {Kapidis} and R. {Poppe} and E. {Van Dam} and L. {Noldus} and R. {Veltkamp}},  booktitle={2019 IEEE SmartWorld, Ubiquitous Intelligence   Computing, Advanced   Trusted Computing, Scalable Computing   Communications, Cloud   Big Data Computing, Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)},   title={Egocentric Hand Track and Object-Based Human Action Recognition},   year={2019},  volume={},  number={},  pages={922-929},  doi={10.1109/SmartWorld-UIC-ATC-SCALCOM-IOP-SCI.2019.00185}}

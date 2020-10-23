@@ -1,0 +1,168 @@
+\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
+  \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
+\begin{thebibliography}{10}
+
+\bibitem{article-full}
+L[eslie]~A. Aamport.
+\newblock The gnats and gnus document preparation system.
+\newblock {\em \mbox{G-Animal's} Journal}, 41(7):73+, July 1986.
+\newblock This is a full ARTICLE entry.
+
+\bibitem{7410583}
+S.~{Bambach}, S.~{Lee}, D.~J. {Crandall}, and C.~{Yu}.
+\newblock Lending a hand: Detecting hands and recognizing activities in complex
+  egocentric interactions.
+\newblock In {\em 2015 IEEE International Conference on Computer Vision
+  (ICCV)}, pages 1949--1957, 2015.
+
+\bibitem{DBLP:journals/corr/abs-1806-06157}
+Fabien Baradel, Natalia Neverova, Christian Wolf, Julien Mille, and Greg Mori.
+\newblock Object level visual reasoning in videos.
+\newblock {\em CoRR}, abs/1806.06157, 2018.
+
+\bibitem{Bertasius}
+Gedas Bertasius, Hyun Park, Stella Yu, and Jianbo Shi.
+\newblock First-person action-object detection with egonet.
+\newblock 07 2017.
+
+\bibitem{DBLP:journals/corr/BertasiusPYS16}
+Gedas Bertasius, Hyun~Soo Park, Stella~X. Yu, and Jianbo Shi.
+\newblock First person action-object detection with egonet.
+\newblock {\em CoRR}, abs/1603.04908, 2016.
+
+\bibitem{6910041}
+A.~{Betancourt}, M.~M. {Lopez}, C.~S. {Regazzoni}, and M.~{Rauterberg}.
+\newblock A sequential classifier for hand detection in the framework of
+  egocentric vision.
+\newblock In {\em 2014 IEEE Conference on Computer Vision and Pattern
+  Recognition Workshops}, pages 600--605, 2014.
+
+\bibitem{10.1016/j.cviu.2016.09.005}
+Alejandro Betancourt, Pietro Morerio, Emilia Barakova, Lucio Marcenaro,
+  Matthias Rauterberg, and Carlo Regazzoni.
+\newblock Left/right hand segmentation in egocentric videos.
+\newblock {\em Comput. Vis. Image Underst.}, 154(C):73–81, January 2017.
+
+\bibitem{cai2016understanding}
+Minjie Cai, Kris~M Kitani, and Yoichi Sato.
+\newblock Understanding hand-object manipulation with grasp types and object
+  attributes.
+\newblock In {\em Robotics: Science and Systems}, volume~3. Ann Arbor,
+  Michigan;, 2016.
+
+\bibitem{wearable}
+Aiden Doherty, Steve Hodges, Abby King, Alan Smeaton, Emma Berry, Chris Moulin,
+  Siân Lindley, Paul Kelly, and Charles Foster.
+\newblock Wearable cameras in health: The state of the art and future
+  possibilities.
+\newblock {\em American journal of preventive medicine}, 44:320--3, 03 2013.
+
+\bibitem{5995444}
+A.~{Fathi}, X.~{Ren}, and J.~M. {Rehg}.
+\newblock Learning to recognize objects in egocentric activities.
+\newblock In {\em CVPR 2011}, pages 3281--3288, 2011.
+
+\bibitem{10.1109/ICCV.2011.6126269}
+Alireza Fathi, Ali Farhadi, and James~M. Rehg.
+\newblock Understanding egocentric activities.
+\newblock In {\em Proceedings of the 2011 International Conference on Computer
+  Vision}, ICCV '11, page 407–414, USA, 2011. IEEE Computer Society.
+
+\bibitem{6232429}
+T.~{Kanade} and M.~{Hebert}.
+\newblock First-person vision.
+\newblock {\em Proceedings of the IEEE}, 100(8):2442--2453, 2012.
+
+\bibitem{9060114}
+G.~{Kapidis}, R.~{Poppe}, E.~{Van Dam}, L.~{Noldus}, and R.~{Veltkamp}.
+\newblock Egocentric hand track and object-based human action recognition.
+\newblock In {\em 2019 IEEE SmartWorld, Ubiquitous Intelligence Computing,
+  Advanced Trusted Computing, Scalable Computing Communications, Cloud Big Data
+  Computing, Internet of People and Smart City Innovation
+  (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)}, pages 922--929, 2019.
+
+\bibitem{book-crossref}
+Donald~E. Knuth.
+\newblock {\em Seminumerical Algorithms}, volume~2 of {\em The Art of Computer
+  Programming}.
+\newblock Addison-Wesley, second edition, {\noopsort{1973c}}1981.
+\newblock This is a cross-referencing BOOK entry.
+
+\bibitem{VOT_TPAMI}
+Matej Kristan, Jiri Matas, Ale\v{s} Leonardis, Tomas Vojir, Roman Pflugfelder,
+  Gustavo Fernandez, Georg Nebehay, Fatih Porikli, and Luka \v{C}ehovin.
+\newblock A novel performance evaluation methodology for single-target
+  trackers.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  38(11):2137--2155, Nov 2016.
+
+\bibitem{6247820}
+Y.~J. {Lee}, J.~{Ghosh}, and K.~{Grauman}.
+\newblock Discovering important people and objects for egocentric video
+  summarization.
+\newblock In {\em 2012 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 1346--1353, 2012.
+
+\bibitem{10.1145/3041164.3041185}
+Teesid Leelasawassuk, Dima Damen, and Walterio Mayol-Cuevas.
+\newblock Automated capture and delivery of assistive task guidance with an
+  eyewear computer: The glaciar system.
+\newblock In {\em Proceedings of the 8th Augmented Human International
+  Conference}, AH '17, New York, NY, USA, 2017. Association for Computing
+  Machinery.
+
+\bibitem{6619302}
+C.~{Li} and K.~M. {Kitani}.
+\newblock Pixel-level hand detection in ego-centric videos.
+\newblock In {\em 2013 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pages 3570--3577, 2013.
+
+\bibitem{7298625}
+Y.~{Li}, {Zhefan Ye}, and J.~M. {Rehg}.
+\newblock Delving into egocentric actions.
+\newblock In {\em 2015 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 287--295, 2015.
+
+\bibitem{7780578}
+M.~{Ma}, H.~{Fan}, and K.~M. {Kitani}.
+\newblock Going deeper into first-person activity recognition.
+\newblock In {\em 2016 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 1894--1903, 2016.
+
+\bibitem{DBLP:journals/corr/MilanL0RS16}
+Anton Milan, Laura Leal{-}Taix{\'{e}}, Ian~D. Reid, Stefan Roth, and Konrad
+  Schindler.
+\newblock {MOT16:} {A} benchmark for multi-object tracking.
+\newblock {\em CoRR}, abs/1603.00831, 2016.
+
+\bibitem{Recognition}
+Thi Nguyen, Jean-Christophe Nebel, and Francisco Flórez-Revuelta.
+\newblock {\em Recognition of Activities of Daily Living from Egocentric Videos
+  Using Hands Detected by a Deep Convolutional Network}, pages 390--398.
+\newblock 06 2018.
+
+\bibitem{proceedings-minimal}
+{\em Proc. Fifteenth Annual Symposium on the Theory of Computing}, 1983.
+
+\bibitem{phdthesis-full}
+F.~Phidias Phony-Baloney.
+\newblock {\em Fighting Fire with Fire: Festooning {F}rench Phrases}.
+\newblock {PhD} dissertation, Fanstord University, Department of French,
+  June-August 1988.
+\newblock This is a full PHDTHESIS entry.
+
+\bibitem{6091176}
+D.~{Townsend}, F.~{Knoefel}, and R.~{Goubran}.
+\newblock Privacy versus autonomy: A tradeoff model for smart home monitoring
+  technologies.
+\newblock In {\em 2011 Annual International Conference of the IEEE Engineering
+  in Medicine and Biology Society}, pages 4749--4752, 2011.
+
+\bibitem{7780657}
+R.~{Yonetani}, K.~M. {Kitani}, and Y.~{Sato}.
+\newblock Recognizing micro-actions and reactions from paired egocentric
+  videos.
+\newblock In {\em 2016 IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pages 2629--2638, 2016.
+
+\end{thebibliography}

@@ -1,0 +1,281 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.10.22)  23 OCT 2020 04:21
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
+(./mitthesis.cls
+Document Class: mitthesis 1999/10/20
+\vithesis=\count79
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+Thesis document copyright MIT unless otherwise (manually) specified
+\@titlesupervisor=\box26
+\@abstractsupervisor=\box27
+\c@savepage=\count89
+) (./lgrind.sty
+Package: lgrind 1997/01/30 v3.4 LGrind environment and supporting stuff
+\lc@unt=\count90
+\ln@xt=\count91
+\LGnuminterval=\count92
+\LGindent=\skip43
+\LGsloppy=\skip44
+\procbox=\box28
+\ls@far=\box29
+\tb@x=\box30
+\TBw@d=\dimen103
+\@ts=\dimen104
+) (/usr/share/texlive/texmf-dist/tex/latex/cmap/cmap.sty
+Package: cmap 2008/03/06 v1.0h CMap support: searchable PDF
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)<<t1.cmap>>)
+(./main.aux (./cover.aux) (./contents.aux) (./chap1.aux) (./chap2.aux)
+(./chap3.aux) (./chap4.aux) (./chap5.aux) (./appa.aux) (./appb.aux)
+(./biblio.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+\openout2 = `cover.aux'.
+
+ (./cover.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 94.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
+<<oms.cmap>> [1
+
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+] (./abstract.tex) [3
+
+] [4
+
+])
+[5]
+\openout2 = `contents.aux'.
+
+ (./contents.tex [6
+
+
+
+] (./main.toc<<ot1.cmap>><<oml.cmap>>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+<<omx.cmap>>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+
+[7] [8])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ [9] [10
+
+] (./main.lof)
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
+ [11] [12
+
+] (./main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
+) [13]
+\openout2 = `chap1.aux'.
+
+ (./chap1.tex
+[14
+
+
+
+]
+Chapter 1.
+[15] [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+[18]
+Underfull \vbox (badness 1675) has occurred while \output is active []
+
+ [19]
+[20] [21] [22]
+Underfull \vbox (badness 1675) has occurred while \output is active []
+
+ [23])
+[24]
+\openout2 = `chap2.aux'.
+
+ (./chap2.tex
+Chapter 2.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25
+
+
+
+]
+Overfull \vbox (6.07855pt too high) has occurred while \output is active []
+
+
+[26]
+\openout2 = `chap3.aux'.
+
+ (./chap3.tex
+Chapter 3.
+) [27
+
+
+
+]
+\openout2 = `chap4.aux'.
+
+ (./chap4.tex [28
+
+
+
+]
+Chapter 4.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29]
+Overfull \vbox (8.94432pt too high) has occurred while \output is active []
+
+
+[30]
+\openout2 = `chap5.aux'.
+
+ (./chap5.tex
+Chapter 5.
+) [31
+
+
+
+]
+\openout2 = `appa.aux'.
+
+ (./appa.tex [32
+
+
+
+]
+Appendix A.
+[33])
+\openout2 = `appb.aux'.
+
+ (./appb.tex [34
+
+
+
+
+]
+Appendix B.
+[35] [36])
+\openout2 = `biblio.aux'.
+
+ (./biblio.tex (./main.bbl [37
+
+
+
+
+
+]
+Underfull \hbox (badness 4726) in paragraph at lines 77--83
+\T1/cmr/m/n/12 cen-tric hand track and object-based hu-man ac-tion recog-ni-tio
+n.  In
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 77--83
+\T1/cmr/m/it/12 2019 IEEE Smart-World, Ubiq-ui-tous In-tel-li-gence Com-put-ing
+, Ad-vanced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--83
+\T1/cmr/m/it/12 Trusted Com-put-ing, Scal-able Com-put-ing Com-mu-ni-ca-tions, 
+Cloud Big
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 77--83
+\T1/cmr/m/it/12 Data Com-put-ing, In-ter-net of Peo-ple and Smart City In-no-va
+-tion (Smart-
+ []
+
+[38])) [39] (./main.aux (./cover.aux) (./contents.aux) (./chap1.aux)
+(./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap5.aux) (./appa.aux)
+(./appb.aux) (./biblio.aux)) )
+(\end occurred when \ifx on line 42 was incomplete) 
+Here is how much of TeX's memory you used:
+ 852 strings out of 494923
+ 8792 string characters out of 6180741
+ 64878 words of memory out of 5000000
+ 4100 multiletter control sequences out of 15000+600000
+ 14260 words of font info for 34 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 28i,7n,21p,2667b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/n/.texlive2017/texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/n/.texlive2017/texmf-va
+r/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/n/.texlive2017/texmf-var/f
+onts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/n/.texlive2017/texmf-var/font
+s/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/n/.texlive2017/texmf-var/fonts/p
+k/ljfour/jknappen/ec/ecrm1200.600pk> </home/n/.texlive2017/texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecrm1728.600pk> </home/n/.texlive2017/texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecrm1440.600pk> </home/n/.texlive2017/texmf-var/fonts/pk/ljfour/
+jknappen/ec/ecbx1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb>
+Output written on main.pdf (39 pages, 177869 bytes).
+PDF statistics:
+ 556 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

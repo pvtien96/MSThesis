@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: cover.aux
+A level-1 auxiliary file: contents.aux
+A level-1 auxiliary file: chap1.aux
+A level-1 auxiliary file: chap2.aux
+A level-1 auxiliary file: chap3.aux
+A level-1 auxiliary file: chap4.aux
+A level-1 auxiliary file: chap5.aux
+A level-1 auxiliary file: appa.aux
+A level-1 auxiliary file: appb.aux
+A level-1 auxiliary file: biblio.aux
+The style file: plain.bst
+Database file #1: main.bib
+Warning--empty booktitle in Bertasius
+Warning--empty publisher in Recognition
+You've used 26 entries,
+            2118 wiz_defined-function locations,
+            683 strings with 9761 characters,
+and the built_in function-call counts, 10785 in all, are:
+= -- 1033
+> -- 533
+< -- 14
++ -- 213
+- -- 184
+* -- 737
+:= -- 1670
+add.period$ -- 82
+call.type$ -- 26
+change.case$ -- 169
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 458
+empty$ -- 829
+format.name$ -- 184
+if$ -- 2371
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 26
+newline$ -- 135
+num.names$ -- 50
+pop$ -- 201
+preamble$ -- 2
+purify$ -- 145
+quote$ -- 0
+skip$ -- 367
+stack$ -- 0
+substring$ -- 614
+swap$ -- 172
+text.length$ -- 14
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 99
+warning$ -- 2
+while$ -- 78
+width$ -- 28
+write$ -- 295
+(There were 2 warnings)
