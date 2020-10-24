@@ -5,7 +5,6 @@
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
 \chapter{Proposed Framework}\label{chap:framework}
-
 \section{Proposed framework: tracking by detection}
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=1\linewidth]{Figs/proposedFramework.png}}
@@ -24,106 +23,38 @@ The framework proposed in this thesis consists of 4 stages: \begin{enumerate*}
 	\caption{Workflow of the training stage.}
 	\label{fig:trainingstage}
 \end{figure}
-The training stage shown in \ref{fig:trainingstage} consist of parts: \begin{enumerate*}
+The training stage shown in Figure \ref{fig:trainingstage} consist of parts: \begin{enumerate*}
 	\item training detection and segmentation models,
 	\item training DeepSORT model
 \end{enumerate*}. Input of both parts are the combination of 3 datasets: Miand32S, GTEA family and EgoHands dataset. The first part will generate D2D model zoo which consists 4 types of models, 2 from yolo family and 2 from RCNN family. The second part trains a CNN for deep appearance descriptor for cosine metric learning \cite{DBLP:journals/corr/abs-1812-00442} in DeepSORT. Detail implementation is explained as follow.
 \subsection{Training detection and segmentation models}
 Initially I setup programming environment which consists 2 frameworks: Detectron2 \cite{wu2019detectron2} for RCNN model family and Ultralytics \cite{ultralytics} for YOLO model family.
-
 Detectron2 is a complete rewrite of the previous version Detectron, and it originates from maskrcnn-benchmark. The platform is now implemented in and powered by the PyTorch deep learning framework. Through a new modular design, Detronron2 is flexible and scalable, and can provide fast training on a single or multiple GPU servers. Detectron2 includes high-quality implementations of state-of-the-art object detection algorithms, including DensePose, panoptic feature pyramid networks, and numerous variants of the pioneering Mask R-CNN model family also developed by FAIR. Its scalable design makes it easy to implement cutting-edge research projects without having to spend the entire code base. The requirements of installing Detectron2 includes: Linux with Python 3.6+, Pytorch 1.4+ and torchvision that matches the PyTorch installation, OpenCV need by demo and visualization. In this thesis, I build Detectron2 from source. The compilers gcc and g++ version 5+ are required, and ninja is recommended for faster build. After having these prerequisites, I clone the Detectron2 repositories and install it via pip from the local clone.
-
 The Ultralytics open-source research into future object detection methods is represented via this repository \cite{ultralytics}. The requirements of install Ultralytics is Python 3.8 or later with all dependencies includes Cython, matplotlib, numpy, OpenCV, pillow, PyYAML, scipy, tensorboard, tqdm, pycocotools, scikit-learn, seaborn, coremltools and onnx. I build Ultralytics from source by cloning their github repository and install via pip.
-
 After installing programming environments, users have to select the model type to train. There are 4 main models integrated in this thesis's framework, the RCNN family consists FasterRCNN and MaskRCNN, while the YOLO family consists Yolov3 and Yolov4. Depending on case of model selection, D2D switches to appropriate branch of setting up training configurations. For the RCNN family, Detectron2 supports different backbone network architectures such as ResNET \{50, 101, 152 \}|, FPN, VGG16, etc. In this thesis, I choose the standard configs, FasterRCNN\_R\_50\_FPN\_3x and MaskRCNN\_R\_50\_FPN\_3x with backbone Resnet 50 layers, feature pyramid network 3x architecture. The config file is saved in a ".yaml" format file. Table \ref{tab:fastConfig} represents a typical configuration for FasterRCNN\_R\_50\_FPN\_3x.
-
-\begin{table}[]
-	\label{tab:fastConfig}
-	\begin{tabular}{|l|l|}
-		\hline
-		Key            & Value                                           \\ \hline
-		\_BASE\_:      & "../Base-RCNN-FPN.yaml"                         \\ \hline
-		MODEL:         &                                                 \\ \hline
-		WEIGHTS:       & "detectron2://ImageNetPretrained/MSRA/R-50.pkl" \\ \hline
-		MASK\_ON       & False                                           \\ \hline
-		RESNETS:       &                                                 \\ \hline
-		DEPTH:         & 50                                              \\ \hline
-		OUT\_FEATURES: & {[}"res2", "res3", "res4",   "res5"{]}          \\ \hline
-		FPN:           &                                                 \\ \hline
-		IN\_FEATURES:  & {[}"res2", "res3", "res4",   "res5"{]}          \\ \hline
-		SOLVER:        & \multirow{2}{*}{(210000, 250000)}               \\ \cline{1-1}
-		STEPS:         &                                                 \\ \hline
-		MAX\_ITER:     & 270000                                          \\ \hline
-		ROI\_HEADS:    & \multirow{2}{*}{"StandardROIHeads"}             \\ \cline{1-1}
-		NAME:          &                                                 \\ \hline
-		IN\_FEATURES:  & {[}"p2", "p3", "p4",   "p5"{]}                  \\ \hline
-	\end{tabular}
-	\caption{FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}
-\end{table}
 For the YOLO family, Ultralytics supports different model checkpoints type, and in this thesis, I choose the standard YOLOv3-SPP and YOLOv4x. Training configuration is also saved in a “.yaml” format file. Table \ref{tab:yoloConfig} represents a typical configuration for Yolov4x.
-\begin{table}[]
-	\label{tab:yoloConfig}
-	\begin{tabular}{|l|l|}
-		\hline
-		Key              & Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
-		nc:              & 1 \# number of classes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
-		depth\_multiple: & 0.33 \# model depth multiple                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
-		width\_multiple: & 0.50 \# layer channel multiple                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
-		anchors:         & \begin{tabular}[c]{@{}l@{}}- {[}10,13, 16,30, 33,23{]}  \# P3/8\\ - {[}30,61, 62,45, 59,119{]}  \# P4/16\\ - {[}116,90, 156,198, 373,326{]}  \# P5/32\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
-		backbone:        & \begin{tabular}[c]{@{}l@{}}\# {[}from, number, module, args{]}\\   {[}{[}-1, 1, Focus, {[}64, 3{]}{]},  \# 0-P1/2\\    {[}-1, 1, Conv, {[}128, 3, 2{]}{]},  \# 1-P2/4\\    {[}-1, 3, BottleneckCSP, {[}128{]}{]},\\    {[}-1, 1, Conv, {[}256, 3, 2{]}{]},  \# 3-P3/8\\    {[}-1, 9, BottleneckCSP, {[}256{]}{]},\\    {[}-1, 1, Conv, {[}512, 3, 2{]}{]},  \# 5-P4/16\\    {[}-1, 9, BottleneckCSP, {[}512{]}{]},\\    {[}-1, 1, Conv, {[}1024, 3, 2{]}{]},  \# 7-P5/32\\    {[}-1, 1, SPP, {[}1024, {[}5, 9, 13{]}{]}{]},\\    {[}-1, 3, BottleneckCSP, {[}1024, False{]}{]},  \# 9\\   {]}\end{tabular}                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
-		head:            & \begin{tabular}[c]{@{}l@{}}{[}{[}-1, 1, Conv, {[}512, 1, 1{]}{]},\\    {[}-1, 1, nn.Upsample, {[}None, 2, 'nearest'{]}{]},\\    {[}{[}-1, 6{]}, 1, Concat, {[}1{]}{]},  \# cat backbone P4\\    {[}-1, 3, BottleneckCSP, {[}512, False{]}{]},  \# 13\\  \\    {[}-1, 1, Conv, {[}256, 1, 1{]}{]},\\    {[}-1, 1, nn.Upsample, {[}None, 2, 'nearest'{]}{]},\\    {[}{[}-1, 4{]}, 1, Concat, {[}1{]}{]},  \# cat backbone P3\\    {[}-1, 3, BottleneckCSP, {[}256, False{]}{]},  \# 17 (P3/8-small)\\  \\    {[}-1, 1, Conv, {[}256, 3, 2{]}{]},\\    {[}{[}-1, 14{]}, 1, Concat, {[}1{]}{]},  \# cat head P4\\    {[}-1, 3, BottleneckCSP, {[}512, False{]}{]},  \# 20  (P4/16-medium)\\  \\    {[}-1, 1, Conv, {[}512, 3, 2{]}{]},\\    {[}{[}-1, 10{]}, 1, Concat, {[}1{]}{]},  \# cat head P5\\    {[}-1, 3, BottleneckCSP, {[}1024, False{]}{]},  \# 23  (P5/32-large)\\  \\    {[}{[}17, 20, 23{]}, 1, Detect, {[}nc, anchors{]}{]},  \# Detect(P3, P4, P5){]}\end{tabular} \\ \hline
-	\end{tabular}
-	\caption{YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}
-\end{table}
-It should be noted that in this thesis the number of classes for training is 1 class “hand”. The initial weights is pre-trained on COCO dataset with 80 classes. The GTEA datasets family, EgoHands dataset and Micand32S datasets is repored in chapter \ref{chap:method}, section \ref{subsec:micand32}, all of them are merged into 1 training dataset. To let detectron2 know how to obtain a custom dataset, I implement a function that returns the items in training datasets. The standard representation for a dataset is combination of multiple dictionaries, each dictionary contains information about one image. The dictionary may have the following fields:
-\begin{table}[]
-	\begin{tabular}{|l|l|}
-		\hline
-		Field         & Meaning                                                                                                                                                                                                                                         \\ \hline
-		file\_name    & \begin{tabular}[c]{@{}l@{}}the full path to the image file. Rotation or flipping may   be applied if the\\ image has EXIF metadata.\end{tabular}                                                                                                \\ \hline
-		height, width & integer.   The shape of the image.                                                                                                                                                                                                              \\ \hline
-		image\_id     & \begin{tabular}[c]{@{}l@{}}(str   or int): a unique id that identifies this image. Required by many\\ evaluators  to identify the images, but a dataset may use it for different\\ purposes.\end{tabular}                                       \\ \hline
-		annotations   & \begin{tabular}[c]{@{}l@{}}(list{[}dict{]}): Required by instance detection, segmentation or keypoint\\ detection tasks. Each dict corresponds to annotations of one instance in\\ this image.\end{tabular}                                     \\ \hline
-		bbox          & \begin{tabular}[c]{@{}l@{}}(list{[}float{]},   required): list of 4 numbers representing the bounding box of\\ the instance.\end{tabular}                                                                                                       \\ \hline
-		bbox\_mode    & \begin{tabular}[c]{@{}l@{}}(int, required): the format of bbox. It must be a member\\  of structures.BoxMode. Currently supports: \\ BoxMode.XYXY\_ABS, BoxMode.XYWH\_ABS.\end{tabular}                                                         \\ \hline
-		category\_id  & \begin{tabular}[c]{@{}l@{}}(int,   required): an integer in the range {[}0, num\_categories-1{]} representing\\ the category label. The value num\_categories is reserved to represent the\\ “background” category, if applicable.\end{tabular} \\ \hline
-		segmentation  & (list{[}list{[}float{]}{]}   or dict): the segmentation mask of the instance.                                                                                                                                                                   \\ \hline
-	\end{tabular}
-	\caption{Detectron2’s custom dataset format.}
-\end{table}
+\\It should be noted that in this thesis the number of classes for training is 1 class “hand”. The initial weights is pre-trained on COCO dataset with 80 classes. The GTEA datasets family, EgoHands dataset and Micand32S datasets is repored in chapter \ref{chap:method}, section \ref{subsec:micand32}, all of them are merged into 1 training dataset. To let detectron2 know how to obtain a custom dataset, I implement a function that returns the items in training datasets. The standard representation for a dataset is combination of multiple dictionaries, each dictionary contains information about one image. The dictionary may have the following fields as in \ref{tab:d2custom}.
 Ultralytics also requires exporting custom dataset labels to YOLO format, with one “*.txt” file per image. The “*.txt” file specifications are: (1) one row per object; (2) each row is “class x\_center y\_center width height” format; (3) box coordinates must be in normalized xywh format (from 0 - 1). If boxes are in pixels, divide x\_center and width by image width, and y\_center and height by image height; (4) class numbers are zero-indexed. Each image's label file should be locatable by simply replacing “/images/*.jpg” with “/labels/*.txt” in its pathname.
 \begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/yoloformat.png}}
+	\centerline{\includegraphics[width=0.5\linewidth]{Figs/yoloformat.png}}
 	\caption{Illustration of YOLO’s data format.}
 	\label{fig:yoloformat}
 \end{figure}
-Data loader is the component that provides data to models. A dataloader usually takes raw information from datasets, and process them into a format needed by the model in training loop. Augmentation is an important part of training. Detectron2’s data augmentation system aims at addressing the following goals: (1) allow augmenting multiple data types together (e.g., images together with their bounding boxes and masks); (2) allow applying a sequence of statically-declared augmentation. For Ultralytics, a Mosaic Dataloader is used for training. The data augmentations used are horizontal and vertical flip, resize, Gauss noise, random brightness contract, crop, median blur, color distortion, gamma, converting color space; some of them are illustrated in \ref{fig:augmentation}.
+Data loader is the component that provides data to models. A dataloader usually takes raw information from datasets, and process them into a format needed by the model in training loop. Augmentation is an important part of training. Detectron2’s data augmentation system aims at addressing the following goals: (1) allow augmenting multiple data types together (e.g., images together with their bounding boxes and masks); (2) allow applying a sequence of statically-declared augmentation. For Ultralytics, a Mosaic Dataloader is used for training. The data augmentations used are horizontal and vertical flip, resize, Gauss noise, random brightness contract, crop, median blur, color distortion, gamma, converting color space; some of them are illustrated in Figure \ref{fig:augmentation}.
 \begin{figure}
 	\centerline{\includegraphics[width=1\linewidth]{Figs/augmentation.png}}
 	\caption{Pictorial of data augmentations.}
 	\label{fig:augmentation}
 \end{figure}
-With the benefits of transfer learning techniques discussed in \cite{DBLP:journals/corr/abs-1808-01974}, in this thesis, I start from the pre-trained weights on 80 classes in COCO datasets and fine-tune it for the particular “hand” classes. Training loop runs with defined configurations and augmented data. Table \ref{tab:traintime} reports the training time in this thesis.
-\begin{table}[]
-	\label{tab:traintime}
-	\begin{tabular}{|l|l|}
-		\hline
-		Model                      & Training   time (hours) \\ \hline
-		FasterRCNN\_R\_50\_FPN\_3x & 46                      \\ \hline
-		MaskRCNN\_R\_50\_FPN\_3x   & 50                      \\ \hline
-		Yolov3\_SPP                & 36                      \\ \hline
-		Yolov4x                    & 40                      \\ \hline
-	\end{tabular}
-	\caption{Training time for detection and segmentation models.}
-\end{table}
+With the benefits of transfer learning techniques discussed in \cite{DBLP:journals/corr/abs-1808-01974}, in this thesis, I start from the pre-trained weights on 80 classes in COCO datasets and fine-tune it for the particular “hand” classes. Training loop runs with defined configurations and augmented data. Training time for Yolov3, Yolov4, FasterRCNN and MaskRCNN in this thesis are respectively 36, 40, 46 and 50 hours.
 The visualization of training steps is available via Tensorboard during training time as in \ref{fig:tensorboard}.
 \begin{figure}
 	\centerline{\includegraphics[width=1\linewidth]{Figs/tensorboard.png}}
 	\caption{FasterRCNN\_R\_50\_FPN\_3x losses visualization during training time.}
 	\label{fig:tensorboard}
 \end{figure}
-\\After training, the framework generates the D2D model zoo which contains 4 model with corresponding weights save in “.h” data format and will be used in the inference stage.
-\subsection{Training Deep Appearance Descriptor for DeepSORT}
+After training, the framework generates the D2D model zoo which contains 4 model with corresponding weights save in “.h” data format and will be used in the inference stage.
+\subsection{Training deep appearance descriptor for DeepSORT}
 The original DeepSORT is used for person tracking task – a familiar issue in which a given query image is used to look at a huge gallery of images that have been gathered at distinct moments, lighting environments, actions performing that may contain the same individual. To customize it on egocentric hand tracking mission, it firstly requires an egocentric hand re-identification dataset to train the appropriate appearance descriptor. As the best of my knowledge, there are very few public egocentric hand re-identification datasets available \cite{9064606}. From the analysis of 3 datasets described in chapter \ref{chap:method}, section \ref{sec:datasets}, I build a new egocentric hand re-identification dataset from the identity information annotations. Images of hands are extracted and cropped from these 3 datasets using the bounding box information and also resized to the same size (100, 100) as recommendation in  \cite{DBLP:journals/corr/abs-1812-00442}. As a result, there are in total 40 identities (26 subject from GTEA + 4 subject from EgoHands + 10 subject from Micand32S = 40 subjects) and 29324 images in this egocentric hand re-identification dataset. The sample of the images used in this dataset is shown in \ref{fig:reid}.
 \begin{figure}
 	\centerline{\includegraphics[width=1\linewidth]{Figs/reid.png}}
@@ -131,7 +62,8 @@ The original DeepSORT is used for person tracking task – a familiar issue in w
 	\label{fig:reid}
 \end{figure}
 Having obtained the egocentric hand re-identification dataset, I train the CNN to get the appearance descriptor. The train and test sets were slit into 80\% and 20\% respectively and both were structed by place all the images of one identity into a specific numbered folder for both train and test sets. I setup the training configuration as in Table \ref{tab:des}. The programming environment in which the training process performed is python 3 with PyTorch framework, numpy, scipy, sklearn, pillow, vizer and edict package.
-\begin{table}	
+\begin{table}
+\centering
 	\label{tab:des}
 	\begin{tabular}{|l|l|}
 		
@@ -155,8 +87,8 @@ Having obtained the egocentric hand re-identification dataset, I train the CNN t
 \end{table}
 The training chart obtained is shown in \ref{fig:descriptor}. It tooks 40 hours to train this CNN.
 \begin{figure}[htbp]
-	\centerline{\includegraphics[]{Figs/descriptor.jpg}}
-	\caption{Workflow of inference stage.}
+	\centerline{\includegraphics[width=0.5\linewidth]{Figs/descriptor.jpg}}
+	\caption{Curve of total loss and top1-error during training loop.}
 	\label{fig:descriptor}
 \end{figure}
 \section{Inference stage}\label{sec:inferstage}

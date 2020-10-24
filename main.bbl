@@ -330,7 +330,7 @@ Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
 \bibitem{wu2019detectron2}
 Yuxin Wu, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick.
 \newblock Detectron2.
-\newblock https://github.com/facebookresearch/detectron2, 2019.
+\newblock {\url{https://github.com/facebookresearch/detectron2}}, 2019.
 
 \bibitem{7780657}
 R.~{Yonetani}, K.~M. {Kitani}, and Y.~{Sato}.

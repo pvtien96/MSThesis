@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2020/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: cover.aux
-A level-1 auxiliary file: signature.aux
 A level-1 auxiliary file: contents.aux
 A level-1 auxiliary file: chap1.aux
 A level-1 auxiliary file: chap2.aux
@@ -19,7 +18,7 @@ Warning--empty booktitle in fathigaze
 Warning--empty publisher in Recognition
 You've used 57 entries,
             2118 wiz_defined-function locations,
-            829 strings with 15337 characters,
+            828 strings with 15332 characters,
 and the built_in function-call counts, 21940 in all, are:
 = -- 2085
 > -- 1252

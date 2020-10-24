@@ -1,22 +1,21 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Problem formulation.}}{26}{}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Problem formulation.}}{24}{table.1.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Some definitions for calculating FastRCNN losses.}}{34}{}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Some definitions for calculating FasterRCNN losses.}}{37}{}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Overview of the CNN architecture \cite {DBLP:journals/corr/WojkeBP17}. The final batch and L2 normalization projects onto the unit hyper-sphere.}}{44}{}%
-\contentsline {table}{\numberline {2.4}{\ignorespaces Detailed enumeration of the Micand32 dataset.}}{53}{}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Some definitions for calculating FastRCNN losses.}}{32}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Some definitions for calculating FasterRCNN losses.}}{35}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Overview of the CNN architecture \cite {DBLP:journals/corr/WojkeBP17}. The final batch and L2 normalization projects onto the unit hyper-sphere.}}{42}{table.2.3}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Detailed enumeration of the Micand32 dataset.}}{51}{table.2.4}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}}{61}{}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}}{62}{}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Detectron2’s custom dataset format.}}{63}{}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Training time for detection and segmentation models.}}{65}{}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Main training configuration of DeepSORT’s appearance descriptor.}}{67}{}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Data format for both the inference result and ground-truth annotation of tracking \cite {DBLP:journals/corr/MilanL0RS16}.}}{71}{}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Main training configuration of DeepSORT’s appearance descriptor.}}{62}{table.3.1}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Data format for both the inference result and ground-truth annotation of tracking \cite {DBLP:journals/corr/MilanL0RS16}.}}{66}{table.3.2}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Object detection and segmentation Average Precision following the COCO standard.}}{77}{}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Object detection and segmentation Average Recall following the COCO standard.}}{77}{}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Object detection and segmentation inference speed and machine requirements.}}{77}{}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Notation of the 11 approaches mentioned and used in the experiments.}}{78}{}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Object detection and segmentation Average Precision following the COCO standard.}}{71}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Object detection and segmentation Average Recall following the COCO standard.}}{71}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Object detection and segmentation inference speed and machine requirements.}}{71}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Notation of the 11 approaches mentioned and used in the experiments.}}{72}{table.4.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}}{80}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}}{81}{table.A.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Detectron2’s custom dataset format.}}{82}{table.A.3}%
 \addvspace {10\p@ }

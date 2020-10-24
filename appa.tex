@@ -1,5 +1,57 @@
 \chapter{Tables}
-
+\begin{table}
+	\label{tab:fastConfig}
+	\begin{tabular}{|l|l|}
+		\hline
+		Key            & Value                                           \\ \hline
+		\_BASE\_:      & "../Base-RCNN-FPN.yaml"                         \\ \hline
+		MODEL:         &                                                 \\ \hline
+		WEIGHTS:       & "detectron2://ImageNetPretrained/MSRA/R-50.pkl" \\ \hline
+		MASK\_ON       & False                                           \\ \hline
+		RESNETS:       &                                                 \\ \hline
+		DEPTH:         & 50                                              \\ \hline
+		OUT\_FEATURES: & {[}"res2", "res3", "res4",   "res5"{]}          \\ \hline
+		FPN:           &                                                 \\ \hline
+		IN\_FEATURES:  & {[}"res2", "res3", "res4",   "res5"{]}          \\ \hline
+		SOLVER:        & \multirow{2}{*}{(210000, 250000)}               \\ \cline{1-1}
+		STEPS:         &                                                 \\ \hline
+		MAX\_ITER:     & 270000                                          \\ \hline
+		ROI\_HEADS:    & \multirow{2}{*}{"StandardROIHeads"}             \\ \cline{1-1}
+		NAME:          &                                                 \\ \hline
+		IN\_FEATURES:  & {[}"p2", "p3", "p4",   "p5"{]}                  \\ \hline
+	\end{tabular}
+	\caption{FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}
+\end{table}
+\begin{table}
+	\label{tab:yoloConfig}
+	\begin{tabular}{|l|l|}
+		\hline
+		Key              & Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+		nc:              & 1 \# number of classes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+		depth\_multiple: & 0.33 \# model depth multiple                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+		width\_multiple: & 0.50 \# layer channel multiple                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
+		anchors:         & \begin{tabular}[c]{@{}l@{}}- {[}10,13, 16,30, 33,23{]}  \# P3/8\\ - {[}30,61, 62,45, 59,119{]}  \# P4/16\\ - {[}116,90, 156,198, 373,326{]}  \# P5/32\end{tabular}                                                                          \\ \hline
+		backbone:        & \begin{tabular}[c]{@{}l@{}}\# {[}from, number, module, args{]}\\   {[}{[}-1, 1, Focus, {[}64, 3{]}{]},  \# 0-P1/2\\    {[}-1, 1, Conv, {[}128, 3, 2{]}{]},  \# 1-P2/4\\    {[}-1, 3, BottleneckCSP, {[}128{]}{]},\\    {[}-1, 1, Conv, {[}256, 3, 2{]}{]},  \# 3-P3/8\\    {[}-1, 9, BottleneckCSP, {[}256{]}{]},\\    {[}-1, 1, Conv, {[}512, 3, 2{]}{]},  \# 5-P4/16\\    {[}-1, 9, BottleneckCSP, {[}512{]}{]},\\    {[}-1, 1, Conv, {[}1024, 3, 2{]}{]},  \# 7-P5/32\\    {[}-1, 1, SPP, {[}1024, {[}5, 9, 13{]}{]}{]},\\    {[}-1, 3, BottleneckCSP, {[}1024, False{]}{]},  \# 9\\   {]}\end{tabular}                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+		head:            & \begin{tabular}[c]{@{}l@{}}{[}{[}-1, 1, Conv, {[}512, 1, 1{]}{]},\\    {[}-1, 1, nn.Upsample, {[}None, 2, 'nearest'{]}{]},\\    {[}{[}-1, 6{]}, 1, Concat, {[}1{]}{]},  \# cat backbone P4\\    {[}-1, 3, BottleneckCSP, {[}512, False{]}{]},  \# 13\\  \\    {[}-1, 1, Conv, {[}256, 1, 1{]}{]},\\    {[}-1, 1, nn.Upsample, {[}None, 2, 'nearest'{]}{]},\\    {[}{[}-1, 4{]}, 1, Concat, {[}1{]}{]},  \# cat backbone P3\\    {[}-1, 3, BottleneckCSP, {[}256, False{]}{]},  \# 17 (P3/8-small)\\  \\    {[}-1, 1, Conv, {[}256, 3, 2{]}{]},\\    {[}{[}-1, 14{]}, 1, Concat, {[}1{]}{]},  \# cat head P4\\    {[}-1, 3, BottleneckCSP, {[}512, False{]}{]},  \# 20  (P4/16-medium)\\  \\    {[}-1, 1, Conv, {[}512, 3, 2{]}{]},\\    {[}{[}-1, 10{]}, 1, Concat, {[}1{]}{]},  \# cat head P5\\    {[}-1, 3, BottleneckCSP, {[}1024, False{]}{]},  \# 23  (P5/32-large)\\  \\    {[}{[}17, 20, 23{]}, 1, Detect, {[}nc, anchors{]}{]},  \# Detect(P3, P4, P5){]}\end{tabular} \\ \hline
+	\end{tabular}
+	\caption{YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}
+\end{table}
+\begin{table}
+	\label{tab:d2custom}
+	\begin{tabular}{|l|l|}
+		\hline
+		Field         & Meaning                                                                                                                                                                                                                                         \\ \hline
+		file\_name    & \begin{tabular}[c]{@{}l@{}}the full path to the image file. Rotation or flipping may   be applied if the\\ image has EXIF metadata.\end{tabular}                                                                                                \\ \hline
+		height, width & integer.   The shape of the image.                                                                                                                                                                                                              \\ \hline
+		image\_id     & \begin{tabular}[c]{@{}l@{}}(str   or int): a unique id that identifies this image. Required by many\\ evaluators  to identify the images, but a dataset may use it for different\\ purposes.\end{tabular}                                       \\ \hline
+		annotations   & \begin{tabular}[c]{@{}l@{}}(list{[}dict{]}): Required by instance detection, segmentation or keypoint\\ detection tasks. Each dict corresponds to annotations of one instance in\\ this image.\end{tabular}                                     \\ \hline
+		bbox          & \begin{tabular}[c]{@{}l@{}}(list{[}float{]},   required): list of 4 numbers representing the bounding box of\\ the instance.\end{tabular}                                                                                                       \\ \hline
+		bbox\_mode    & \begin{tabular}[c]{@{}l@{}}(int, required): the format of bbox. It must be a member\\  of structures.BoxMode. Currently supports: \\ BoxMode.XYXY\_ABS, BoxMode.XYWH\_ABS.\end{tabular}                                                         \\ \hline
+		category\_id  & \begin{tabular}[c]{@{}l@{}}(int,   required): an integer in the range {[}0, num\_categories-1{]} representing\\ the category label. The value num\_categories is reserved to represent the\\ “background” category, if applicable.\end{tabular} \\ \hline
+		segmentation  & (list{[}list{[}float{]}{]}   or dict): the segmentation mask of the instance.                                                                                                                                                                   \\ \hline
+	\end{tabular}
+	\caption{Detectron2’s custom dataset format.}
+\end{table}
 %\clearpage
 %\newpage
 

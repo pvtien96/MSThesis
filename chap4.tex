@@ -61,10 +61,11 @@ The following sub-sections will present result for different object detection an
 \subsection{Egocentric hand detection and segmentation result}
 This section presents results for the different object detection algorithms consider in this thesis. The algorithms to be evaluated are: Yolov3\_spp, Yolov4x, FasterRCNN\_R\_50\_FPN\_3x, MaskRCNN\_R\_50\_FPN\_3x. Detection evaluation is show in Table \ref{tab:detres_ap}, Table \ref{tab:detres_ar} and Table \ref{tab:detres_sp}.
 \begin{table}[]
+	\centering
 	\label{tab:detres_ap}
 	\begin{tabular}{|l|l|l|l|l|l|l|}
 		\hline
-		Algorithm                  & AP            & AP50          & AP75          & APsmall & APmedium      & APlarge       \\ \hline
+		Algorithm                  & AP            & AP50          & AP75          & \(AP^{small}\) & \(AP^{medium}\)      & \(AP^{large}\)       \\ \hline
 		Yolov3\_spp                & 89.2          & 92.4          & 92.1          & 1.1     & 66.4          & 54.1          \\ \hline
 		Yolov4x                    & 93.1          & 95.6          & 94.6          & 3.2     & 72.5          & 42.9          \\ \hline
 		FasterRCNN & \textbf{96.2} & 97.9          & \textbf{97.9} & 0.9     & \textbf{75.8} & 6.3           \\ \hline
@@ -101,8 +102,8 @@ This section presents results for the different object detection algorithms cons
 	\label{tab:detres_sp}
 \end{table}
 \subsection{Egocentric hand tracking result}
-Tracking results for SORT and DeepSORT with different object detection strategy are presented in this section. As described in section 3.4, the tests are performed in a tracking by detection system where tracking and detection algorithms are completely separated. Therefore, different results for combinations of tracking and detection algorithms are reported. Further, ground-truth detections are also test with SORT and DeepSORT, this is done so as to give an insight how much of the error is due to the object detection algorithm and how much of it is due to the tracking algorithm. Tracking performance with ground-truth detections should only have errors introduced by the tracking algorithms and can thereby give an upper limit for how much better the tracking by detection system can become by changing object detection algorithm. Thus, this frameworks consists of 6 detction and segmentation algorithms, they are: Yolov3\_SPP, Yolov4x, Faster\_RCNN\_R\_50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x with region based and detection ground-truth. Their combination with 2 tracking algorithms, SORT and DeepSORT, we obtain a total of 12 options for the pipeline. However, the combination of MaskRCNN with region based and SORT scheme is identical to the combination of Mask and SORT scheme because in theory, the SORT algorithm does not use visual information fields. To conclude, we have 11 approaches conventionally defined as in the Table \ref{tab:notation} for brief presentation.
 \begin{table}[]
+	\centering
 	\label{tab:notation}
 	\begin{tabular}{|l|l|l|l|}
 		\hline
@@ -120,7 +121,10 @@ Tracking results for SORT and DeepSORT with different object detection strategy 
 		11 & Groundtruth           & \multicolumn{1}{c|}{}                          & GDS      \\ \hline
 	\end{tabular}
 	\caption{Notation of the 11 approaches mentioned and used in the experiments.}
+	\vspace{-2cm}
 \end{table}
+Tracking results for SORT and DeepSORT with different object detection strategy are presented in this section. As described in section 3.4, the tests are performed in a tracking by detection system where tracking and detection algorithms are completely separated. Therefore, different results for combinations of tracking and detection algorithms are reported. Further, ground-truth detections are also test with SORT and DeepSORT, this is done so as to give an insight how much of the error is due to the object detection algorithm and how much of it is due to the tracking algorithm. Tracking performance with ground-truth detections should only have errors introduced by the tracking algorithms and can thereby give an upper limit for how much better the tracking by detection system can become by changing object detection algorithm. Thus, this frameworks consists of 6 detction and segmentation algorithms, they are: Yolov3\_SPP, Yolov4x, Faster\_RCNN\_R\_50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x with region based and detection ground-truth. Their combination with 2 tracking algorithms, SORT and DeepSORT, we obtain a total of 12 options for the pipeline. However, the combination of MaskRCNN with region based and SORT scheme is identical to the combination of Mask and SORT scheme because in theory, the SORT algorithm does not use visual information fields. To conclude, we have 11 approaches conventionally defined as in the Table \ref{tab:notation} for brief presentation.
+
 \section{Discussions}
 \subsection{Object detection: tradeoff between accuracy and speed}
 \subsection{The superiority of DeepSORT over SORT}
