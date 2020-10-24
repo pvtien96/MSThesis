@@ -1,12 +1,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2-1}{\ignorespaces Illustration of transformation between predicted and ground truth bounding boxes.}}{32}{}%
+\contentsline {figure}{\numberline {2-2}{\ignorespaces Schematic of the R-CNN pipeline.}}{33}{}%
+\contentsline {figure}{\numberline {2-3}{\ignorespaces The architecture of Fast RCNN.}}{34}{}%
+\contentsline {figure}{\numberline {2-4}{\ignorespaces An illustration of Faster RCNN model.}}{36}{}%
+\contentsline {figure}{\numberline {2-5}{\ignorespaces The Mask RCNN framework for instance segmentation.}}{38}{}%
+\contentsline {figure}{\numberline {2-6}{\ignorespaces The workflow of YOLO model.}}{40}{}%
+\contentsline {figure}{\numberline {2-7}{\ignorespaces The network architecture of YOLO.}}{40}{}%
+\contentsline {figure}{\numberline {2-8}{\ignorespaces Upshots from GTEA family datasets.}}{46}{}%
+\contentsline {figure}{\numberline {2-9}{\ignorespaces Hand masks after post-processing EGTEA Gaze+.}}{48}{}%
+\contentsline {figure}{\numberline {2-10}{\ignorespaces Visualizations of EgoHand dataset in \cite {10.1109/ICCV.2015.226}.}}{50}{}%
+\contentsline {figure}{\numberline {2-11}{\ignorespaces Samples from EgoHands dataset after post-processing.}}{50}{}%
+\contentsline {figure}{\numberline {2-12}{\ignorespaces Randomly selected actions 5 6 7 8, from left to right respectively.}}{51}{}%
+\contentsline {figure}{\numberline {2-13}{\ignorespaces Visualization of groundtruth tracklets of patient’s hands opening water bottle. Series of continuous samples from video GH010358\_6\_10208\_11900 in Micand32Enhanced.}}{54}{}%
+\contentsline {figure}{\numberline {2-14}{\ignorespaces The workflow of EHTA.}}{55}{}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3-1}{\ignorespaces Overview of proposed framework: D2D. The x-axis represents the time flow of the 4 stages. The y-axis regards the increasing degree of abstraction level of the stages.}}{32}
-\contentsline {figure}{\numberline {3-2}{\ignorespaces Workflow of the training stage.}}{33}
-\contentsline {figure}{\numberline {3-3}{\ignorespaces Workflow of inference stage.}}{35}
+\contentsline {figure}{\numberline {3-1}{\ignorespaces Overview of proposed framework: D2D. The x-axis represents the time flow of the 4 stages. The y-axis regards the increasing degree of abstraction level of the stages.}}{58}{}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces Workflow of the training stage.}}{59}{}%
+\contentsline {figure}{\numberline {3-3}{\ignorespaces Illustration of YOLO’s data format.}}{64}{}%
+\contentsline {figure}{\numberline {3-4}{\ignorespaces Pictorial of data augmentations.}}{65}{}%
+\contentsline {figure}{\numberline {3-5}{\ignorespaces FasterRCNN\_R\_50\_FPN\_3x losses visualization during training time.}}{66}{}%
+\contentsline {figure}{\numberline {3-6}{\ignorespaces Images from the self-generated egocentric hand re-identification dataset. Images in the same row has the same identity.}}{67}{}%
+\contentsline {figure}{\numberline {3-7}{\ignorespaces Workflow of inference stage.}}{68}{}%
+\contentsline {figure}{\numberline {3-8}{\ignorespaces Workflow of inference stage.}}{70}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5-1}{\ignorespaces Schematic illustration of an online annotation pipeline.}}{83}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B-1}{\ignorespaces Armadillo slaying lawyer.}}{43}
-\contentsline {figure}{\numberline {B-2}{\ignorespaces Armadillo eradicating national debt.}}{44}

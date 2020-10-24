@@ -518,8 +518,9 @@ requirements for the \@degreeword\ of \\
 % The \kern0pt pushes any depth into the height.  Thanks to Richard Stone.
 \def\endtitlepage{\par\kern 0pt\egroup\vss\egroup\newpage}
 
-\def\MIT{MASSACHUSETTS INSTITUTE OF TECHNOLOGY}
-\def\Mit{Massachusetts Institute of Technology}
+%\def\MIT{MASSACHUSETTS INSTITUTE OF TECHNOLOGY}
+\def\MIT{HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY}
+\def\Mit{Hanoi University of Science and Technology}
 
 \def\permission{\par\noindent{\centering
    The author hereby grants to MIT permission to reproduce and to

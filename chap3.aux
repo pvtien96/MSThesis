@@ -1,28 +1,55 @@
 \relax 
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Proposed Framework}{31}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Proposed Framework}{57}{}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Proposed framework: tracking by detection}{31}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces Overview of proposed framework: D2D. The x-axis represents the time flow of the 4 stages. The y-axis regards the increasing degree of abstraction level of the stages.}}{32}}
-\newlabel{fig:framework}{{3-1}{32}}
+\newlabel{chap:framework}{{3}{57}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Proposed framework: tracking by detection}{57}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces Overview of proposed framework: D2D. The x-axis represents the time flow of the 4 stages. The y-axis regards the increasing degree of abstraction level of the stages.}}{58}{}\protected@file@percent }
+\newlabel{fig:framework}{{3-1}{58}}
 \citation{DBLP:journals/corr/abs-1812-00442}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Training stage}{33}}
-\newlabel{sec:trainingstage}{{3.2}{33}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3-2}{\ignorespaces Workflow of the training stage.}}{33}}
-\newlabel{fig:trainingstage}{{3-2}{33}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Training stage}{59}{}\protected@file@percent }
+\newlabel{sec:trainingstage}{{3.2}{59}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3-2}{\ignorespaces Workflow of the training stage.}}{59}{}\protected@file@percent }
+\newlabel{fig:trainingstage}{{3-2}{59}}
 \citation{wu2019detectron2}
 \citation{ultralytics}
 \citation{ultralytics}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Training detection and segmentation models}{34}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Training detection and segmentation models}{60}{}\protected@file@percent }
+\citation{DBLP:journals/corr/abs-1808-01974}
+\newlabel{tab:fastConfig}{{3.2.1}{61}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}}{61}{}\protected@file@percent }
+\newlabel{tab:yoloConfig}{{3.2.1}{62}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}}{62}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Detectron2’s custom dataset format.}}{63}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-3}{\ignorespaces Illustration of YOLO’s data format.}}{64}{}\protected@file@percent }
+\newlabel{fig:yoloformat}{{3-3}{64}}
+\citation{9064606}
+\citation{DBLP:journals/corr/abs-1812-00442}
+\@writefile{lof}{\contentsline {figure}{\numberline {3-4}{\ignorespaces Pictorial of data augmentations.}}{65}{}\protected@file@percent }
+\newlabel{fig:augmentation}{{3-4}{65}}
+\newlabel{tab:traintime}{{3.2.1}{65}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Training time for detection and segmentation models.}}{65}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Training Deep Appearance Descriptor for DeepSORT}{65}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-5}{\ignorespaces FasterRCNN\_R\_50\_FPN\_3x losses visualization during training time.}}{66}{}\protected@file@percent }
+\newlabel{fig:tensorboard}{{3-5}{66}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3-6}{\ignorespaces Images from the self-generated egocentric hand re-identification dataset. Images in the same row has the same identity.}}{67}{}\protected@file@percent }
+\newlabel{fig:reid}{{3-6}{67}}
+\newlabel{tab:des}{{3.2.2}{67}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.5}{\ignorespaces Main training configuration of DeepSORT’s appearance descriptor.}}{67}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-7}{\ignorespaces Workflow of inference stage.}}{68}{}\protected@file@percent }
+\newlabel{fig:descriptor}{{3-7}{68}}
 \citation{DBLP:journals/corr/MilanL0RS16}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Training Deep Appearance Descriptor for DeepSORT}{35}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Inference stage}{35}}
-\newlabel{sec:inferstage}{{3.4}{35}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3-3}{\ignorespaces Workflow of inference stage.}}{35}}
-\newlabel{fig:inferstage}{{3-3}{35}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Evaluation stage}{35}}
+\citation{DBLP:journals/corr/MilanL0RS16}
+\citation{DBLP:journals/corr/MilanL0RS16}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Inference stage}{69}{}\protected@file@percent }
+\newlabel{sec:inferstage}{{3.3}{69}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3-8}{\ignorespaces Workflow of inference stage.}}{70}{}\protected@file@percent }
+\newlabel{fig:inferenceStage}{{3-8}{70}}
+\newlabel{tab:des}{{3.4}{71}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.6}{\ignorespaces Data format for both the inference result and ground-truth annotation of tracking \cite  {DBLP:journals/corr/MilanL0RS16}.}}{71}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Evaluation stage}{71}{}\protected@file@percent }
 \@setckpt{chap3}{
-\setcounter{page}{37}
+\setcounter{page}{73}
 \setcounter{equation}{0}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}
@@ -32,12 +59,13 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
-\setcounter{section}{5}
+\setcounter{section}{4}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{3}
-\setcounter{table}{0}
+\setcounter{figure}{8}
+\setcounter{table}{6}
 \setcounter{savepage}{3}
+\setcounter{parentequation}{0}
 }

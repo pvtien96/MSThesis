@@ -9,6 +9,20 @@ S.~{Bambach}, S.~{Lee}, D.~J. {Crandall}, and C.~{Yu}.
 \newblock In {\em 2015 IEEE International Conference on Computer Vision
   (ICCV)}, pages 1949--1957, 2015.
 
+\bibitem{10.1109/ICCV.2015.226}
+Sven Bambach, Stefan Lee, David~J. Crandall, and Chen Yu.
+\newblock Lending a hand: Detecting hands and recognizing activities in complex
+  egocentric interactions.
+\newblock In {\em Proceedings of the 2015 IEEE International Conference on
+  Computer Vision (ICCV)}, ICCV '15, page 1949–1957, USA, 2015. IEEE Computer
+  Society.
+
+\bibitem{9064606}
+A.~{Bandini} and J.~{Zariffa}.
+\newblock Analysis of the hands in egocentric vision: A survey.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  pages 1--1, 2020.
+
 \bibitem{DBLP:journals/corr/abs-1806-06157}
 Fabien Baradel, Natalia Neverova, Christian Wolf, Julien Mille, and Greg Mori.
 \newblock Object level visual reasoning in videos.
@@ -42,6 +56,11 @@ Alex Bewley, ZongYuan Ge, Lionel Ott, Fabio Ramos, and Ben Upcroft.
 \newblock Simple online and realtime tracking.
 \newblock {\em CoRR}, abs/1602.00763, 2016.
 
+\bibitem{bochkovskiy2020yolov4}
+Alexey Bochkovskiy, Chien-Yao Wang, and Hong-Yuan~Mark Liao.
+\newblock Yolov4: Optimal speed and accuracy of object detection.
+\newblock {\em arXiv preprint arXiv:2004.10934}, 2020.
+
 \bibitem{cai2016understanding}
 Minjie Cai, Kris~M Kitani, and Yoichi Sato.
 \newblock Understanding hand-object manipulation with grasp types and object
@@ -61,6 +80,13 @@ Aiden Doherty, Steve Hodges, Abby King, Alan Smeaton, Emma Berry, Chris Moulin,
   possibilities.
 \newblock {\em American journal of preventive medicine}, 44:320--3, 03 2013.
 
+\bibitem{10.1145/3343031.3350535}
+Abhishek Dutta and Andrew Zisserman.
+\newblock The via annotation software for images, audio and video.
+\newblock In {\em Proceedings of the 27th ACM International Conference on
+  Multimedia}, MM '19, page 2276–2279, New York, NY, USA, 2019. Association
+  for Computing Machinery.
+
 \bibitem{5995444}
 A.~{Fathi}, X.~{Ren}, and J.~M. {Rehg}.
 \newblock Learning to recognize objects in egocentric activities.
@@ -71,6 +97,50 @@ Alireza Fathi, Ali Farhadi, and James~M. Rehg.
 \newblock Understanding egocentric activities.
 \newblock In {\em Proceedings of the 2011 International Conference on Computer
   Vision}, ICCV '11, page 407–414, USA, 2011. IEEE Computer Society.
+
+\bibitem{fathigaze}
+Alireza Fathi, Yin Li, and James Rehg.
+\newblock Learning to recognize daily actions using gaze.
+\newblock volume 7572, pages 314--327, 10 2012.
+
+\bibitem{DBLP:journals/corr/Girshick15}
+Ross~B. Girshick.
+\newblock Fast {R-CNN}.
+\newblock {\em CoRR}, abs/1504.08083, 2015.
+
+\bibitem{DBLP:journals/corr/GirshickDDM13}
+Ross~B. Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock {\em CoRR}, abs/1311.2524, 2013.
+
+\bibitem{hastie2009elements}
+T.~Hastie, R.~Tibshirani, and J.H. Friedman.
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}.
+\newblock Springer series in statistics. Springer, 2009.
+
+\bibitem{DBLP:journals/corr/HeGDG17}
+Kaiming He, Georgia Gkioxari, Piotr Doll{\'{a}}r, and Ross~B. Girshick.
+\newblock Mask {R-CNN}.
+\newblock {\em CoRR}, abs/1703.06870, 2017.
+
+\bibitem{DBLP:journals/corr/HeZR014}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Spatial pyramid pooling in deep convolutional networks for visual
+  recognition.
+\newblock {\em CoRR}, abs/1406.4729, 2014.
+
+\bibitem{DBLP:journals/corr/HeZRS15}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock {\em CoRR}, abs/1512.03385, 2015.
+
+\bibitem{8909903}
+X.~{Hou}, Y.~{Wang}, and L.~{Chau}.
+\newblock Vehicle tracking using deep sort with low confidence track filtering.
+\newblock In {\em 2019 16th IEEE International Conference on Advanced Video and
+  Signal Based Surveillance (AVSS)}, pages 1--6, 2019.
 
 \bibitem{DBLP:journals/corr/HuangRSZKFFWSG016}
 Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
@@ -142,6 +212,17 @@ Y.~{Li}, {Zhefan Ye}, and J.~M. {Rehg}.
 \newblock In {\em 2015 IEEE Conference on Computer Vision and Pattern
   Recognition (CVPR)}, pages 287--295, 2015.
 
+\bibitem{li2020eye}
+Yin Li, Miao Liu, and James~M Rehg.
+\newblock In the eye of the beholder: Gaze and actions in first person video.
+\newblock {\em arXiv preprint arXiv:2006.00626}, 2020.
+
+\bibitem{DBLP:journals/corr/LinDGHHB16}
+Tsung{-}Yi Lin, Piotr Doll{\'{a}}r, Ross~B. Girshick, Kaiming He, Bharath
+  Hariharan, and Serge~J. Belongie.
+\newblock Feature pyramid networks for object detection.
+\newblock {\em CoRR}, abs/1612.03144, 2016.
+
 \bibitem{DBLP:journals/corr/abs-1708-02002}
 Tsung{-}Yi Lin, Priya Goyal, Ross~B. Girshick, Kaiming He, and Piotr
   Doll{\'{a}}r.
@@ -166,6 +247,50 @@ Thi Nguyen, Jean-Christophe Nebel, and Francisco Flórez-Revuelta.
   Using Hands Detected by a Deep Convolutional Network}, pages 390--398.
 \newblock 06 2018.
 
+\bibitem{DBLP:journals/corr/RedmonDGF15}
+Joseph Redmon, Santosh~Kumar Divvala, Ross~B. Girshick, and Ali Farhadi.
+\newblock You only look once: Unified, real-time object detection.
+\newblock {\em CoRR}, abs/1506.02640, 2015.
+
+\bibitem{DBLP:journals/corr/RedmonF16}
+Joseph Redmon and Ali Farhadi.
+\newblock {YOLO9000:} better, faster, stronger.
+\newblock {\em CoRR}, abs/1612.08242, 2016.
+
+\bibitem{DBLP:journals/corr/abs-1804-02767}
+Joseph Redmon and Ali Farhadi.
+\newblock Yolov3: An incremental improvement.
+\newblock {\em CoRR}, abs/1804.02767, 2018.
+
+\bibitem{DBLP:journals/corr/RenHG015}
+Shaoqing Ren, Kaiming He, Ross~B. Girshick, and Jian Sun.
+\newblock Faster {R-CNN:} towards real-time object detection with region
+  proposal networks.
+\newblock {\em CoRR}, abs/1506.01497, 2015.
+
+\bibitem{DBLP:journals/corr/RussakovskyDSKSMHKKBBF14}
+Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
+  Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael~S. Bernstein,
+  Alexander~C. Berg, and Fei{-}Fei Li.
+\newblock Imagenet large scale visual recognition challenge.
+\newblock {\em CoRR}, abs/1409.0575, 2014.
+
+\bibitem{4651201}
+O.~{Shigeta}, S.~{Kagami}, and K.~{Hashimoto}.
+\newblock Identifying a moving object with an accelerometer in a camera view.
+\newblock In {\em 2008 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 3872--3877, 2008.
+
+\bibitem{Simonyan2015VeryDC}
+K.~Simonyan and Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em CoRR}, abs/1409.1556, 2015.
+
+\bibitem{DBLP:journals/corr/abs-1808-01974}
+Chuanqi Tan, Fuchun Sun, Tao Kong, Wenchang Zhang, Chao Yang, and Chunfang Liu.
+\newblock A survey on deep transfer learning.
+\newblock {\em CoRR}, abs/1808.01974, 2018.
+
 \bibitem{6091176}
 D.~{Townsend}, F.~{Knoefel}, and R.~{Goubran}.
 \newblock Privacy versus autonomy: A tradeoff model for smart home monitoring
@@ -177,6 +302,20 @@ D.~{Townsend}, F.~{Knoefel}, and R.~{Goubran}.
 Ultralytics.
 \newblock Ultralytics.
 \newblock https://www.ultralytics.com., 2019.
+
+\bibitem{6126456}
+K.~E.~A. {van de Sande}, J.~R.~R. {Uijlings}, T.~{Gevers}, and A.~W.~M.
+  {Smeulders}.
+\newblock Segmentation as selective search for object recognition.
+\newblock In {\em 2011 International Conference on Computer Vision}, pages
+  1879--1886, 2011.
+
+\bibitem{tien}
+{Van-Tien Pham}, {Thi-Lan Le}, {Thanh-Hai Tran Thi}, and {Thanh-Phuong Nguyen}.
+\newblock Hand detection and segmentation using multimodal information from
+  kinect.
+\newblock In {\em 2020 3rd IEEE International Conference on Multimedia Analysis
+  and Pattern Recognition (MAPR)}, 10 2020.
 
 \bibitem{DBLP:journals/corr/abs-1812-00442}
 Nicolai Wojke and Alex Bewley.

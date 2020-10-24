@@ -8,10 +8,119 @@
 
 \section{Evaluation criteria} \label{sec:evacri}
 \subsection{Object detection metrics}
+Average Precision is a standard and popular metric in measuring the performance of the object detection and segmentation algorithms. The Precision (Prcn) and Recall (Rcll) are defined as follow:
+\begin{equation}
+	Prcn = \frac{TP}{TP+FP}
+\end{equation}
+\begin{equation}
+	Rcll = \frac{TP}{TP+FN}
+\end{equation}
+where, TP, FP, and FN are number of True Positive, False Positive, and False Negative, respectively. A predicted bounding box is considered a TP if its intersection over union (IoU), or Jaccard Index, with a ground truth box is larger than 0.5. Equation \ref{eq:IoU} shows how the IoU between a predicted box P and a ground truth box G is calculated.
+\begin{equation}
+	\label{eq:IoU}
+	IoU(P,G) = \frac{|P\cap G|}{| P \cup G |}
+\end{equation}
+F1 score is a metric that combines recall and precision into a single score by calculating the harmonic mean of precision and recall:
+\begin{equation}
+	F1 = \frac{2TP}{2TP+FP+FN}
+\end{equation}
+Latest research papers tend to give results in the COCO dataset format. In COCO mAP, a 101-point interpolated AP definition is used in the calculation. For COCO, AP is the average over multiple IoU. AP@[. 5: .95] corresponds to the average AP for IoU from 0.5 to 0.95 with a step size of 0.05. The following are some other metrics collected for the COCO dataset:
 \subsection{Object tracking metrics}
+Performance is measured according to the framework presented in MOT16 \cite{DBLP:journals/corr/MilanL0RS16} and in the same manner as performance is measure in the MOTChallange. The authors of \cite{DBLP:journals/corr/MilanL0RS16} provide publicly available code for evaluation, this code is used to calculate the different performance metrics. MOT16 was chosen since it is a compilation of other many metrics developed in an attempt to standardize evaluation of multiple object tracking. MOT16 contains a wide array of metrics for evaluation of multiple object tracking, some which are quite similar to each other. Hence, metrics that were considered to similar to other have not been included in this thesis.
+\begin{itemize}
+	\item Identification Recall (IDR) and Identification Precision (IDP): IDR and IDP are similar to the metrics Recall and Precision for object detection. The metrics will however differ since objects are considered tracked only if they can be assigned an identity, which will not be the case for all detected objects. Another difference is that inconsistencies in identity assignments will lower the IDTP score. For each ground truth identity, the predicted identity most similar to it is found. Any other identity assigned to the ground truth identity is then considered a mismatch (IDFP) and will be counted as a false positive instead of a true positive.
+	\begin{equation}
+		IDR = \frac{IDTP}{IDTP+IDFP}
+	\end{equation}
+	\begin{equation}
+		IDP = \frac{IDTP}{IDTP+IDFN}
+	\end{equation}
+where, IDTP is the sum of TP in detection and the number of correctly labeled objects in the tracking; IDFP/IDFN is the sum of FP/FN in detection and the number of correctly predicted objects for positive class in detection but incorrectly labeled in tracking.
+	\item IDF1-score(IDF1): Similar to F1 score for object detection, IDF1 combines both IDR and IDP into a single score to facilitate comparisons of different trackers. The higher IDF1 is, the better tracker is.
+	\begin{equation}
+		IDF1 = \frac{2IDTP}{2IDTP+IDFP+IDFN}
+	\end{equation}
+	\item Mostly Tracked (MT): The number of ground truth identities that are tracked for 80\% or more of their existence.
+	\item Partly Tracked (PT): The number of ground truth identities that are tracked between 20\% and 80\% of their existence.
+	\item Mostly Lost (ML): The number of ground truth identities that are tracked for less than 20\% of their existence.
+	\item Identity Switches (IDs): The number of identity switches. An identity switch is counted every time an already tracked ground truth identity is assigned a new tracking identity.
+	\item Track Fragmentations (FM): The number of track fragmentations. A track fragmentation is counted every time a tracked ground truth identity is lost and then found again in a later frame.
+	\item Multiple Object Tracking Accuracy (MOTA): MOTA combines false negatives, false positives and identity switches into a single score in order to express overall performance with a single value. This is the most important metric for object tracking evaluation and it is defined as:
+	\begin{equation}
+		MOTA = 1 - \frac{\sum _t (IDFN_t+IDFP_t+IDS_t)}{\sum _t GT_t}
+	\end{equation}
+where, t is the index of frame, GT is the number of objserved objects in the real-world. It is worth to note that MOTA would be a negative value if there are many errors in the tracking process and the number of these errors is larger than that of observed objects.
+	\item Multiple Object Tracking Precision(MOTP): MOTP measures how well correctly predicted bounding boxes TP fit their respective ground truth boxes GT. This is done by calculating the average overlap between true positives and their corresponding ground truth object.
+	\begin{equation}
+		MOTP = \frac{\sum _t d_{t,i}}{\sum _t c_t}
+	\end{equation}
+where, \(c_t\) denotes the number of matches found in the frame t and \(d_{t,i}\) is the sum of distances between all true positive and their corresponding ground truth i. This metric indicate the ability of the tracking in estimating precise object positions.
+\end{itemize}
 \section{Experimental results}
+The following sub-sections will present result for different object detection and tracking algorithms tested in this thesis. All experiments are conducted on 32 videos of Micand32 datasets. The average inference speed is measured on a Workstation supermicro with Intel® Xeon®, CPU E5-2620 v2@2.1GHz, 6 cores, 12 threads, RAM 12GB, GPU GTX 1080.
 \subsection{Egocentric hand detection and segmentation result}
+This section presents results for the different object detection algorithms consider in this thesis. The algorithms to be evaluated are: Yolov3\_spp, Yolov4x, FasterRCNN\_R\_50\_FPN\_3x, MaskRCNN\_R\_50\_FPN\_3x. Detection evaluation is show in Table \ref{tab:detres_ap}, Table \ref{tab:detres_ar} and Table \ref{tab:detres_sp}.
+\begin{table}[]
+	\label{tab:detres_ap}
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		Algorithm                  & AP            & AP50          & AP75          & APsmall & APmedium      & APlarge       \\ \hline
+		Yolov3\_spp                & 89.2          & 92.4          & 92.1          & 1.1     & 66.4          & 54.1          \\ \hline
+		Yolov4x                    & 93.1          & 95.6          & 94.6          & 3.2     & 72.5          & 42.9          \\ \hline
+		FasterRCNN & \textbf{96.2} & 97.9          & \textbf{97.9} & 0.9     & \textbf{75.8} & 6.3           \\ \hline
+		MaskRCNN  & 92.1          & \textbf{98.9} & 97.9          & 0.0     & 32.4          & \textbf{92.2} \\ \hline
+	\end{tabular}
+	\caption{Object detection and segmentation Average Precision following the COCO standard.}
+\end{table}
+	
+\begin{table}[]
+	
+	\begin{tabular}{|l|l|l|l|l|l|l|}
+		\hline
+		Algorithm                  & \(AR^{max=1}\)      & \(AR^max=10\)      & \(AR^{max}=100\)     & \(AR^{small}\) & \(AR^{medium}\)      & \(AR^{large}\)       \\ \hline
+		Yolov3\_spp                & 6.5          & 53.6          & 76.4          & 3.2     & 32.5          & 75.9          \\ \hline
+		Yolov4x                    & 8.7          & 65.8          & 89.7          & 7.1     & 40.1          & 82.7          \\ \hline
+		FasterRCNN & \textbf{9.6} & 76.8          & \textbf{97.6} & 10.0    & \textbf{77.8} & \textbf{97.6} \\ \hline
+		MaskRCNN   & 9.2          & \textbf{73.9} & 94.6          & 0.0     & 50.8          & 94.7          \\ \hline
+	\end{tabular}
+	\label{tab:detres_ar}
+	\caption{Object detection and segmentation Average Recall following the COCO standard.}
+\end{table}
+
+\begin{table}[]
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\multirow{2}{*}{Algorithm}} & \multirow{2}{*}{\begin{tabular}[c]{@{}c@{}}Average inference time/image \\ (millisecond)\end{tabular}} & \multirow{2}{*}{Speed (Hz)} & \multicolumn{2}{c|}{Memory requirement (MB)} \\ \cline{4-5} 
+		\multicolumn{1}{|c|}{}                           &                                                                                                        &                             & RAM                   & GPU                  \\ \hline
+		\multicolumn{1}{|c|}{Yolov3\_spp}                & 45                                                                                                     & 22                          & \textbf{1989}         & 2260                 \\ \hline
+		Yolov4x                                          & \textbf{38}                                                                                            & \textbf{25}                 & 2152                  & \textbf{2076}        \\ \hline
+		FasterRCNN                                       & 84                                                                                                     & 12                          & 2351                  & 3297                 \\ \hline
+		MaskRCNN                                         & 215                                                                                                    & 5                           & 2461                  & 3674                 \\ \hline
+	\end{tabular}
+	\caption{Object detection and segmentation inference speed and machine requirements.}
+	\label{tab:detres_sp}
+\end{table}
 \subsection{Egocentric hand tracking result}
+Tracking results for SORT and DeepSORT with different object detection strategy are presented in this section. As described in section 3.4, the tests are performed in a tracking by detection system where tracking and detection algorithms are completely separated. Therefore, different results for combinations of tracking and detection algorithms are reported. Further, ground-truth detections are also test with SORT and DeepSORT, this is done so as to give an insight how much of the error is due to the object detection algorithm and how much of it is due to the tracking algorithm. Tracking performance with ground-truth detections should only have errors introduced by the tracking algorithms and can thereby give an upper limit for how much better the tracking by detection system can become by changing object detection algorithm. Thus, this frameworks consists of 6 detction and segmentation algorithms, they are: Yolov3\_SPP, Yolov4x, Faster\_RCNN\_R\_50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x with region based and detection ground-truth. Their combination with 2 tracking algorithms, SORT and DeepSORT, we obtain a total of 12 options for the pipeline. However, the combination of MaskRCNN with region based and SORT scheme is identical to the combination of Mask and SORT scheme because in theory, the SORT algorithm does not use visual information fields. To conclude, we have 11 approaches conventionally defined as in the Table \ref{tab:notation} for brief presentation.
+\begin{table}[]
+	\label{tab:notation}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		No & Detector              & Tracker                                        & Notation \\ \hline
+		1  & Yolov3                & \multirow{5}{*}{SORT}                          & Y3S      \\ \cline{1-2} \cline{4-4} 
+		2  & Yolov4                &                                                & Y4S      \\ \cline{1-2} \cline{4-4} 
+		3  & FasterRCNN            &                                                & FS       \\ \cline{1-2} \cline{4-4} 
+		4  & MaskRCNN              &                                                & MS       \\ \cline{1-2} \cline{4-4} 
+		5  & Groundtruth           &                                                & GS       \\ \hline
+		6  & Yolov3                & \multicolumn{1}{c|}{\multirow{6}{*}{DeepSORT}} & Y3DS     \\ \cline{1-2} \cline{4-4} 
+		7  & Yolov4                & \multicolumn{1}{c|}{}                          & Y4DS     \\ \cline{1-2} \cline{4-4} 
+		8  & FasterRCNN            & \multicolumn{1}{c|}{}                          & FS       \\ \cline{1-2} \cline{4-4} 
+		9  & MaskRCNN              & \multicolumn{1}{c|}{}                          & MS       \\ \cline{1-2} \cline{4-4} 
+		10 & MaskRCNN+Region based & \multicolumn{1}{c|}{}                          & RDS      \\ \cline{1-2} \cline{4-4} 
+		11 & Groundtruth           & \multicolumn{1}{c|}{}                          & GDS      \\ \hline
+	\end{tabular}
+	\caption{Notation of the 11 approaches mentioned and used in the experiments.}
+\end{table}
 \section{Discussions}
 \subsection{Object detection: tradeoff between accuracy and speed}
 \subsection{The superiority of DeepSORT over SORT}

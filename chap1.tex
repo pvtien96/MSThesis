@@ -1,15 +1,15 @@
-\chapter{Introduction}
+\chapter{Introduction}\label{chap:intro}
 
 \section{Overview of object recognition and tracking}
 \subsection{Object recognition}
 In the past decade, modern computer vision technology based on AI and deep learning methods has undergone tremendous development. Today, it is used in applications such as image classification, facial recognition, object recognition in images, video analysis and classification, and image processing in robots and autonomous vehicles. Many computer vision tasks require intelligent segmentation of images to understand the content contained in the image and simplify the analysis of each part. Today's image segmentation technology uses deep learning models for computer vision to understand the real objects represented by each pixel in an image at a level that was unimaginable only ten years ago. Deep learning can learn patterns in visual input in order to predict the categories of objects that make up an image. The main deep learning architectures used for image processing are convolutional neural networks (CNN) or specific CNN frameworks such as AlexNet, VGG, Inception and ResNet. Generally, a deep learning model for computer vision is trained and executed on a dedicated graphics processing unit (GPU) to reduce calculation time.
 
 Image segmentation is a key process in computer vision. It involves dividing the visual input into multiple parts to simplify image analysis. A segment represents an object or part of an object, and includes a set of pixels or "super pixels". Image segmentation divides pixels into larger parts, eliminating the need to treat a single pixel as an observation unit. Object recognition is divided into three levels:
-\begin{enumerate}
+\begin{itemize}
 	\item Image Classification: to classify the entire image into categories such as people, vehicles, dogs.
 	\item Object detection: to detect an object in the image and draw a rectangle around it, such as a pedestrian or sheep.
 	\item Object Segmentation: to identify the various parts of the image and understand what objects they belong to. Segmentation lays the foundation for performing object detection and classification. There are two type of granularity within the segmentation process itself: semantic segmentation and instance segmentation. Semantic segmentation classifies all pixels of the image into meaningful object categories. These classes are "semantic interpretable" and correspond to the classes in the real world. For example, you can isolate all pixels related to cats and then color them green. This is also called dense prediction because it can predict the meaning of each pixel. Instance segmentation identifies each instance of each object in the image. It differs from semantic segmentation in that it does not classify each pixel. If there are three cars in the image, semantic segmentation will classify all cars into one instance, and instance segmentation will identify each car.
-\end{enumerate}
+\end{itemize}
 Image segmentation helps determine the relationship between objects and the context of objects in the image. Applications include face recognition, license plate recognition and satellite image analysis. Industries such as retail and fashion use image segmentation in image-based searches. Self-driving cars use it to understand their surroundings. Medical imaging-extract clinically relevant information from medical images. For example, radiologists can use machine learning to enhance analysis by segmenting images into different organs, tissue types, or disease symptoms. This reduces the time required to run diagnostic tests.
 \subsection{Object Tracking}
 
@@ -53,15 +53,14 @@ In \cite{9060114}, the egocentric human action recognition is solved by explicit
 \begin{table}
 	\caption{Problem formulation.}
 	\label{formulation}
-	\begin{tabular}{|l|l|}
+	\begin{tabular}{|l|p{13cm}|}
 		
 		\hline 
 		Input &  Sequence of frames from an egocentric surveillance video\\ 
 		\hline 
 		Output & Trajectories of the tracked hands, includes: \\
 		& \tabitem The number of human hands in the current frame \\
-		& \tabitem The location of each hand, represented by a bounding box for the \\ 
-		& detection algorithm, or a set of pixels for the segmentation algorithm \\
+		& \tabitem The location of each hand, represented by a bounding box for the detection algorithm, or a set of pixels for the segmentation algorithm \\
 		& \tabitem Identity of each hand across the video
 \\ 
 		\hline 
@@ -78,5 +77,5 @@ The inference results on test dataset are used to analyze the effect of phase de
 	\item First, a hand detection, segmentation and tracking from egocentric vision pipeline is built. This platform contains many state-of-the-art detection algorithms in RCNN and YOLO families, and also 2 tracking algorithm SORT and DeepSORT. Other algorithms can be simply integrated into this framework.
 	\item Second, a comparative evaluation of combination of a detector and a tracker is conducted and analyzed on both term of accuracy and performance. Consequence, the recommendation for choosing the method on egocentric hand tracking applications is given.
 	\item Third, MICAND32, a new egocentric hand detection, segmentation and tracking datasets is built during this thesis, accompanied with labeling, visualizing and evaluation tools.
-	Part of this thesis is inherited from a part of my previous work [MAPR2020]. Code in this thesis is open-source and will made available at .
+	Part of this thesis is inherited from a part of my previous work \cite{tien}. Code in this thesis is open-source and will made available at .
 \end{itemize}
