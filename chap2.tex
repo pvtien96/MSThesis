@@ -60,7 +60,7 @@ The regularization term is critical here and RCNN paper picked the best \(\lambd
 \subsubsection{FastRCNN}
 The main disadvantage of the R-CNN method is its slow speed. This is mainly because each regional proposal is passed through CNN separately, which is very time-consuming. In order to improve the speed, Girshick introduced a target detection method called Fast R-CNN in \cite{DBLP:journals/corr/Girshick15}. Fast R-CNN can improve the speed of object detection, mainly by passing the image forward through CNN only once, rather than once for each region performed by R-CNN. As in R-CNN, the region proposal method first divides the image into category-independent regions, creating a region of interest (RoI). Then, the entire image is processed by a CNN, which does a convolutional feature map of the image. Next, for each regional proposal, the RoI pool layer using spatial pyramid pool \cite{DBLP:journals/corr/HeZR014} is applied to the feature map. This will convert each RoI into a fixed-size vector. Then, the feature vectors are processed by fully connected layers, which are divided into two different output layers. One of the output layers is the softmax layer, which estimates probability estimates for object classes. The other layer is the bounding box regressor, which outputs a refined estimate of the bounding box for each object class. Figure \ref{fig:fastArc} shows how an image is processed by Fast R-CNN.
 \begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/fastArc.png}}
+	\centerline{\includegraphics[width=0.5\linewidth]{Figs/fastArc.png}}
 	\caption{The architecture of Fast RCNN.}
 	\label{fig:fastArc}
 \end{figure}
@@ -99,7 +99,7 @@ The bounding box loss \(\mathcal{L}_{box}\) should measure the difference betwee
 Fast R-CNN passing the speed of object detection by passing the image forward through the CNN only once, instead of forward passing through each region of interest in the image. For Fast R-CNN, the bottleneck lies in the image segmentation method usually implemented on the CPU. In order to solve this problem, Ren et al. A method called Faster R-CNN is proposed in \cite{DBLP:journals/corr/RenHG015}. Faster R-CNN eliminates the need for CPU computing by introducing the idea of a Region Proposal Networks (RPNs). The region proposal network to region proposed by sliding a small network on the convolutional feature map. At each location, the small network takes a window of the convolution feature map and converts it into a feature vector. This feature vector is then input into two different fully connected layers, one layer performs bounding box regression, and the other layer is a classification layer that predicts objective scores. The objectivity score is a prediction of the probability that the predicted bounding box contains only one object compared to the background.
 \\For each position, RPN makes several predictions relative to a fixed number of reference frames, which are called anchors. You can anchor as a suggested border for each sliding window position. In \cite{DBLP:journals/corr/RenHG015}, anchors are created in 3 ratios and 3 different aspect ratios, and each position provides a total of 9 different anchors. This means that RPN has 9 bounding boxes at each sliding window position, and each anchor point has one bounding box.
 \begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/faster.png}}
+	\centerline{\includegraphics[width=0.5\linewidth]{Figs/faster.png}}
 	\caption{An illustration of Faster RCNN model.}
 	\label{fig:faster}
 \end{figure}
@@ -134,7 +134,7 @@ where \(\mathcal{L}_{cls}\) is the log loss function over two classes, as we can
 \subsubsection{MaskRCNN}
 The mask R-CNN is an extension of Faster R-CNN proposed by He et al in \cite{DBLP:journals/corr/HeGDG17}. In addition to object detection, Mask R-CNN can also perform object instance segmentation. Segmentation is achieved by adding a third branch to Faster R-CNN, which outputs an object mask for each detected object. In order to improve the segmentation, a method called RoIAlign is introduced to extract more accurate feature maps for each RoI. RoIAlign uses bilinear interpolation instead of quantizing the feature map to calculate the exact value of the feature map.
 \begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/maskrcnn.png}}
+	\centerline{\includegraphics[width=0.5\linewidth]{Figs/maskrcnn.png}}
 	\caption{The Mask RCNN framework for instance segmentation.}
 	\label{fig:maskrcnn}
 \end{figure}
@@ -148,7 +148,7 @@ The mask branch generates a mask of dimension m x m for each RoI and each class;
 \begin{equation}
 	\mathcal{L}_{mask} = - \frac{1}{m^2} \sum_{1 \leq i, j \leq m} \big[ y_{ij} \log \hat{y}^k_{ij} + (1-y_{ij}) \log (1- \hat{y}^k_{ij}) \big]\
 \end{equation}
-where \(y_{ij}\) is the label of a cell (i, j) in the true mask for the region of size m x m; \(\hat{y}_{ij}^k\) is the predicted value of the same cell in the mask learned for the ground-truth class k.
+where \(y_{ij}\) is the label of a cell (i, j) in the true mask for the region of size m x m; \(\hat{y}_{ij}^k\) is the predicted value of the same cell in the mask learned for ground-truth class k.
 \subsection{YOLO model family}
 \subsubsection{YOLO}
 In \cite{DBLP:journals/corr/RedmonDGF15}, a novel object detection method is introduced, called YOLO, which means "You Only Look Once". Unlike R-CNN and its successors, YOLO does not use any region proposal method, but uses a single CNN to predict bounding boxes and classes. 
@@ -158,12 +158,13 @@ In \cite{DBLP:journals/corr/RedmonDGF15}, a novel object detection method is int
 	\label{eq:yolo}
 	Pr(Class_i|Object)*Pr(Object)*IoU^{gt}_{pred} = Pr(Class_i)*IoU^{gt}_{pred}
 \end{equation}
-This score not only explains the probability that the box contains class \(i\), \(Pr(Class_i)\), but also how to estimate the predicted box to fit the ground truth box \(Pr(Object)*IoU_{pred}^{gt}\). Figure \ref{fig:yoloworkflow} shows how to split the image into a grid, and how the cell with the dot as the center predicts different bounding boxes. The predicted bounding box is then combined with the class probabilities also obtained from the image grid to produce the final object detection.
-\begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/yoloworkflow.png}}
-	\caption{The workflow of YOLO model.}
-	\label{fig:yoloworkflow}
-\end{figure}
+This score not only explains the probability that the box contains class \(i\), \(Pr(Class_i)\), but also how to estimate the predicted box to fit the ground truth box \(Pr(Object)*IoU_{pred}^{gt}\). 
+%Figure \ref{fig:yoloworkflow} shows how to split the image into a grid, and how the cell with the dot as the center predicts different bounding boxes. The predicted bounding box is then combined with the class probabilities also obtained from the image grid to produce the final object detection.
+%\begin{figure}
+%	\centerline{\includegraphics[width=1\linewidth]{Figs/yoloworkflow.png}}
+%	\caption{The workflow of YOLO model.}
+%	\label{fig:yoloworkflow}
+%\end{figure}
 The base model \ref{fig:yolo-network} is similar to GoogLeNet with inception module replaced by 1x1 and 3x3 conv layers. The final prediction of shape S×S×(5B+K) is produced by two fully connected layers over the whole conv feature map.
 \begin{figure}
 	\centerline{\includegraphics[width=1\linewidth]{Figs/yolo-network.png}}
@@ -177,6 +178,7 @@ In order to increase speed, a CNN architecture called Darknet-19 is introduced i
 \subsubsection{YOLOv3}
 YOLOv3 includes a further improvement of YOLOv2 proposed by Redmon et al in \cite{DBLP:journals/corr/abs-1804-02767}. Similar to the feature pyramid network (FPN) described in \cite{DBLP:journals/corr/LinDGHHB16}, in YOLOv3, the box will be predicted at 3 different scales. This YOLOv3's ability to detect small objects, which was struggling with earlier versions of YOLO.
 Inspired by the residual network proposed in \cite{DBLP:journals/corr/HeZRS15}, Darknet-19 was extended to include a residual layer. This new CNN architecture is called Darknet-53 because it has a total of 53 convolutional layers. Compared with Darknet-19, Darknet-53 has higher accuracy but slower speed.
+\vspace{-1.6cm}
 \subsubsection{YOLOv4}
 So far, YOLOv4 is the latest and most advanced iteration \cite{bochkovskiy2020yolov4}. It has the fastest running speed and can be used for optimization of production systems and parallel computing. Some of the new technologies adopted in YOLOv4 are: (1) weighted residual connection, (2) cross-stage-partial connection, (3) cross mini-batch processing, (4) normalization (CmBN), (5) self-confrontation training, (6) Mish-activation, etc. In order to obtain higher precision values, YOLOv4 uses Dense Block, which is a deeper and more complex network. Similarly, the backbone of its function extractor uses CSPDarknet-53, which deploys CSSP connection with Darkenet-53 of the early YOLOv3. In addition to CSPDarknet-53, YOLOv4's architecture also includes SPP add-on modules, PANet path aggregation neck and YOLOv3 anchor-based head. SPP blocks are stacked on CSPDarknet53 to increase the receiving field that can discretize the most significant context features and ensure that its network operation speed will not decrease. Similarly, PANet is used to aggregate parameters from multiple backbone levels, instead of the FPN used in YOLOv3.
 \section{Object tracking algorithms}
@@ -231,11 +233,11 @@ Track handling is processed as follow: every time a new detection is successfull
 \subsection{GTEA family datatsets}
 Georgia Tech Egocentric Activity Datasets (GTEA) \cite{5995444} contains 7 types of daily activities, each performed by 4 different subjects. The camera is mounted on a cap worn by the subject. 
 GTEA Gaze \cite{fathigaze} dataset is collected using Tobii eye-tracking glasses. It consists of 17 sequences, performed by 14 different subjects. GTEA Gaze+ \cite{7298625} is collected by using SMI eye-tracking glasses at Georgia Tech's AwareHome. This dataset consists of 7 meal-preparation activities, performed by 26 subjects. Subjects perform the activities based on the given recipes. Activities are: American Breakfast, Pizza, Snack, Greek Salad, Pasta Salad, Turkey Sandwich and Cheese Burger. SMI glasses record a HD video of subject’s activities at 24 frames per second. They also record subject's gaze at 30 fps. For each activity, ELAN is used to annotate its actions. An activity is a meal-preparation task such as making pizza, and an action is a short temporal segment such as putting sauce on the pizza crust, dicing the green peppers, washing the mushrooms. The authors have completed more than half of the annotations. The current version contains 37 videos with gaze tracking and action annotations. Audio files are also available on request.
-\begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/GTEA.jpg}}
-	\caption{Upshots from GTEA family datasets.}
-	\label{fig:gtea}
-\end{figure}
+%\begin{figure}
+%	\centerline{\includegraphics[width=1\linewidth]{Figs/GTEA.jpg}}
+%	\caption{Upshots from GTEA family datasets.}
+%	\label{fig:gtea}
+%\end{figure}
 EGTEA Gaze+ \cite{li2020eye} is the largest and most comprehensive dataset for FPV actions and gaze up to date. This dataset coms with HD videos (1920x960), audios, gaze tracking data, frame-level action annotations and pixel-level hand masks at sampled frames. EGTEA Gaze+ is a major expansion of GTEA Gaze+. Specifically, this new datasets EGTEA Gaze + contains 29 hours (withdrawn status) cooking events from 86 independent sessions on 32 topics of 32 subjects performing 7 different meal preparation tasks. These videos have audio and gaze tracking (30Hz). The authors also provide human annotations for actions (human-object interactions) and hand masks. Action annotations include 10325 fine-grained action examples, such as "cut green peppers" or "pour condiments in a condiment container into a salad". These pixel-level hand annotations include 15,176 hand masks in 13,847 frames from the video of 200 action categories sparsely sampled from all 86 sessions of the datasets. Post-processing EGTEA Gaze+ dataset for the thesis’s framework is conducted as follow: The original data in the EGTEA Gaze + dataset is processed into COCO standard in order to be used in the framework. The mask image is converted into binary mask image by thresholding and then applying a contour calculation algorithm of the hand area. At last, the binary mask is converted to the RLE (run length encoding) standard which is usable data in the framework. In the scope of this thesis, the 4 datasets GTEA, GTEA Gaze, GTEA Gaze + and EGTEA Gaze + is regulated into GTEA family datasets.
 \vspace*{-\baselineskip}
 \begin{figure}
@@ -251,11 +253,11 @@ The EgoHand dataset, which is presented in \cite{10.1109/ICCV.2015.226} is a lar
 	\label{fig:egohands}
 \end{figure}
 Post-processing EgoHands for the thesis’s framework is conducted as follow: The original annotations in EgoHands datasets consists of 4 categories: my left, my right, your left, your right. In the scope of this thesis, I just focus the hands appearing in egocentric video, therefore I convert all 4 categories into 1 category, “hand”. From the “.mat” format data, I dumped into “.json” format and feed to the framework.
-\begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/postegohands.png}}
-	\caption{Samples from EgoHands dataset after post-processing.}
-	\label{fig:postegohands}
-\end{figure}
+%\begin{figure}
+%	\centerline{\includegraphics[width=1\linewidth]{Figs/postegohands.png}}
+%	\caption{Samples from EgoHands dataset after post-processing.}
+%	\label{fig:postegohands}
+%\end{figure}
 \subsection{Micand32 dataset} \label{subsec:micand32}
 As introduced in chapter \ref{chap:intro}, the NAFOSTED’s project is carried out with the aim of using advanced deep learning techniques to evaluate the healing and surgical research of the patient with a sensor through detection segmentation, tracking, gesture recognition, and correlation of the patient's hand with objects. The members in the project prepare the script and perform data collection at Saint Paul Vietnam hospital in one full working week. The experiment was carried out by 10 volunteers, patients aged 20 to 60 years, 5 men and 5 women under the supervision, explanation and help of doctors and instructors. The implementation site consists of 3 areas: the desk area, the sink area and the closet area. Patients will wear 5 sensors including: 1 camera at the head, 1 camera in the shoulder, 1 sensor of kinetics (sensors that will collect and store information about the carrier's position, acceleration) in the left hand, 1 kinematic sensor in the right hand, 1 kinetic sensor in the leg. The patient performs 21 agreed and pre-defined actions, such as taking stairs, practicing hands with objects, brushing hair, opening cabinets, etc. The average number of executions per action is 2. The recorded videos have very high resolution compared to the previous related datasets, is 1920x1440, frequency 30fps. Average time to perform an action is 5 seconds. Thus, in terms of images, the data set consists of 5 people x 2 cameras x 21 actions x 5 times = 1050 videos, so there will be 1050 videos x 5 seconds x 30 fps = 157500 frames.
 \\The Micand32 dataset is a subset of the NAFOSTED subject dataset. In the context of the problem of detecting, partitioning and tracking human hands, this thesis is concerned with only 4/21 types of actions most relevant to the hand: (5) practice with ball, (6) practice with water bottles, (7) practice with wooden blocks, (8) practice with cylinders. Figure \ref{fig:micand32} visualizes random samples of 4 action types extracted from MICAND32.

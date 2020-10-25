@@ -1,10 +1,10 @@
 \contentsline {chapter}{\numberline {1}Introduction}{15}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Overview of object recognition and tracking}{15}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Object recognition}{15}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Object tracking}{17}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}Object tracking}{16}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}Context and scope of the thesis}{18}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Egocentric vision}{18}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Background project}{20}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.2}Background project}{19}{subsection.1.2.2}%
 \contentsline {section}{\numberline {1.3}Related works}{21}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Video object recoginiton and tracking related works}{21}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Hand recognition related works}{22}{subsection.1.3.2}%
@@ -19,36 +19,38 @@
 \contentsline {subsubsection}{RCNN}{28}{section*.6}%
 \contentsline {subsubsection}{FastRCNN}{31}{section*.7}%
 \contentsline {subsubsection}{FasterRCNN}{33}{section*.8}%
-\contentsline {subsubsection}{MaskRCNN}{35}{section*.9}%
-\contentsline {subsection}{\numberline {2.2.2}YOLO model family}{37}{subsection.2.2.2}%
-\contentsline {subsubsection}{YOLO}{37}{section*.10}%
-\contentsline {subsubsection}{YOLOv2}{39}{section*.11}%
-\contentsline {subsubsection}{YOLOv3}{39}{section*.12}%
-\contentsline {subsubsection}{YOLOv4}{40}{section*.13}%
-\contentsline {section}{\numberline {2.3}Object tracking algorithms}{40}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}SORT}{40}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}DeepSORT}{41}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Egocentric vision datasets}{44}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}GTEA family datatsets}{44}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}EgoHands dataset}{45}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Micand32 dataset}{49}{subsection.2.4.3}%
-\contentsline {chapter}{\numberline {3}Proposed Framework}{55}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Proposed framework: tracking by detection}{55}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Training stage}{57}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Training detection and segmentation models}{58}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Training deep appearance descriptor for DeepSORT}{61}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Inference stage}{62}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Evaluation stage}{65}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Experiments}{67}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Evaluation criteria}{67}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Object detection metrics}{67}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Object tracking metrics}{68}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Experimental results}{70}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Egocentric hand detection and segmentation result}{71}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Egocentric hand tracking result}{71}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Discussions}{73}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Object detection: tradeoff between accuracy and speed}{73}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}The superiority of DeepSORT over SORT}{73}{subsection.4.3.2}%
+\contentsline {subsubsection}{MaskRCNN}{34}{section*.9}%
+\contentsline {subsection}{\numberline {2.2.2}YOLO model family}{36}{subsection.2.2.2}%
+\contentsline {subsubsection}{YOLO}{36}{section*.10}%
+\contentsline {subsubsection}{YOLOv2}{36}{section*.11}%
+\contentsline {subsubsection}{YOLOv3}{37}{section*.12}%
+\contentsline {subsubsection}{YOLOv4}{38}{section*.13}%
+\contentsline {section}{\numberline {2.3}Object tracking algorithms}{38}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}SORT}{38}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}DeepSORT}{39}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Egocentric vision datasets}{42}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}GTEA family datatsets}{42}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}EgoHands dataset}{43}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Micand32 dataset}{45}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Proposed Framework}{51}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Proposed framework: tracking by detection}{51}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Training stage}{53}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Training detection and segmentation models}{54}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Training deep appearance descriptor for DeepSORT}{57}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Inference stage}{58}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Evaluation stage}{60}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Experiments}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Evaluation criteria}{63}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Object detection metrics}{63}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Object tracking metrics}{64}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Experimental results}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Egocentric hand detection and segmentation result}{67}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Egocentric hand tracking result}{67}{subsection.4.2.2}%
+\contentsline {subsubsection}{Short-term tracking on a standard dataset: Micand32S}{68}{section*.14}%
+\contentsline {subsubsection}{Long-term tracking on a realistic dataset: Micand32E}{69}{section*.15}%
+\contentsline {section}{\numberline {4.3}Discussions}{71}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Object detection: tradeoff between accuracy and speed}{71}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}The superiority of DeepSORT over SORT}{72}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Impact of detection method over tracking result}{73}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Complexsity of 4 types of patients's actions}{73}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Challenging cases}{73}{subsection.4.3.5}%
@@ -60,4 +62,5 @@
 \contentsline {chapter}{\numberline {A}Tables}{79}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Figures}{83}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Short-term tracking results on Micand32S}{83}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Long-term tracking results on Micand32E}{89}{section.B.2}%
+\contentsline {section}{\numberline {B.2}Long-term tracking results on Micand32E}{83}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Other}{83}{section.B.3}%
