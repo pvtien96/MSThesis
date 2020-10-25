@@ -41,8 +41,8 @@
 \usepackage{fontawesome}
 \usepackage{hyperref}
 \usepackage{pgfplots}
+\usepackage{wrapfig}
 %\pgfplotsset{compat=newest}
-
 \pagestyle{plain}
 
 %% This bit allows you to either specify only the files which you wish to
@@ -52,6 +52,11 @@
 %\typein [\files]{Enter file names to process, (chap1,chap2 ...), or `all' to process all files:}
 \def\all{all}
 \ifx\files\all \typeout{Including all files.} \else %\typeout{Including only \files.} \includeonly{\files} \fi
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]   
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt}
 
 \begin{document}
 

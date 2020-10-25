@@ -63,53 +63,54 @@ This subsection presents results for the different object detection algorithms c
 \begin{table}[]
 	\centering
 	\label{tab:detres_ap}
-	\begin{tabular}{|l|l|l|l|l|l|l|}
+	\caption{Object detection and segmentation Average Precision following the COCO standard.}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
 		\hline
 		Algorithm                  & AP            & AP50          & AP75          & \(AP^{small}\) & \(AP^{medium}\)      & \(AP^{large}\)       \\ \hline
-		Yolov3\_spp                & 89.2          & 92.4          & 92.1          & 1.1     & 66.4          & 54.1          \\ \hline
+		Yolov3                & 89.2          & 92.4          & 92.1          & 1.1     & 66.4          & 54.1          \\ \hline
 		Yolov4x                    & 93.1          & 95.6          & 94.6          & 3.2     & 72.5          & 42.9          \\ \hline
 		FasterRCNN & \textbf{96.2} & 97.9          & \textbf{97.9} & 0.9     & \textbf{75.8} & 6.3           \\ \hline
 		MaskRCNN  & 92.1          & \textbf{98.9} & 97.9          & 0.0     & 32.4          & \textbf{92.2} \\ \hline
 	\end{tabular}
-	\caption{Object detection and segmentation Average Precision following the COCO standard.}
 \end{table}
 \begin{table}[]
 	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|l|l|l|l|}
-			\hline
-			Algorithm                  & \(AR^{max=1}\)      & \(AR^{max}=10\)      & \(AR^{max}=100\)     & \(AR^{small}\) & \(AR^{medium}\)      & \(AR^{large}\)       \\ \hline
-			Yolov3\_spp                & 6.5          & 53.6          & 76.4          & 3.2     & 32.5          & 75.9          \\ \hline
-			Yolov4x                    & 8.7          & 65.8          & 89.7          & 7.1     & 40.1          & 82.7          \\ \hline
-			FasterRCNN\_R\_50\_FPN\_3x & \textbf{9.6} & 76.8          & \textbf{97.6} & 10.0    & \textbf{77.8} & \textbf{97.6} \\ \hline
-			MaskRCNN\_R\_50\_FPN\_3x   & 9.2          & \textbf{73.9} & 94.6          & 0.0     & 50.8          & 94.7          \\ \hline
-		\end{tabular}%
-	}
 	\caption{Object detection and segmentation Average Recall following the COCO standard.}
 	\label{tab:detres_ar}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Algorithm                  & \(AR^{max=1}\)      & \(AR^{max}=10\)      & \(AR^{max}=100\)     & \(AR^{small}\) & \(AR^{medium}\)      & \(AR^{large}\)       \\ \hline
+			Yolov3                & 6.5          & 53.6          & 76.4          & 3.2     & 32.5          & 75.9          \\ \hline
+			Yolov4x                    & 8.7          & 65.8          & 89.7          & 7.1     & 40.1          & 82.7          \\ \hline
+			FasterRCNN & \textbf{9.6} & 76.8          & \textbf{97.6} & 10.0    & \textbf{77.8} & \textbf{97.6} \\ \hline
+			MaskRCNN   & 9.2          & \textbf{73.9} & 94.6          & 0.0     & 50.8          & 94.7          \\ \hline
+		\end{tabular}%
+	}
 \end{table}
 \begin{table}[hbt!]
 	\centering
+	\caption{Object detection and segmentation average training and inference time, speed and machine requirements.}
+	\label{tab:detres_sp}
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|l|l|l|}
+		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
 			\multirow{2}{*}{Algorithm} & \multicolumn{2}{l|}{Average time}         & \multirow{2}{*}{Speed (Hz)} & \multicolumn{2}{l|}{Memory requirement (MB)} \\ \cline{2-3} \cline{5-6} 
 			& Training (hour) & Inference (millisecond) &                             & RAM                   & GPU                  \\ \hline
-			Yolov3\_spp                & \textbf{36}     & 45                      & 22                          & \textbf{1989}         & 2260                 \\ \hline
+			Yolov3                & \textbf{36}     & 45                      & 22                          & \textbf{1989}         & 2260                 \\ \hline
 			Yolov4x                    & 40              & \textbf{38}             & \textbf{25}                 & 2152                  & \textbf{2076}        \\ \hline
-			FasterRCNN\_R\_50\_FPN\_3x & 46              & 84                      & 12                          & 2351                  & 3297                 \\ \hline
-			MaskRCNN\_R\_50\_FPN\_3x   & 50              & \textbf{215}            & \textbf{5}                  & \textbf{2461}         & \textbf{3674}        \\ \hline
+			FasterRCNN & 46              & 84                      & 12                          & 2351                  & 3297                 \\ \hline
+			MaskRCNN   & 50              & \textbf{215}            & \textbf{5}                  & \textbf{2461}         & \textbf{3674}        \\ \hline
 		\end{tabular}%
 	}
-	\caption{Object detection and segmentation average training and inference time, speed and machine requirements.}
-	\label{tab:detres_sp}
 \end{table}
 \subsection{Egocentric hand tracking result}
 Tracking results for SORT and DeepSORT with different object detection strategy are presented in this section. As described in section 3.4, the tests are performed in a tracking by detection system where tracking and detection algorithms are completely separated. Therefore, different results for combinations of tracking and detection algorithms are reported. Further, ground-truth detections are also test with SORT and DeepSORT, this is done so as to give an insight how much of the error is due to the object detection algorithm and how much of it is due to the tracking algorithm. Tracking performance with ground-truth detections should only have errors introduced by the tracking algorithms and can thereby give an upper limit for how much better the tracking by detection system can become by changing object detection algorithm. Thus, this frameworks consists of 6 detction and segmentation algorithms, they are: Yolov3\_SPP, Yolov4x, Faster\_RCNN\_R\_50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x, Mask\_RCNN\_R50\_FPN\_3x with region based and detection ground-truth. Their combination with 2 tracking algorithms, SORT and DeepSORT, we obtain a total of 12 options for the pipeline. However, the combination of MaskRCNN with region based and SORT scheme is identical to the combination of Mask and SORT scheme because in theory, the SORT algorithm does not use visual information fields. To conclude, we have 11 approaches conventionally defined as in the Table \ref{tab:notation} for brief presentation.
 \begin{table}[]
 	\centering
 	\label{tab:notation}
-	\begin{tabular}{|l|l|l|l|}
+	\caption{Notation of the 11 approaches mentioned and used in the experiments.}
+	\begin{tabular}{|l|l|c|l|}
 		\hline
 		No & Detector              & Tracker                                        & Notation \\ \hline
 		1  & Yolov3                & \multirow{5}{*}{SORT}                          & Y3S      \\ \cline{1-2} \cline{4-4} 
@@ -124,21 +125,14 @@ Tracking results for SORT and DeepSORT with different object detection strategy 
 		10 & MaskRCNN+Region based & \multicolumn{1}{c|}{}                          & RDS      \\ \cline{1-2} \cline{4-4} 
 		11 & Groundtruth           & \multicolumn{1}{c|}{}                          & GDS      \\ \hline
 	\end{tabular}
-	\caption{Notation of the 11 approaches mentioned and used in the experiments.}
 	\vspace{-0.7cm}
 \end{table}
 \\In this thesis, I conduct the experiments to evaluate the performance of these approaches on the custom dataset Micand32 which contains 2 sub-datasets: Micand32S and Micand32E. The properties of this dataset is reported in chapter \ref{chap:method}, sub-section \ref{subsec:micand32}.
 \subsubsection{Short-term tracking on a standard dataset: Micand32S}
 The Mican32S sub-datasets contains 26 sequences containing in total 3162 frames as per the MOT16 Challenge rules and recommendations, each containing from 100 to 300 images. These recordings are chosen so every video has an excursion span of precisely one patient’s activity, for instance opening the cap of the water bottle, getting the circle, playing with ball, turning left of right, etc. Simultaneously, every video generally contains just 1 or 2 active hands. This sub-dataset can be characterized into short-term tracking datasets. The desire set for the framework proposed in this theory is to recognize, segment, and track this entire fundamental excursion of the hand. Since the quantity of recordings is up to 26 recordings, in this part I will list the overall evaluation for each approach on the whole 26 recordings, which is a weighted average of the quantity of frames per video. Besides, I likewise measure a case of 26 recordings running on 1 approach to see the impact of the sort of activity on the presentation of the framework. Note that the hand in the 26 recordings is utilized to train the deep appearance descriptor for DeepSORT as referenced in chapter \ref{chap:framework}, sub-section \ref{subsec:train_deep}. Table \ref{tab:short_overall} reports short-term tracking overall result on Micand32S following the MOT16 evaluation protocol.
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
 \begin{table}[]
+	\caption{Short-term tracking \textbf{overall} result on Micand32S following the MOT16 evaluation protocol.}
+	\label{tab:short_overall}
 	\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -171,8 +165,6 @@ The Mican32S sub-datasets contains 26 sequences containing in total 3162 frames 
 			GDS    & \textbf{99.9}                                        & \textbf{100}                                        & 99.8                                                & 99.8                                                   & \textbf{100.0}                                         & 35                                                   & \textbf{34} & \textbf{1}                                           & \textbf{0} & \textbf{0} & \textbf{0} & \textbf{0} & 1          & 99.8                                                 & \textbf{0.062} \\ \hline
 		\end{tabular}%
 	}
-	\caption{Short-term tracking \textbf{overall} result on Micand32S following the MOT16 evaluation protocol.}
-	\label{tab:short_overall}
 \end{table}
 The GDS presents an alomost perfect performance on Micand32S, detailed metrics of this method is revealed in Figure \ref{fig:GDS_short}. Of all ground-truth-free approaches, the Y4DS approach reaches a remarkable result shown in Figure \ref{fig:y4ds_short}.
 \subsubsection{Long-term tracking on a realistic dataset: Micand32E}
@@ -183,6 +175,8 @@ Table \ref{tab:long_overall} presents the overall tracking results inferenced on
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
 \begin{table}[]
+	\caption{Long-term tracking \textbf{overrall} results on Micand32E following the MOT16 protocol.}
+	\label{tab:long_overall}
 	\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -215,13 +209,14 @@ Table \ref{tab:long_overall} presents the overall tracking results inferenced on
 			GDS    & 88.5          & 88.5          & 88.1          & \textbf{99.1}                                          & \textbf{99.9}                                          & 24   & \textbf{23}                                          & 1                                                    & \textbf{0}                                           & \textbf{12}                                          & \textbf{135}                                         & 82                                                    & \textbf{43}                                          & \textbf{98.4} & \textbf{0.052} \\ \hline
 		\end{tabular}%
 	}
-	\caption{Long-term tracking \textbf{overrall} results on Micand32E following the MOT16 protocol.}
-	\label{tab:long_overall}
+%\vspace{-1cm}
 \end{table}
 To analyze the complexity and the difficulty of the four types of action, I analyzed the results of the tracking algorithm that achives highest MOTA, the GDS, across these four action types. This result is shown in the Table \ref{tab:long_gds}.
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
 \begin{table}[]
+	\caption{GDS \textbf{detail} results on Micand32E.}
+	\label{tab:long_gds}
 	\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -250,11 +245,12 @@ To analyze the complexity and the difficulty of the four types of action, I anal
 			Overall                   & 88.5          & 88.5          & 88.1          & 99.1                                                   & 99.9                                                   & 24         & 23                                                   & 1                                                    & 0                                                    & 12         & 135        & 82                                                    & 43                                                   & 98.4          & 0.052          \\ \hline
 		\end{tabular}%
 	}
-	\caption{GDS \textbf{detail} results on Micand32E.}
-	\label{tab:long_gds}
 \end{table}
+\raggedbottom
 Especially, the approach proposed by the author of this thesis performs an impressive result as in the Table \ref{tab:long_rds}.
 \begin{table}[]
+	\caption{RDS \textbf{detail} results on Micand32E.}
+	\label{tab:long_rds}
 	\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
@@ -283,8 +279,6 @@ Especially, the approach proposed by the author of this thesis performs an impre
 			Overall                   & 89.6       & 89.5      & 89.5      & 89.5                                                   & 98.2                                                   & 24   & 16                                                   & 8                                                    & 0                                                    & 212  & 258  & 79                                                    & 74                                                   & 96.3       & 0.072  \\ \hline
 		\end{tabular}%
 	}
-	\caption{RDS \textbf{detail} results on Micand32E.}
-	\label{tab:long_rds}
 \end{table}
 \section{Discussions}
 \subsection{Object detection: tradeoff between accuracy and speed}
@@ -294,7 +288,9 @@ From this investigation result, three recommendations on the choice of egocentri
 
 \subsection{The superiority of DeepSORT over SORT}
 To compare the effectiveness of the 2 tracking method, overall tracking evaluation on Micand32E reported in Table \ref{tab:long_overall} is very essential. On a same detection algorithm, DeepSORT generates a higher MOTA in almost case, for example: Y3DS 76,6\%  while Y3S 74,1\%, MDS 96,2\% while MS 94,3\%. Figure \ref{fig:pgf_mota} and Figure \ref{fig:pgf_motp} clearly demonstrates the dominance of DeepSORT over SORT. This result is expected because the DeepSORT tracking inherits the benefits of deep appearance descriptor trained on the egocentric hand re-identification dataset generated by this thesis which is mentioned in the background theory. Also, the identity switches IDs has significantly decrease between SORT and DeepSORT, 91 for GS and only 79 for GDS.
+
 \begin{figure}
+\resizebox{0.5\textwidth}{!}{%	
 \begin{tikzpicture}
 	\label{fig:pgf_mota}
 	\begin{axis}[
@@ -317,6 +313,8 @@ To compare the effectiveness of the 2 tracking method, overall tracking evaluati
 		\legend{SORT,DeepSORT}
 	\end{axis}
 \end{tikzpicture}
+}
+\resizebox{0.5\textwidth}{!}{%	
 \begin{tikzpicture}
 	\label{fig:pgf_motp}
 	\begin{axis}[
@@ -330,15 +328,16 @@ To compare the effectiveness of the 2 tracking method, overall tracking evaluati
 			anchor=north,legend columns=-1},
 		ybar interval=0.7,
 		]
-		\addplot 
+		\addplot [green, fill]
 		coordinates {(Y3,54.1) (Y4,56.7)
 			(FR,74.5) (MR,74.5) (GT,89.1)};
-		\addplot 
+		\addplot [red, fill]
 		coordinates {(Y3,58.7) (Y4,65)
 			(FR,79.4) (MR,83.5) (GT,89.6)};
 		\legend{SORT,DeepSORT}
 	\end{axis}
 \end{tikzpicture}
+}
 \caption{Overall MOTA and MOTP metric on Micand32E.}
 \end{figure}
 \subsection{Impact of detection method over tracking result}

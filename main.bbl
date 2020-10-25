@@ -28,11 +28,6 @@ Fabien Baradel, Natalia Neverova, Christian Wolf, Julien Mille, and Greg Mori.
 \newblock Object level visual reasoning in videos.
 \newblock {\em CoRR}, abs/1806.06157, 2018.
 
-\bibitem{Bertasius}
-Gedas Bertasius, Hyun Park, Stella Yu, and Jianbo Shi.
-\newblock First-person action-object detection with egonet.
-\newblock 07 2017.
-
 \bibitem{DBLP:journals/corr/BertasiusPYS16}
 Gedas Bertasius, Hyun~Soo Park, Stella~X. Yu, and Jianbo Shi.
 \newblock First person action-object detection with egonet.
@@ -153,11 +148,6 @@ Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
 R.~E. Kalman.
 \newblock {A New Approach to Linear Filtering and Prediction Problems}.
 \newblock {\em Journal of Basic Engineering}, 82(1):35--45, 03 1960.
-
-\bibitem{6232429}
-T.~{Kanade} and M.~{Hebert}.
-\newblock First-person vision.
-\newblock {\em Proceedings of the IEEE}, 100(8):2442--2453, 2012.
 
 \bibitem{9060114}
 G.~{Kapidis}, R.~{Poppe}, E.~{Van Dam}, L.~{Noldus}, and R.~{Veltkamp}.

@@ -37,7 +37,7 @@ For the YOLO family, Ultralytics supports different model checkpoints type, and 
 Ultralytics also requires exporting custom dataset labels to YOLO format, with one “*.txt” file per image. The “*.txt” file specifications are: (1) one row per object; (2) each row is “class x\_center y\_center width height” format; (3) box coordinates must be in normalized xywh format (from 0 - 1). If boxes are in pixels, divide x\_center and width by image width, and y\_center and height by image height; (4) class numbers are zero-indexed. Each image's label file should be locatable by simply replacing “/images/*.jpg” with “/labels/*.txt” in its pathname.
 
 Data loader is the component that provides data to models. A dataloader usually takes raw information from datasets, and process them into a format needed by the model in training loop. Augmentation is an important part of training. Detectron2’s data augmentation system aims at addressing the following goals: (1) allow augmenting multiple data types together (e.g., images together with their bounding boxes and masks); (2) allow applying a sequence of statically-declared augmentation. For Ultralytics, a Mosaic Dataloader is used for training. The data augmentations used are horizontal and vertical flip, resize, Gauss noise, random brightness contract, crop, median blur, color distortion, gamma, converting color space; some of them are illustrated in Figure \ref{fig:augmentation}.
-\begin{figure}
+\begin{figure}[!htb]
 	\centerline{\includegraphics[width=1\linewidth]{Figs/augmentation.png}}
 	\caption{Pictorial of data augmentations.}
 	\label{fig:augmentation}
@@ -52,39 +52,17 @@ The visualization of training steps is available via Tensorboard during training
 After training, the framework generates the D2D model zoo which contains 4 model with corresponding weights save in “.h” data format and will be used in the inference stage.
 \subsection{Training deep appearance descriptor for DeepSORT} \label{subsec:train_deep}
 The original DeepSORT is used for person tracking task – a familiar issue in which a given query image is used to look at a huge gallery of images that have been gathered at distinct moments, lighting environments, actions performing that may contain the same individual. To customize it on egocentric hand tracking mission, it firstly requires an egocentric hand re-identification dataset to train the appropriate appearance descriptor. As the best of my knowledge, there are very few public egocentric hand re-identification datasets available \cite{9064606}. From the analysis of 3 datasets described in chapter \ref{chap:method}, section \ref{sec:datasets}, I build a new egocentric hand re-identification dataset from the identity information annotations. Images of hands are extracted and cropped from these 3 datasets using the bounding box information and also resized to the same size (100, 100) as recommendation in  \cite{DBLP:journals/corr/abs-1812-00442}. As a result, there are in total 40 identities (26 subject from GTEA + 4 subject from EgoHands + 10 subject from Micand32S = 40 subjects) and 29324 images in this egocentric hand re-identification dataset. The sample of the images used in this dataset is shown in \ref{fig:reid}.
-\begin{figure}
+\begin{figure}[!htb]
 	\centerline{\includegraphics[width=1\linewidth]{Figs/reid.png}}
 	\caption{Images from the self-generated egocentric hand re-identification dataset. Images in the same row has the same identity.}
 	\label{fig:reid}
 \end{figure}
-Having obtained the egocentric hand re-identification dataset, I train the CNN to get the appearance descriptor. The train and test sets were slit into 80\% and 20\% respectively and both were structed by place all the images of one identity into a specific numbered folder for both train and test sets. I setup the training configuration as in Table \ref{tab:des}. The programming environment in which the training process performed is python 3 with PyTorch framework, numpy, scipy, sklearn, pillow, vizer and edict package.
-\begin{table}
-\centering
-	\label{tab:des}
-	\begin{tabular}{|l|l|}
-		
-		\hline 
-		Field & Value\\ 
-		\hline 
-		Batch size & 64 \\
-		\hline
-		No. of epochs & 40 \\
-		\hline
-		Learning rate & 0.1 \\
-		\hline
-		Momentum & 0.9 \\
-		\hline
-		Weight decay & 5e-4\\ 
-		\hline
-		Learning decay & 0.1 after every 10 epochs\\
-		\hline
-	\end{tabular} 
-\caption{Main training configuration of DeepSORT’s appearance descriptor.}
-\end{table}
+Having obtained the egocentric hand re-identification dataset, I train the CNN to get the appearance descriptor. The train and test sets were slit into 80\% and 20\% respectively and both were structed by place all the images of one identity into a specific numbered folder for both train and test sets. I setup the training configuration as in Figure \ref{fig:descriptor}. The programming environment in which the training process performed is python 3 with PyTorch framework, numpy, scipy, sklearn, pillow, vizer and edict package.
 The training chart obtained is shown in \ref{fig:descriptor}. It tooks 40 hours to train this CNN.
-\begin{figure}[htbp]
-	\centerline{\includegraphics[width=0.5\linewidth]{Figs/descriptor.jpg}}
-	\caption{Curve of total loss and top1-error during training loop.}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\linewidth]{Figs/training_descriptor.png}
+	\caption{Left: training configuration of DeepSORT’s appearance descriptor. Right curve of total loss and top1-error during training loop.}
 	\label{fig:descriptor}
 \end{figure}
 \section{Inference stage}\label{sec:inferstage}
@@ -96,8 +74,9 @@ The training chart obtained is shown in \ref{fig:descriptor}. It tooks 40 hours 
 In inference stage \ref{fig:inferenceStage}, each of 32 videos from Micand32 dataset will be tested in turn. Initially Each frame is fed into the detection phase in chronological order. Next, users select a detection or segmentation model from the D2D model zoo which was already trained in training stage. In order to analyze the affection of the detection phase on tracking phase, the detection ground-truth of Micand32 is also available for user to select in this step. As a consequence, 6 options are available: Yolov3\_spp, Yolov4x, FasterRCNNR50FPN3x, MaskRCNNR50FPN3x, MaskRCNNR50FPN3x with region based and detection ground-truth. Depending on the chosen model type, the D2D framework will setup inference configurations. For example, the default confidence threshold in this thesis is 50\%. Appropriate pre-trained weights will be loaded from the D2D model zoo in “.h” format and the inference process will begin. For detection models which includes yolo model family and FasterRCNNR50FPN3x, each prediction on image is represented in the following format: \(pred^i = [x_0^i, y_0^i, x_1^i, y_1^i, c^i]\) where \(pred^i\) is the i-th prediction with \((x_0^i, y_0^i),  (x_1^i, y_1^i)\), is respectively the top-left and bottom-right vertex coordinate of the i-th bounding box and ci is the current confident score of this bounding box. For MaskRCNNR50FPN3x, each prediction will consist one more field: \(pred^i = [x_0^i, y_0^i, x_1^i, y_1^i, pol^i, c^i]\) where the \(pol^i\) is the polygon of the mask in RLE format. For MaskRCNNR50FPN3x with region-based option, after obtaining the mask predictions, the framework will execute background subtraction in order to keep only hand region. This is intended to make the deep appearance descriptor in DeepSORT focus more on the hand region. In the following step, users will select the tracking algorithm, include: SORT or DeepSORT. For SORT, detection will be processed in Kalman filter and then associated by the Hungarian algorithm as explained in chapter 2, section 2.3. For DeepSORT, the deep appearance descriptor will be loaded from the pre-trained CNN in the training stage. Tracklets for the whole sequences will be compared with the tracking ground-truth in evaluation stage in order to analyze the effective of the algorithms.
 \section{Evaluation stage}
 Detail evaluation criteria and measurement metrics is reported in chapter \ref{chap:exp}, section \ref{sec:evacri}. The evaluation stage includes 2 parts: (1) evaluate detection and segmentation results; (2) evaluate tracking results. For detection and segmentation result, this thesis adopts the evaluation API from Detectron2 repository and the py-cocotools package. For tracking result, performance is measured according to the framework presented in \cite{DBLP:journals/corr/MilanL0RS16}. The authors provide evaluation scripts for official development kit of MOT Challenge. MOT16 was chosen since it is a compilation of other many metrics developed in an attempt to standardize evaluation of multiple object tracking. This devkit requires Python 3.7+, Matlab R2020a, matlab python engine, pandas and pytz. Tracking result will be saved in simple comma-separated value (CSV) files. Each line represents one object instance and contains 9 values as show in Table \ref{tab:eva_cri_tracking}.
-\begin{table}[]
+\begin{table}
 	\centering
+	\caption{Data format for both the inference result and ground-truth annotation of tracking.}
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|l|l|l|}
 			\hline
@@ -113,7 +92,6 @@ Detail evaluation criteria and measurement metrics is reported in chapter \ref{c
 			9        & Visibility          & \begin{tabular}[c]{@{}l@{}}Visibility   ratio, a number between 0 and 1 that says how much of the hand is visible.\\ Can be due to occlusion and due to image border cropping.\end{tabular} \\ \hline
 		\end{tabular}%
 	}
-	\caption{Data format for both the inference result and ground-truth annotation of tracking.}
 	\label{tab:eva_cri_tracking}
 \end{table}
 An example of such an annotation file is:

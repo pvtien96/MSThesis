@@ -13,48 +13,47 @@ A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
 The style file: plain.bst
 Database file #1: main.bib
-Warning--empty booktitle in Bertasius
 Warning--empty booktitle in fathigaze
 Warning--empty publisher in Recognition
-You've used 57 entries,
+You've used 55 entries,
             2118 wiz_defined-function locations,
-            828 strings with 15332 characters,
-and the built_in function-call counts, 21940 in all, are:
-= -- 2085
-> -- 1252
+            816 strings with 15113 characters,
+and the built_in function-call counts, 21271 in all, are:
+= -- 2025
+> -- 1216
 < -- 21
-+ -- 498
-- -- 434
-* -- 1484
-:= -- 3588
-add.period$ -- 177
-call.type$ -- 57
-change.case$ -- 386
++ -- 484
+- -- 422
+* -- 1434
+:= -- 3476
+add.period$ -- 171
+call.type$ -- 55
+change.case$ -- 374
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 878
-empty$ -- 1538
-format.name$ -- 434
-if$ -- 4685
+cite$ -- 57
+duplicate$ -- 854
+empty$ -- 1483
+format.name$ -- 422
+if$ -- 4547
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 57
-newline$ -- 289
-num.names$ -- 114
-pop$ -- 404
+int.to.str$ -- 55
+missing$ -- 55
+newline$ -- 279
+num.names$ -- 110
+pop$ -- 389
 preamble$ -- 2
-purify$ -- 331
+purify$ -- 321
 quote$ -- 0
-skip$ -- 736
+skip$ -- 721
 stack$ -- 0
-substring$ -- 983
-swap$ -- 293
+substring$ -- 946
+swap$ -- 291
 text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 224
-warning$ -- 3
-while$ -- 156
-width$ -- 59
-write$ -- 634
-(There were 3 warnings)
+type$ -- 216
+warning$ -- 2
+while$ -- 151
+width$ -- 57
+write$ -- 614
+(There were 2 warnings)
