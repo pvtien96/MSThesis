@@ -268,10 +268,10 @@ As introduced in chapter \ref{chap:intro}, the NAFOSTED’s project is carried o
 	\caption{Randomly selected actions 5 6 7 8, from left to right respectively.}
 	\label{fig:micand32}
 \end{figure}
-Micand32 consists of 32 sequences of 1920x1440 resolution, is divided into 2 parts: Micand32Standard includes 26 sequences and Micand32Enhanced includes 6 sequences. In particular, with Micand32Standard, each sequence contains from 100 to 300 frames, in the frames is mainly the journey of one hand doing a whole activity, this corresponds to the type of short-term tracking. This episode has lengths of each sequences that are equivalent to the MOT Challenge standards. With Micand32Enhanced, each sequence contains from 500 to 1700 frames, of which most frames contain more than 2 arms due to the intervention of the instructor's hand while the patient is performing the action. At the same time, the patient performed multiple repetitions in each sequence, corresponding to a long-term object tracking type. This episode is very close to reality, it is quite challenging and highly applicable. The ground-truth detection and partition section of this data set was labeled by 8 students using the VIA tool \cite{10.1145/3343031.3350535}. VGG Image Annotator is a simple and standalone manual annotation software for images, audio and video. VIA runs in a web browser and does not require any installation or settings. The complete VIA software fits a single independent HTML page, which is less than 400 KB in size and can be run as an offline application in most modern web browsers. The following table \ref{fig:mican32Sta} provides detailed statistics on Micand32.
+Micand32 consists of 32 sequences of 1920x1440 resolution, is divided into 2 parts: Micand32Standard includes 26 sequences and Micand32Enhanced includes 6 sequences. In particular, with Micand32Standard, each sequence contains from 100 to 300 frames, in the frames is mainly the journey of one hand doing a whole activity, this corresponds to the type of short-term tracking. This episode has lengths of each sequences that are equivalent to the MOT Challenge standards. With Micand32Enhanced, each sequence contains from 500 to 1700 frames, of which most frames contain more than 2 arms due to the intervention of the instructor's hand while the patient is performing the action. At the same time, the patient performed multiple repetitions in each sequence, corresponding to a long-term object tracking type. This episode is very close to reality, it is quite challenging and highly applicable. The ground-truth detection and partition section of this data set was labeled by 8 students using the VIA tool \cite{10.1145/3343031.3350535}. VGG Image Annotator is a simple and standalone manual annotation software for images, audio and video. VIA runs in a web browser and does not require any installation or settings. The complete VIA software fits a single independent HTML page, which is less than 400 KB in size and can be run as an offline application in most modern web browsers. Table \ref{tab:mican32Sta}, label statistical visualization and correlogram \ref{fig:micand32_visualization}  provides detailed statistics on Micand32: 1 category, 11k images, 18k instances, 2 instances/images. The hands highly present at the edge of frame, the size of the hands are various. 
 \begin{table}[]
 	\centering
-	\label{fig:mican32Sta}
+	\label{tab:mican32Sta}
 	\caption{Detailed enumeration of the Micand32 dataset.}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
@@ -313,13 +313,30 @@ Micand32 consists of 32 sequences of 1920x1440 resolution, is divided into 2 par
 		& MICAND32                     & 5, 6, 7,   8  & \textbf{11019}                                              & 2                                                     \\ \hline
 	\end{tabular}
 \end{table}
-In order to evaluate the effectiveness of the tracking algorithm, there is currently no standard popular tool to support the id tag of the object in the video frame. To the best of my knowledge, currently there is no egocentric dataset that involves detailed standard for hand tracking, according to \cite{9064606}. This thesis refers to the MOT Challenge tracking data standard and the annotator has done the tracking tagging through a self-developed tool called EHTA. Egocentric Hand Tracking Annotator was especially designed to model semi-automatic annotation pipelines to speed up the annotation process. Such a semi-automatic can be achieved by using AI generated annotation proposals that are presented to an annotator inside the annotation tool. Also, EHTA integrates a part of the VIA labeling tool \cite{10.1145/3343031.3350535}.
+\\In order to evaluate the effectiveness of the tracking algorithm, there is currently no standard popular tool to support the id tag of the object in the video frame. To the best of my knowledge, currently there is no egocentric dataset that involves detailed standard for hand tracking, according to \cite{9064606}. This thesis refers to the MOT Challenge tracking data standard and the annotator has done the tracking tagging through a self-developed tool called EHTA. Egocentric Hand Tracking Annotator was especially designed to model semi-automatic annotation pipelines to speed up the annotation process. Such a semi-automatic can be achieved by using AI generated annotation proposals that are presented to an annotator inside the annotation tool. Also, EHTA integrates a part of the VIA labeling tool \cite{10.1145/3343031.3350535}.
 Figure \ref{fig:micand32Trajectory} performs trajectory of the patient’s hands opening water bottle, in which the groundtruth is visualized by EHTA.
-\begin{figure}
-	\centerline{\includegraphics[width=1\linewidth]{Figs/micand32Trajectory.png}}
-	\caption{Visualization of groundtruth tracklets of patient’s hands opening water bottle. Series of continuous samples from video GH010358\_6\_10208\_11900 in Micand32Enhanced.}
+\begin{figure*}[ht!]
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/1.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/31.png}\hfill	\includegraphics[width=.12\textwidth]{Figs/trajectory/61.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/91.png}\hfill	\includegraphics[width=.12\textwidth]{Figs/trajectory/121.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/151.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/181.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/211.png}\hfill	\includegraphics[width=.12\textwidth]{Figs/trajectory/241.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/271.png}\hfill	\includegraphics[width=.12\textwidth]{Figs/trajectory/301.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/331.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/361.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/391.png}\hfill	\includegraphics[width=.12\textwidth]{Figs/trajectory/421.png}\hfill
+	\includegraphics[width=.12\textwidth]{Figs/trajectory/451.png}\hfill
+	\caption{Visualization of groundtruth tracklets of patient’s hands practicing with cylinders. Frames extracted from GH010358\_8\_8000\_8547, ordered from left to right, up to down: 1, 31, 61, 91, 121, 151, 181, 211, 241, 271, 301, 311, 361, 391, 421, 451.}
 	\label{fig:micand32Trajectory}
-\end{figure}
+\end{figure*}
+\begin{figure*}[ht!]
+	\centering
+	\includegraphics[width=0.48\textwidth]{Figs/yolov5/labels.png}
+	\includegraphics[width=0.48\textwidth]{Figs/yolov5/labels_correlogram.png}
+	\caption{Micand32 dataset. Left: labels statistical visualization. Right: labels correlogram.}
+	\label{fig:micand32_visualization}
+\end{figure*}
 Figure \ref{fig:EHTA} shows the working flowchart of EHTA. Initially, annotator selected 1 model from model zoo that was pre-trained on COCO, GTEA family and EgoHands datasets, for example, this thesis used FasterRCNNR50FPN3x. Input is a set of frames in 1 sequence. For each frame, reference the model on the frame to predict the position of the hands and get the detection of bounding box and confidence score. Next, use the VIA tool to display the prediction in frames, observe and make comments to write code. From observation and experience with the dataset, writing code to automatically editing the labels for the hand’s position and identification. Then shows the automatically assigned label portion. If the label is not correct, manually correct the bounding box position, add or remove the bounding box, or correct the incorrect ID. Finally, save ground-truth according to MOT Challenge standards for training, testing and evaluation in txt format. At the same time, save ground-truth video for debugging.
 \begin{figure}
 	\centerline{\includegraphics[width=1\linewidth]{Figs/EHTAflowchartPage2.png}}

@@ -54,13 +54,13 @@
 \contentsline {subsection}{\numberline {4.3.3}Impact of detection method over tracking result}{70}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Complexsity of 4 types of patients's actions}{71}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Challenging cases}{71}{subsection.4.3.5}%
-\contentsline {chapter}{\numberline {5}Conclusion}{73}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusion}{73}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Accomplishment}{73}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Drawback}{74}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Future works}{74}{section.5.2}%
-\contentsline {chapter}{\numberline {A}Tables}{77}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Figures}{81}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Short-term tracking results on Micand32S}{81}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Long-term tracking results on Micand32E}{81}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Other}{81}{section.B.3}%
+\contentsline {chapter}{\numberline {5}Conclusion}{75}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusion}{75}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Accomplishment}{75}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Drawback}{76}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Future works}{76}{section.5.2}%
+\contentsline {chapter}{\numberline {A}Tables}{79}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Figures}{83}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Short-term tracking results on Micand32S}{83}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Long-term tracking results on Micand32E}{83}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Other}{83}{section.B.3}%

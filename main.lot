@@ -18,7 +18,7 @@
 \contentsline {table}{\numberline {4.8}{\ignorespaces RDS \textbf {detail} results on Micand32E.}}{68}{table.4.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}}{78}{table.A.1}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}}{79}{table.A.2}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Detectron2’s custom dataset format.}}{80}{table.A.3}%
+\contentsline {table}{\numberline {A.1}{\ignorespaces FasterRCNN\_R\_50\_FPN3x training configuration file. Detail information field is explained at the Detectron2's application programming interface (API) documentation. The main difference of FasterRCNN and MaskRCNN in term of configuration is MaskRCNN's option MASK\_ON value.}}{80}{table.A.1}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces YOLOv4x training configuration file. Detail information field is explained at Ultralytic API.}}{81}{table.A.2}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Detectron2’s custom dataset format.}}{82}{table.A.3}%
 \addvspace {10\p@ }

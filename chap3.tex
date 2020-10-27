@@ -37,12 +37,18 @@ For the YOLO family, Ultralytics supports different model checkpoints type, and 
 Ultralytics also requires exporting custom dataset labels to YOLO format, with one “*.txt” file per image. The “*.txt” file specifications are: (1) one row per object; (2) each row is “class x\_center y\_center width height” format; (3) box coordinates must be in normalized xywh format (from 0 - 1). If boxes are in pixels, divide x\_center and width by image width, and y\_center and height by image height; (4) class numbers are zero-indexed. Each image's label file should be locatable by simply replacing “/images/*.jpg” with “/labels/*.txt” in its pathname.
 
 Data loader is the component that provides data to models. A dataloader usually takes raw information from datasets, and process them into a format needed by the model in training loop. Augmentation is an important part of training. Detectron2’s data augmentation system aims at addressing the following goals: (1) allow augmenting multiple data types together (e.g., images together with their bounding boxes and masks); (2) allow applying a sequence of statically-declared augmentation. For Ultralytics, a Mosaic Dataloader is used for training. The data augmentations used are horizontal and vertical flip, resize, Gauss noise, random brightness contract, crop, median blur, color distortion, gamma, converting color space; some of them are illustrated in Figure \ref{fig:augmentation}.
-\begin{figure}[!htb]
-	\centerline{\includegraphics[width=1\linewidth]{Figs/augmentation.png}}
-	\caption{Pictorial of data augmentations.}
+%\begin{figure}[!htb]
+%	\centerline{\includegraphics[width=1\linewidth]{Figs/augmentation.png}}
+%	\caption{Pictorial of data augmentations.}
+%	\label{fig:augmentation}
+%\end{figure}
+\begin{figure*}[ht!]
+	\includegraphics[width=.32\textwidth]{Figs/yolov5/train_batch0.jpg}
+	\includegraphics[width=.32\textwidth]{Figs/yolov5/train_batch1.jpg}	\includegraphics[width=.32\textwidth]{Figs/yolov5/train_batch2.jpg}
+	\caption{Pictorial of data augmentations in training batch.}
 	\label{fig:augmentation}
-\end{figure}
-With the benefits of transfer learning techniques discussed in \cite{DBLP:journals/corr/abs-1808-01974}, in this thesis, I start from the pre-trained weights on 80 classes in COCO datasets and fine-tune it for the particular “hand” classes. Training loop runs with defined configurations and augmented data. Training time for Yolov3, Yolov4, FasterRCNN and MaskRCNN in this thesis are respectively 36, 40, 46 and 50 hours.
+\end{figure*}
+With the benefits of transfer learning techniques discussed in \cite{DBLP:journals/corr/abs-1808-01974}, in this thesis, I start from the pre-trained weights on 80 classes in COCO datasets and fine-tune it for the particular “hand” classes. Training loop runs with defined configurations and augmented data. Table \ref{tab:detres_sp} reports that training time for Yolov3, Yolov4, FasterRCNN and MaskRCNN in this thesis are respectively 36, 40, 46 and 50 hours.
 The visualization of training steps is available via Tensorboard during training time as in \ref{fig:tensorboard}.
 \begin{figure}
 	\centerline{\includegraphics[width=1\linewidth]{Figs/tensorboard.png}}
