@@ -15,45 +15,46 @@ The style file: plain.bst
 Database file #1: main.bib
 Warning--empty booktitle in fathigaze
 Warning--empty publisher in Recognition
-You've used 55 entries,
+Warning--empty year in tan1911efficientdet
+You've used 60 entries,
             2118 wiz_defined-function locations,
-            816 strings with 15113 characters,
-and the built_in function-call counts, 21271 in all, are:
-= -- 2025
-> -- 1216
-< -- 21
-+ -- 484
-- -- 422
-* -- 1434
-:= -- 3476
-add.period$ -- 171
-call.type$ -- 55
-change.case$ -- 374
+            840 strings with 16041 characters,
+and the built_in function-call counts, 23589 in all, are:
+= -- 2241
+> -- 1351
+< -- 24
++ -- 537
+- -- 470
+* -- 1595
+:= -- 3836
+add.period$ -- 186
+call.type$ -- 60
+change.case$ -- 413
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 854
-empty$ -- 1483
-format.name$ -- 422
-if$ -- 4547
+cite$ -- 63
+duplicate$ -- 947
+empty$ -- 1646
+format.name$ -- 470
+if$ -- 5051
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 55
-newline$ -- 279
-num.names$ -- 110
-pop$ -- 389
+int.to.str$ -- 60
+missing$ -- 60
+newline$ -- 304
+num.names$ -- 120
+pop$ -- 437
 preamble$ -- 2
-purify$ -- 321
+purify$ -- 355
 quote$ -- 0
-skip$ -- 721
+skip$ -- 801
 stack$ -- 0
-substring$ -- 946
-swap$ -- 291
-text.length$ -- 21
+substring$ -- 1071
+swap$ -- 330
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 216
-warning$ -- 2
-while$ -- 151
-width$ -- 57
-write$ -- 614
-(There were 2 warnings)
+type$ -- 236
+warning$ -- 3
+while$ -- 167
+width$ -- 62
+write$ -- 667
+(There were 3 warnings)

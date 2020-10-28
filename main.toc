@@ -15,7 +15,7 @@
 \contentsline {chapter}{\numberline {2}Methodology and Datasets}{25}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Tracking by detection approach}{25}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Object detection and segmentation algorithms}{26}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}RCNN model}{26}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}RCNN model family}{26}{subsection.2.2.1}%
 \contentsline {subsubsection}{RCNN}{26}{subsection.2.2.1}%
 \contentsline {subsubsection}{FastRCNN}{28}{figure.2.1}%
 \contentsline {subsubsection}{FasterRCNN}{30}{equation.2.2.13}%
@@ -41,8 +41,8 @@
 \contentsline {section}{\numberline {3.4}Evaluation stage}{58}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Experiments}{61}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Evaluation criteria}{61}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Object detection metrics}{61}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Object tracking metrics}{62}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.1}Object detection evaluation metrics}{61}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Object tracking evaluation metrics}{62}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Experimental results}{64}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Egocentric hand detection and segmentation result}{64}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Egocentric hand tracking result}{64}{subsection.4.2.2}%
@@ -52,7 +52,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Object detection: tradeoff between accuracy and speed}{68}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}The superiority of DeepSORT over SORT}{69}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Impact of detection method over tracking result}{70}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Complexsity of 4 types of patients's actions}{71}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.4}Complexity of 4 types of patients's actions}{71}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Challenging cases}{71}{subsection.4.3.5}%
 \contentsline {chapter}{\numberline {5}Conclusion}{75}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Conclusion}{75}{section.5.1}%
