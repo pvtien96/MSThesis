@@ -22,14 +22,14 @@
 \contentsline {subsubsection}{MaskRCNN}{32}{equation.2.2.16}%
 \contentsline {subsection}{\numberline {2.2.2}YOLO model family}{33}{subsection.2.2.2}%
 \contentsline {subsubsection}{YOLO}{33}{subsection.2.2.2}%
-\contentsline {subsubsection}{YOLOv2}{34}{figure.2.5}%
+\contentsline {subsubsection}{YOLOv2}{35}{figure.2.5}%
 \contentsline {subsubsection}{YOLOv3}{35}{figure.2.5}%
-\contentsline {subsubsection}{YOLOv4}{35}{figure.2.5}%
+\contentsline {subsubsection}{YOLOv4}{36}{figure.2.5}%
 \contentsline {section}{\numberline {2.3}Object tracking algorithms}{36}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}SORT}{36}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}DeepSORT}{37}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Egocentric vision datasets}{39}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}GTEA family datatsets}{39}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.4}Egocentric vision datasets}{40}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}GTEA family datatsets}{40}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}EgoHands dataset}{41}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Micand32 dataset}{43}{subsection.2.4.3}%
 \contentsline {chapter}{\numberline {3}Proposed Framework}{49}{chapter.3}%

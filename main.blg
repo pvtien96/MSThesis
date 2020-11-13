@@ -11,50 +11,50 @@ A level-1 auxiliary file: chap5.aux
 A level-1 auxiliary file: appa.aux
 A level-1 auxiliary file: appb.aux
 A level-1 auxiliary file: biblio.aux
-The style file: plain.bst
+The style file: ieeetr.bst
 Database file #1: main.bib
-Warning--empty booktitle in fathigaze
 Warning--empty publisher in Recognition
+Warning--empty booktitle in fathigaze
 Warning--empty year in tan1911efficientdet
 You've used 60 entries,
-            2118 wiz_defined-function locations,
-            840 strings with 16041 characters,
-and the built_in function-call counts, 23589 in all, are:
-= -- 2241
-> -- 1351
-< -- 24
-+ -- 537
-- -- 470
-* -- 1595
-:= -- 3836
-add.period$ -- 186
+            1876 wiz_defined-function locations,
+            815 strings with 15361 characters,
+and the built_in function-call counts, 16374 in all, are:
+= -- 1443
+> -- 828
+< -- 0
++ -- 297
+- -- 237
+* -- 1181
+:= -- 2339
+add.period$ -- 62
 call.type$ -- 60
-change.case$ -- 413
+change.case$ -- 58
 chr.to.int$ -- 0
 cite$ -- 63
-duplicate$ -- 947
-empty$ -- 1646
-format.name$ -- 470
-if$ -- 5051
+duplicate$ -- 909
+empty$ -- 1560
+format.name$ -- 237
+if$ -- 4002
 int.to.chr$ -- 0
 int.to.str$ -- 60
 missing$ -- 60
-newline$ -- 304
-num.names$ -- 120
-pop$ -- 437
-preamble$ -- 2
-purify$ -- 355
+newline$ -- 185
+num.names$ -- 60
+pop$ -- 263
+preamble$ -- 1
+purify$ -- 0
 quote$ -- 0
-skip$ -- 801
+skip$ -- 573
 stack$ -- 0
-substring$ -- 1071
-swap$ -- 330
-text.length$ -- 24
+substring$ -- 807
+swap$ -- 351
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 236
+type$ -- 0
 warning$ -- 3
-while$ -- 167
+while$ -- 116
 width$ -- 62
-write$ -- 667
+write$ -- 557
 (There were 3 warnings)

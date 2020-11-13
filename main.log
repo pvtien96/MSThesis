@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.23)  28 OCT 2020 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.10.23)  13 NOV 2020 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,22 +702,30 @@ File: pgflibraryplotmarks.code.tex 2020/10/01 v3.1.6a (3.1.6a)
 \WF@everypar=\toks39
 Package: wrapfig 2003/01/31  v 3.6
 )
+(c:/texlive/2020/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count313
+\float@exts=\toks40
+\float@box=\box68
+\@float@everytoks=\toks41
+\@floatcapt=\box69
+)
 (c:/texlive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box68
+\ttl@box=\box70
 \beforetitleunit=\skip58
 \aftertitleunit=\skip59
 \ttl@plus=\dimen293
 \ttl@minus=\dimen294
-\ttl@toksa=\toks40
+\ttl@toksa=\toks42
 \titlewidth=\dimen295
 \titlewidthlast=\dimen296
 \titlewidthfirst=\dimen297
 )
 (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count313
-\l__pdf_internal_box=\box69
+\l__kernel_color_stack_int=\count314
+\l__pdf_internal_box=\box71
 )
 (./main.aux (./cover.aux) (./contents.aux) (./chap1.aux) (./chap2.aux)
 (./chap3.aux) (./chap4.aux) (./chap5.aux) (./appa.aux) (./appb.aux
@@ -727,36 +735,36 @@ LaTeX Warning: Label `fig:yoloformat' multiply defined.
 ) (./biblio.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 (c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count314
+\scratchcounter=\count315
 \scratchdimen=\dimen298
-\scratchbox=\box70
-\nofMPsegments=\count315
-\nofMParguments=\count316
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count317
+\scratchbox=\box72
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count318
 \MPscratchDim=\dimen299
-\MPnumerator=\count318
-\makeMPintoPDFobject=\count319
-\everyMPtoPDFconversion=\toks42
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks44
 ) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -766,7 +774,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 61.
+Package hyperref Info: Link coloring OFF on input line 64.
 
 (c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -777,11 +785,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count320
+\c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 64.
+LaTeX Info: Redefining \pageref on input line 64.
+LaTeX Info: Redefining \nameref on input line 64.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -792,7 +800,7 @@ LaTeX Info: Redefining \nameref on input line 61.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 61.
+ on input line 64.
 
 \openout2 = `cover.aux'.
 
@@ -888,7 +896,13 @@ Overfull \hbox (1.17511pt too wide) in paragraph at lines 56--57
 , YOLOv3,
  []
 
-[22]
+[22pdfTeX warning (ext4): destination with the same identifier (name{table.1.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.64 	\item S
+             econd, a comparative evaluation of combination of a detector an...
+]
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
 ut line 67.
  (c:/texlive/2020/texmf-dist/tex/latex/fontawesome/ufontawesometwo.fd
@@ -923,20 +937,20 @@ Chapter 2.
 
 
 ] [26]
-<Figs/rcnnSche.png, id=672, 440.5185pt x 116.946pt>
-File: Figs/rcnnSche.png Graphic file (type png)
-<use Figs/rcnnSche.png>
-Package pdftex.def Info: Figs/rcnnSche.png  used on input line 56.
-(pdftex.def)             Requested size: 433.62pt x 115.11842pt.
+<Figs/RCNN.png, id=678, 1003.75pt x 266.49562pt>
+File: Figs/RCNN.png Graphic file (type png)
+<use Figs/RCNN.png>
+Package pdftex.def Info: Figs/RCNN.png  used on input line 56.
+(pdftex.def)             Requested size: 433.62pt x 115.12764pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-<Figs/fastArc.png, id=695, 837.1275pt x 340.27126pt>
+<Figs/fastArc.png, id=702, 1348.03625pt x 388.45125pt>
 File: Figs/fastArc.png Graphic file (type png)
 <use Figs/fastArc.png>
 Package pdftex.def Info: Figs/fastArc.png  used on input line 63.
-(pdftex.def)             Requested size: 216.81pt x 88.12575pt.
+(pdftex.def)             Requested size: 433.62pt x 124.94708pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
@@ -953,15 +967,28 @@ Overfull \hbox (12.65866pt too wide) in paragraph at lines 70--78
 [][] 
  []
 
-[28 <./Figs/rcnnSche.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./Figs/fastArc.png>]
-<Figs/faster.png, id=715, 441.1755pt x 210.24pt>
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \begin{equation}
+                      <./Figs/RCNN.png>] [29pdfTeX warning (ext4): destination 
+with the same identifier (name{table.2.1}) has been already used, duplicate ign
+ored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.87 \end{equation}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.87 \end{equation}
+                    <./Figs/fastArc.png>]
+<Figs/faster.png, id=722, 949.5475pt x 452.69125pt>
 File: Figs/faster.png Graphic file (type png)
 <use Figs/faster.png>
 Package pdftex.def Info: Figs/faster.png  used on input line 102.
-(pdftex.def)             Requested size: 216.81pt x 103.32005pt.
+(pdftex.def)             Requested size: 433.62pt x 206.72775pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
@@ -973,25 +1000,51 @@ Overfull \hbox (8.14732pt too wide) in paragraph at lines 111--122
  []
 
 [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6364) has occurred while \output is active []
 
- [31 <./Figs/faster.png>]
-<Figs/maskrcnn.png, id=732, 1026.83624pt x 504.38437pt>
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.129 \end{equation}
+                     <./Figs/faster.png>]
+<Figs/maskrcnn.png, id=741, 2055.68pt x 846.16125pt>
 File: Figs/maskrcnn.png Graphic file (type png)
 <use Figs/maskrcnn.png>
-Package pdftex.def Info: Figs/maskrcnn.png  used on input line 137.
-(pdftex.def)             Requested size: 216.81pt x 106.49336pt.
- [32 <./Figs/maskrcnn.png>] [33]
-<Figs/yolo-network.png, id=752, 1339.0025pt x 403.5075pt>
+Package pdftex.def Info: Figs/maskrcnn.png  used on input line 138.
+(pdftex.def)             Requested size: 403.26341pt x 165.9885pt.
+
+Underfull \vbox (badness 4518) has occurred while \output is active []
+
+ [32pdfTeX warning (ext4): destination with the same identifier (name{table.2.2
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.146 \end{equation}
+                    ] [33pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.2.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.157 \begin{equation}
+                       <./Figs/maskrcnn.png>]
+<Figs/yolo-network.png, id=761, 1339.0025pt x 403.5075pt>
 File: Figs/yolo-network.png Graphic file (type png)
 <use Figs/yolo-network.png>
 Package pdftex.def Info: Figs/yolo-network.png  used on input line 170.
 (pdftex.def)             Requested size: 433.62pt x 130.67044pt.
- [34 <./Figs/yolo-network.png>]
-[35]
-Underfull \vbox (badness 4981) has occurred while \output is active []
 
- [36]
+Underfull \vbox (badness 2197) has occurred while \output is active []
+
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.178 \subsubsection{YOLOv3}
+                             <./Figs/yolo-network.png>]
+Underfull \vbox (badness 4886) has occurred while \output is active []
+
+ [35]
+[36]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 197.
@@ -999,186 +1052,274 @@ LaTeX Warning: No positions in optional float specifier.
 [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-<Figs/GTEA.jpg, id=805, 2622.79875pt x 647.41875pt>
+ [38pdfTeX warning (ext4): destination with the same identifier (name{table.2.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.223 \begin{equation}
+                      ]
+<Figs/GTEA.jpg, id=816, 2622.79875pt x 647.41875pt>
 File: Figs/GTEA.jpg Graphic file (type jpg)
 <use Figs/GTEA.jpg>
 Package pdftex.def Info: Figs/GTEA.jpg  used on input line 239.
 (pdftex.def)             Requested size: 433.62pt x 107.02693pt.
 
-[39]
-<Figs/postGTEA.png, id=813, 1051.67906pt x 223.58531pt>
-File: Figs/postGTEA.png Graphic file (type png)
-<use Figs/postGTEA.png>
-Package pdftex.def Info: Figs/postGTEA.png  used on input line 247.
-(pdftex.def)             Requested size: 433.62pt x 92.18571pt.
- [40 <./Figs/GTEA.jpg>]
-<Figs/egohands.jpg, id=821, 1520.68124pt x 456.20438pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.245 
+       <./Figs/GTEA.jpg>]
+<Figs/EGTEA/Turkey.png, id=830, 144.54pt x 108.405pt>
+File: Figs/EGTEA/Turkey.png Graphic file (type png)
+<use Figs/EGTEA/Turkey.png>
+Package pdftex.def Info: Figs/EGTEA/Turkey.png  used on input line 247.
+(pdftex.def)             Requested size: 69.38078pt x 52.03545pt.
+<Figs/EGTEA/Greek.png, id=831, 144.54pt x 108.405pt>
+File: Figs/EGTEA/Greek.png Graphic file (type png)
+<use Figs/EGTEA/Greek.png>
+Package pdftex.def Info: Figs/EGTEA/Greek.png  used on input line 248.
+(pdftex.def)             Requested size: 69.38078pt x 52.03545pt.
+<Figs/EGTEA/Pizza.png, id=832, 144.54pt x 108.405pt>
+File: Figs/EGTEA/Pizza.png Graphic file (type png)
+<use Figs/EGTEA/Pizza.png>
+Package pdftex.def Info: Figs/EGTEA/Pizza.png  used on input line 248.
+(pdftex.def)             Requested size: 69.38078pt x 52.03545pt.
+<Figs/EGTEA/Continental.png, id=833, 144.54pt x 108.405pt>
+File: Figs/EGTEA/Continental.png Graphic file (type png)
+<use Figs/EGTEA/Continental.png>
+Package pdftex.def Info: Figs/EGTEA/Continental.png  used on input line 249.
+(pdftex.def)             Requested size: 69.38078pt x 52.03545pt.
+<Figs/EGTEA/Bacon.png, id=834, 144.54pt x 108.405pt>
+File: Figs/EGTEA/Bacon.png Graphic file (type png)
+<use Figs/EGTEA/Bacon.png>
+Package pdftex.def Info: Figs/EGTEA/Bacon.png  used on input line 249.
+(pdftex.def)             Requested size: 69.38078pt x 52.03545pt.
+<Figs/EGTEA/Cheese.png, id=835, 144.54pt x 108.405pt>
+File: Figs/EGTEA/Cheese.png Graphic file (type png)
+<use Figs/EGTEA/Cheese.png>
+Package pdftex.def Info: Figs/EGTEA/Cheese.png  used on input line 250.
+(pdftex.def)             Requested size: 69.38078pt x 52.03545pt.
+<Figs/egohands.jpg, id=838, 1520.68124pt x 456.20438pt>
 File: Figs/egohands.jpg Graphic file (type jpg)
 <use Figs/egohands.jpg>
-Package pdftex.def Info: Figs/egohands.jpg  used on input line 254.
+Package pdftex.def Info: Figs/egohands.jpg  used on input line 257.
 (pdftex.def)             Requested size: 433.62pt x 130.08224pt.
- [41 <./Figs/postGTEA.PNG>] [42 <./Figs/egohands.jpg>]
-<Figs/micand32.png, id=834, 697.8572pt x 128.73094pt>
+ [41pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.267 \subsection{Micand32 dataset}
+                                    \label{subsec:micand32} <./Figs/EGTEA/Turke
+y.png> <./Figs/EGTEA/Greek.png> <./Figs/EGTEA/Pizza.png> <./Figs/EGTEA/Continen
+tal.png> <./Figs/EGTEA/Bacon.png> <./Figs/EGTEA/Cheese.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+<Figs/micand32.png, id=850, 697.8572pt x 128.73094pt>
 File: Figs/micand32.png Graphic file (type png)
 <use Figs/micand32.png>
-Package pdftex.def Info: Figs/micand32.png  used on input line 268.
+Package pdftex.def Info: Figs/micand32.png  used on input line 271.
 (pdftex.def)             Requested size: 433.62pt x 79.98912pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 273.
+               Default added (so using `tbp') on input line 276.
 
-<Figs/yolov5/labels.png, id=838, 578.16pt x 578.16pt>
+<Figs/yolov5/labels.png, id=854, 578.16pt x 578.16pt>
 File: Figs/yolov5/labels.png Graphic file (type png)
 <use Figs/yolov5/labels.png>
-Package pdftex.def Info: Figs/yolov5/labels.png  used on input line 320.
+Package pdftex.def Info: Figs/yolov5/labels.png  used on input line 323.
 (pdftex.def)             Requested size: 208.13574pt x 208.12862pt.
-<Figs/yolov5/labels_correlogram.png, id=839, 722.7pt x 722.7pt>
+<Figs/yolov5/labels_correlogram.png, id=855, 722.7pt x 722.7pt>
 File: Figs/yolov5/labels_correlogram.png Graphic file (type png)
 <use Figs/yolov5/labels_correlogram.png>
 Package pdftex.def Info: Figs/yolov5/labels_correlogram.png  used on input line
- 321.
+ 324.
 (pdftex.def)             Requested size: 208.13574pt x 208.13303pt.
-<Figs/trajectory/1.png, id=843, 1927.2pt x 1445.4pt>
+<Figs/trajectory/1.png, id=859, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/1.png Graphic file (type png)
 <use Figs/trajectory/1.png>
-Package pdftex.def Info: Figs/trajectory/1.png  used on input line 328.
+Package pdftex.def Info: Figs/trajectory/1.png  used on input line 331.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/31.png, id=844, 1927.2pt x 1445.4pt>
+<Figs/trajectory/31.png, id=860, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/31.png Graphic file (type png)
 <use Figs/trajectory/31.png>
-Package pdftex.def Info: Figs/trajectory/31.png  used on input line 329.
+Package pdftex.def Info: Figs/trajectory/31.png  used on input line 332.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/61.png, id=845, 1927.2pt x 1445.4pt>
+<Figs/trajectory/61.png, id=861, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/61.png Graphic file (type png)
 <use Figs/trajectory/61.png>
-Package pdftex.def Info: Figs/trajectory/61.png  used on input line 329.
+Package pdftex.def Info: Figs/trajectory/61.png  used on input line 332.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/91.png, id=846, 1927.2pt x 1445.4pt>
+<Figs/trajectory/91.png, id=862, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/91.png Graphic file (type png)
 <use Figs/trajectory/91.png>
-Package pdftex.def Info: Figs/trajectory/91.png  used on input line 330.
+Package pdftex.def Info: Figs/trajectory/91.png  used on input line 333.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/121.png, id=847, 1927.2pt x 1445.4pt>
+<Figs/trajectory/121.png, id=863, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/121.png Graphic file (type png)
 <use Figs/trajectory/121.png>
-Package pdftex.def Info: Figs/trajectory/121.png  used on input line 330.
+Package pdftex.def Info: Figs/trajectory/121.png  used on input line 333.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/151.png, id=848, 1927.2pt x 1445.4pt>
+<Figs/trajectory/151.png, id=864, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/151.png Graphic file (type png)
 <use Figs/trajectory/151.png>
-Package pdftex.def Info: Figs/trajectory/151.png  used on input line 331.
+Package pdftex.def Info: Figs/trajectory/151.png  used on input line 334.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/181.png, id=849, 1927.2pt x 1445.4pt>
+<Figs/trajectory/181.png, id=865, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/181.png Graphic file (type png)
 <use Figs/trajectory/181.png>
-Package pdftex.def Info: Figs/trajectory/181.png  used on input line 332.
+Package pdftex.def Info: Figs/trajectory/181.png  used on input line 335.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/211.png, id=850, 1927.2pt x 1445.4pt>
+<Figs/trajectory/211.png, id=866, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/211.png Graphic file (type png)
 <use Figs/trajectory/211.png>
-Package pdftex.def Info: Figs/trajectory/211.png  used on input line 333.
+Package pdftex.def Info: Figs/trajectory/211.png  used on input line 336.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/241.png, id=851, 1927.2pt x 1445.4pt>
+<Figs/trajectory/241.png, id=867, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/241.png Graphic file (type png)
 <use Figs/trajectory/241.png>
-Package pdftex.def Info: Figs/trajectory/241.png  used on input line 333.
+Package pdftex.def Info: Figs/trajectory/241.png  used on input line 336.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/271.png, id=852, 1927.2pt x 1445.4pt>
+<Figs/trajectory/271.png, id=868, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/271.png Graphic file (type png)
 <use Figs/trajectory/271.png>
-Package pdftex.def Info: Figs/trajectory/271.png  used on input line 334.
+Package pdftex.def Info: Figs/trajectory/271.png  used on input line 337.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/301.png, id=853, 1927.2pt x 1445.4pt>
+<Figs/trajectory/301.png, id=869, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/301.png Graphic file (type png)
 <use Figs/trajectory/301.png>
-Package pdftex.def Info: Figs/trajectory/301.png  used on input line 334.
+Package pdftex.def Info: Figs/trajectory/301.png  used on input line 337.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/331.png, id=854, 1927.2pt x 1445.4pt>
+<Figs/trajectory/331.png, id=870, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/331.png Graphic file (type png)
 <use Figs/trajectory/331.png>
-Package pdftex.def Info: Figs/trajectory/331.png  used on input line 335.
+Package pdftex.def Info: Figs/trajectory/331.png  used on input line 338.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/361.png, id=855, 1927.2pt x 1445.4pt>
+<Figs/trajectory/361.png, id=871, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/361.png Graphic file (type png)
 <use Figs/trajectory/361.png>
-Package pdftex.def Info: Figs/trajectory/361.png  used on input line 336.
+Package pdftex.def Info: Figs/trajectory/361.png  used on input line 339.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/391.png, id=856, 1927.2pt x 1445.4pt>
+<Figs/trajectory/391.png, id=872, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/391.png Graphic file (type png)
 <use Figs/trajectory/391.png>
-Package pdftex.def Info: Figs/trajectory/391.png  used on input line 337.
+Package pdftex.def Info: Figs/trajectory/391.png  used on input line 340.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/421.png, id=857, 1927.2pt x 1445.4pt>
+<Figs/trajectory/421.png, id=873, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/421.png Graphic file (type png)
 <use Figs/trajectory/421.png>
-Package pdftex.def Info: Figs/trajectory/421.png  used on input line 337.
+Package pdftex.def Info: Figs/trajectory/421.png  used on input line 340.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-<Figs/trajectory/451.png, id=858, 1927.2pt x 1445.4pt>
+<Figs/trajectory/451.png, id=874, 1927.2pt x 1445.4pt>
 File: Figs/trajectory/451.png Graphic file (type png)
 <use Figs/trajectory/451.png>
-Package pdftex.def Info: Figs/trajectory/451.png  used on input line 338.
+Package pdftex.def Info: Figs/trajectory/451.png  used on input line 341.
 (pdftex.def)             Requested size: 52.03227pt x 39.01529pt.
-[43]
+[43pdfTeX warning (ext4): destination with the same identifier (name{figure.2.8
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.345 
+       <./Figs/egohands.jpg>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44 <./Figs/micand32.PNG>] [45]
-<Figs/EHTAflowchartPage2.png, id=876, 2028.57875pt x 1099.10625pt>
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.345 
+       <./Figs/micand32.PNG>] [45pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.2.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.345 
+       <./Figs/yolov5/labels.png> <./Figs/yolov5/labels_correlogram.png>]
+[46pdfTeX warning (ext4): destination with the same identifier (name{table.2.4}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.345 
+      ]
+<Figs/EHTAflowchartPage2.png, id=898, 2028.57875pt x 1099.10625pt>
 File: Figs/EHTAflowchartPage2.png Graphic file (type png)
 <use Figs/EHTAflowchartPage2.png>
-Package pdftex.def Info: Figs/EHTAflowchartPage2.png  used on input line 345.
+Package pdftex.def Info: Figs/EHTAflowchartPage2.png  used on input line 348.
 (pdftex.def)             Requested size: 433.62pt x 234.92801pt.
-) [46 <./Figs/yolov5/labels.png> <./Figs/yolov5/labels_correlogram.png> <./Figs
-/trajectory/1.png (PNG copy)> <./Figs/trajectory/31.png (PNG copy)> <./Figs/tra
-jectory/61.png (PNG copy)> <./Figs/trajectory/91.png (PNG copy)> <./Figs/trajec
-tory/121.png (PNG copy)> <./Figs/trajectory/151.png (PNG copy)> <./Figs/traject
-ory/181.png (PNG copy)> <./Figs/trajectory/211.png (PNG copy)> <./Figs/trajecto
-ry/241.png (PNG copy)> <./Figs/trajectory/271.png (PNG copy)> <./Figs/trajector
-y/301.png (PNG copy)> <./Figs/trajectory/331.png (PNG copy)> <./Figs/trajectory
-/361.png (PNG copy)> <./Figs/trajectory/391.png (PNG copy)> <./Figs/trajectory/
-421.png (PNG copy)> <./Figs/trajectory/451.png (PNG copy)>] [47 <./Figs/EHTAflo
-wchartPage2.png>]
+) [47pdfTeX warning (ext4): destination with the same identifier (name{figure.2
+.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.75 \include{chap2}
+                     <./Figs/trajectory/1.png (PNG copy)> <./Figs/trajectory/31
+.png (PNG copy)> <./Figs/trajectory/61.png (PNG copy)> <./Figs/trajectory/91.pn
+g (PNG copy)> <./Figs/trajectory/121.png (PNG copy)> <./Figs/trajectory/151.png
+ (PNG copy)> <./Figs/trajectory/181.png (PNG copy)> <./Figs/trajectory/211.png 
+(PNG copy)> <./Figs/trajectory/241.png (PNG copy)> <./Figs/trajectory/271.png (
+PNG copy)> <./Figs/trajectory/301.png (PNG copy)> <./Figs/trajectory/331.png (P
+NG copy)> <./Figs/trajectory/361.png (PNG copy)> <./Figs/trajectory/391.png (PN
+G copy)> <./Figs/trajectory/421.png (PNG copy)> <./Figs/trajectory/451.png (PNG
+ copy)>] [48pdfTeX warning (ext4): destination with the same identifier (name{f
+igure.2.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.75 \include{chap2}
+                     <./Figs/EHTAflowchartPage2.png>]
 \openout2 = `chap3.aux'.
 
- (./chap3.tex [48
+ (./chap3.tex
+Chapter 3.
+[49
 
 
 
 
 ]
-Chapter 3.
-[49]
-<Figs/proposedFramework.png, id=903, 2107.875pt x 1907.125pt>
+<Figs/proposedFramework.png, id=919, 2107.875pt x 1907.125pt>
 File: Figs/proposedFramework.png Graphic file (type png)
 <use Figs/proposedFramework.png>
 Package pdftex.def Info: Figs/proposedFramework.png  used on input line 18.
 (pdftex.def)             Requested size: 433.62pt x 392.30177pt.
-<Figs/trainingStage.png, id=904, 3155.79pt x 1712.3975pt>
+<Figs/trainingStage.png, id=920, 3155.79pt x 1712.3975pt>
 File: Figs/trainingStage.png Graphic file (type png)
 <use Figs/trainingStage.png>
 Package pdftex.def Info: Figs/trainingStage.png  used on input line 24.
 (pdftex.def)             Requested size: 433.62pt x 235.26595pt.
- [50 <./Figs/proposedFramework.png>] [51 <./Figs/trainingStage.png>]
+ [50pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.27 \end{figure}
+                  <./Figs/proposedFramework.png>] [51pdfTeX warning (ext4): des
+tination with the same identifier (name{figure.3.2}) has been already used, dup
+licate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.37 
+      <./Figs/trainingStage.png>]
 Underfull \vbox (badness 5652) has occurred while \output is active []
 
  [52]
-<Figs/yolov5/train_batch0.jpg, id=932, 642.4pt x 642.4pt>
+<Figs/yolov5/train_batch0.jpg, id=948, 642.4pt x 642.4pt>
 File: Figs/yolov5/train_batch0.jpg Graphic file (type jpg)
 <use Figs/yolov5/train_batch0.jpg>
 Package pdftex.def Info: Figs/yolov5/train_batch0.jpg  used on input line 50.
 (pdftex.def)             Requested size: 138.76157pt x 138.76025pt.
-<Figs/yolov5/train_batch1.jpg, id=933, 642.4pt x 642.4pt>
+<Figs/yolov5/train_batch1.jpg, id=949, 642.4pt x 642.4pt>
 File: Figs/yolov5/train_batch1.jpg Graphic file (type jpg)
 <use Figs/yolov5/train_batch1.jpg>
 Package pdftex.def Info: Figs/yolov5/train_batch1.jpg  used on input line 51.
 (pdftex.def)             Requested size: 138.76157pt x 138.76025pt.
-<Figs/yolov5/train_batch2.jpg, id=934, 642.4pt x 642.4pt>
+<Figs/yolov5/train_batch2.jpg, id=950, 642.4pt x 642.4pt>
 File: Figs/yolov5/train_batch2.jpg Graphic file (type jpg)
 <use Figs/yolov5/train_batch2.jpg>
 Package pdftex.def Info: Figs/yolov5/train_batch2.jpg  used on input line 51.
 (pdftex.def)             Requested size: 138.76157pt x 138.76025pt.
-<Figs/tensorboard.png, id=938, 928.97063pt x 382.42876pt>
+<Figs/tensorboard.png, id=954, 928.97063pt x 382.42876pt>
 File: Figs/tensorboard.png Graphic file (type png)
 <use Figs/tensorboard.png>
 Package pdftex.def Info: Figs/tensorboard.png  used on input line 57.
@@ -1187,19 +1328,31 @@ Package pdftex.def Info: Figs/tensorboard.png  used on input line 57.
 Underfull \vbox (badness 5652) has occurred while \output is active []
 
  [53]
-<Figs/reid.png, id=948, 766.36313pt x 417.81094pt>
+<Figs/reid.png, id=964, 766.36313pt x 417.81094pt>
 File: Figs/reid.png Graphic file (type png)
 <use Figs/reid.png>
 Package pdftex.def Info: Figs/reid.png  used on input line 67.
 (pdftex.def)             Requested size: 433.62pt x 236.40788pt.
-<Figs/training_descriptor.png, id=951, 606.76688pt x 197.23688pt>
+<Figs/training_descriptor.png, id=967, 606.76688pt x 197.23688pt>
 File: Figs/training_descriptor.png Graphic file (type png)
 <use Figs/training_descriptor.png>
 Package pdftex.def Info: Figs/training_descriptor.png  used on input line 75.
 (pdftex.def)             Requested size: 433.62pt x 140.95406pt.
 
-[54 <./Figs/yolov5/train_batch0.jpg> <./Figs/yolov5/train_batch1.jpg> <./Figs/y
-olov5/train_batch2.jpg> <./Figs/tensorboard.PNG>]
+[54pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.79 \section{Inference stage}
+                              \label{sec:inferstage}pdfTeX warning (ext4): dest
+ination with the same identifier (name{figure.3.4}) has been already used, dupl
+icate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.79 \section{Inference stage}
+                              \label{sec:inferstage} <./Figs/yolov5/train_batch
+0.jpg> <./Figs/yolov5/train_batch1.jpg> <./Figs/yolov5/train_batch2.jpg> <./Fig
+s/tensorboard.PNG>]
 Package epstopdf Info: Source file: <Figs/inferenceStage.eps>
 (epstopdf)                    date: 2020-10-23 21:02:31
 (epstopdf)                    size: 17377447 bytes
@@ -1210,18 +1363,36 @@ Package epstopdf Info: Source file: <Figs/inferenceStage.eps>
 nverted-to.pdf Figs/inferenceStage.eps>
 (epstopdf)             \includegraphics on input line 81.
 Package epstopdf Info: Output file is already uptodate.
-<Figs/inferenceStage-eps-converted-to.pdf, id=957, 1408.26125pt x 2019.545pt>
+<Figs/inferenceStage-eps-converted-to.pdf, id=973, 1408.26125pt x 2019.545pt>
 File: Figs/inferenceStage-eps-converted-to.pdf Graphic file (type pdf)
 <use Figs/inferenceStage-eps-converted-to.pdf>
 Package pdftex.def Info: Figs/inferenceStage-eps-converted-to.pdf  used on inpu
 t line 81.
 (pdftex.def)             Requested size: 433.62pt x 621.83073pt.
- [55 <./Figs/reid.png>]
-Underfull \vbox (badness 7963) has occurred while \output is active []
-
- [56 <./Figs/training_descriptor.PNG>] [57 <./Figs/inferenceStage-eps-converted
--to.pdf>])
-[58] [59]
+ [55pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.84 \end{figure}
+                  <./Figs/reid.png>] [56pdfTeX warning (ext4): destination with
+ the same identifier (name{figure.3.6}) has been already used, duplicate ignore
+d
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.88 
+      <./Figs/training_descriptor.PNG>] [57pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.3.7}) has been already used, duplicate ign
+ored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.88 
+      <./Figs/inferenceStage-eps-converted-to.pdf>]) [58] [59pdfTeX warning (ex
+t4): destination with the same identifier (name{table.3.1}) has been already us
+ed, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.76 \include{chap3}
+                    ]
 \openout2 = `chap4.aux'.
 
  (./chap4.tex [60
@@ -1244,12 +1415,34 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 109.
 
-[64] [65]
+[64] [65pdfTeX warning (ext4): destination with the same identifier (name{table
+.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.131 ...racking on a standard dataset: Micand32S}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{table.4.2}) has been already used, duplica
+te ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.131 ...racking on a standard dataset: Micand32S}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{table.4.3}) has been already used, duplica
+te ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.131 ...racking on a standard dataset: Micand32S}
+                                                  ]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 133.
 
-[66]
+[66pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.170 ...acking on a realistic dataset: Micand32E}
+                                                  ]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 177.
@@ -1262,158 +1455,183 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 249.
 
-[67] [68]
+[67pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.281 \section{Discussions}
+                           ] [68pdfTeX warning (ext4): destination with the sam
+e identifier (name{table.4.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.284 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.284 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.284 
+      ]
 Overfull \hbox (2.62225pt too wide) in paragraph at lines 293--332
-[][] [] 
+[][] []
  []
 
-[69] [70] [71] [72]
-<Figs/Occluded/200.png, id=1090, 1927.2pt x 1445.4pt>
+[69] [70pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.336 ...plexity of 4 types of patients's actions}
+                                                  ] [71] [72]
+<Figs/Occluded/200.png, id=1106, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/200.png Graphic file (type png)
 <use Figs/Occluded/200.png>
 Package pdftex.def Info: Figs/Occluded/200.png  used on input line 349.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/210.png, id=1091, 1927.2pt x 1445.4pt>
+<Figs/Occluded/210.png, id=1107, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/210.png Graphic file (type png)
 <use Figs/Occluded/210.png>
 Package pdftex.def Info: Figs/Occluded/210.png  used on input line 350.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/220.png, id=1092, 1927.2pt x 1445.4pt>
+<Figs/Occluded/220.png, id=1108, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/220.png Graphic file (type png)
 <use Figs/Occluded/220.png>
 Package pdftex.def Info: Figs/Occluded/220.png  used on input line 350.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/230.png, id=1093, 1927.2pt x 1445.4pt>
+<Figs/Occluded/230.png, id=1109, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/230.png Graphic file (type png)
 <use Figs/Occluded/230.png>
 Package pdftex.def Info: Figs/Occluded/230.png  used on input line 351.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/240.png, id=1094, 1927.2pt x 1445.4pt>
+<Figs/Occluded/240.png, id=1110, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/240.png Graphic file (type png)
 <use Figs/Occluded/240.png>
 Package pdftex.def Info: Figs/Occluded/240.png  used on input line 351.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/250.png, id=1095, 1927.2pt x 1445.4pt>
+<Figs/Occluded/250.png, id=1111, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/250.png Graphic file (type png)
 <use Figs/Occluded/250.png>
 Package pdftex.def Info: Figs/Occluded/250.png  used on input line 352.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/256.png, id=1096, 1927.2pt x 1445.4pt>
+<Figs/Occluded/256.png, id=1112, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/256.png Graphic file (type png)
 <use Figs/Occluded/256.png>
 Package pdftex.def Info: Figs/Occluded/256.png  used on input line 353.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/257.png, id=1097, 1927.2pt x 1445.4pt>
+<Figs/Occluded/257.png, id=1113, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/257.png Graphic file (type png)
 <use Figs/Occluded/257.png>
 Package pdftex.def Info: Figs/Occluded/257.png  used on input line 354.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/258.png, id=1098, 1927.2pt x 1445.4pt>
+<Figs/Occluded/258.png, id=1114, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/258.png Graphic file (type png)
 <use Figs/Occluded/258.png>
 Package pdftex.def Info: Figs/Occluded/258.png  used on input line 354.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/259.png, id=1099, 1927.2pt x 1445.4pt>
+<Figs/Occluded/259.png, id=1115, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/259.png Graphic file (type png)
 <use Figs/Occluded/259.png>
 Package pdftex.def Info: Figs/Occluded/259.png  used on input line 355.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/260.png, id=1100, 1927.2pt x 1445.4pt>
+<Figs/Occluded/260.png, id=1116, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/260.png Graphic file (type png)
 <use Figs/Occluded/260.png>
 Package pdftex.def Info: Figs/Occluded/260.png  used on input line 355.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/261.png, id=1101, 1927.2pt x 1445.4pt>
+<Figs/Occluded/261.png, id=1117, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/261.png Graphic file (type png)
 <use Figs/Occluded/261.png>
 Package pdftex.def Info: Figs/Occluded/261.png  used on input line 356.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/267.png, id=1102, 1927.2pt x 1445.4pt>
+<Figs/Occluded/267.png, id=1118, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/267.png Graphic file (type png)
 <use Figs/Occluded/267.png>
 Package pdftex.def Info: Figs/Occluded/267.png  used on input line 357.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/270.png, id=1103, 1927.2pt x 1445.4pt>
+<Figs/Occluded/270.png, id=1119, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/270.png Graphic file (type png)
 <use Figs/Occluded/270.png>
 Package pdftex.def Info: Figs/Occluded/270.png  used on input line 358.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/273.png, id=1104, 1927.2pt x 1445.4pt>
+<Figs/Occluded/273.png, id=1120, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/273.png Graphic file (type png)
 <use Figs/Occluded/273.png>
 Package pdftex.def Info: Figs/Occluded/273.png  used on input line 358.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/276.png, id=1105, 1927.2pt x 1445.4pt>
+<Figs/Occluded/276.png, id=1121, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/276.png Graphic file (type png)
 <use Figs/Occluded/276.png>
 Package pdftex.def Info: Figs/Occluded/276.png  used on input line 359.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/279.png, id=1106, 1927.2pt x 1445.4pt>
+<Figs/Occluded/279.png, id=1122, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/279.png Graphic file (type png)
 <use Figs/Occluded/279.png>
 Package pdftex.def Info: Figs/Occluded/279.png  used on input line 359.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/Occluded/282.png, id=1107, 1927.2pt x 1445.4pt>
+<Figs/Occluded/282.png, id=1123, 1927.2pt x 1445.4pt>
 File: Figs/Occluded/282.png Graphic file (type png)
 <use Figs/Occluded/282.png>
 Package pdftex.def Info: Figs/Occluded/282.png  used on input line 360.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/blur/119.png, id=1108, 1927.2pt x 1445.4pt>
+<Figs/blur/119.png, id=1124, 1927.2pt x 1445.4pt>
 File: Figs/blur/119.png Graphic file (type png)
 <use Figs/blur/119.png>
 Package pdftex.def Info: Figs/blur/119.png  used on input line 365.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/blur/120.png, id=1109, 1927.2pt x 1445.4pt>
+<Figs/blur/120.png, id=1125, 1927.2pt x 1445.4pt>
 File: Figs/blur/120.png Graphic file (type png)
 <use Figs/blur/120.png>
 Package pdftex.def Info: Figs/blur/120.png  used on input line 366.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/blur/125.png, id=1110, 1927.2pt x 1445.4pt>
+<Figs/blur/125.png, id=1126, 1927.2pt x 1445.4pt>
 File: Figs/blur/125.png Graphic file (type png)
 <use Figs/blur/125.png>
 Package pdftex.def Info: Figs/blur/125.png  used on input line 366.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/blur/131.png, id=1111, 1927.2pt x 1445.4pt>
+<Figs/blur/131.png, id=1127, 1927.2pt x 1445.4pt>
 File: Figs/blur/131.png Graphic file (type png)
 <use Figs/blur/131.png>
 Package pdftex.def Info: Figs/blur/131.png  used on input line 367.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/blur/137.png, id=1112, 1927.2pt x 1445.4pt>
+<Figs/blur/137.png, id=1128, 1927.2pt x 1445.4pt>
 File: Figs/blur/137.png Graphic file (type png)
 <use Figs/blur/137.png>
 Package pdftex.def Info: Figs/blur/137.png  used on input line 367.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/blur/143.png, id=1113, 1927.2pt x 1445.4pt>
+<Figs/blur/143.png, id=1129, 1927.2pt x 1445.4pt>
 File: Figs/blur/143.png Graphic file (type png)
 <use Figs/blur/143.png>
 Package pdftex.def Info: Figs/blur/143.png  used on input line 368.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/ShapeChange/1582.png, id=1114, 1927.2pt x 1445.4pt>
+<Figs/ShapeChange/1582.png, id=1130, 1927.2pt x 1445.4pt>
 File: Figs/ShapeChange/1582.png Graphic file (type png)
 <use Figs/ShapeChange/1582.png>
 Package pdftex.def Info: Figs/ShapeChange/1582.png  used on input line 373.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/ShapeChange/1592.png, id=1115, 1927.2pt x 1445.4pt>
+<Figs/ShapeChange/1592.png, id=1131, 1927.2pt x 1445.4pt>
 File: Figs/ShapeChange/1592.png Graphic file (type png)
 <use Figs/ShapeChange/1592.png>
 Package pdftex.def Info: Figs/ShapeChange/1592.png  used on input line 374.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/ShapeChange/1602.png, id=1116, 1927.2pt x 1445.4pt>
+<Figs/ShapeChange/1602.png, id=1132, 1927.2pt x 1445.4pt>
 File: Figs/ShapeChange/1602.png Graphic file (type png)
 <use Figs/ShapeChange/1602.png>
 Package pdftex.def Info: Figs/ShapeChange/1602.png  used on input line 374.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/ShapeChange/1612.png, id=1117, 1927.2pt x 1445.4pt>
+<Figs/ShapeChange/1612.png, id=1133, 1927.2pt x 1445.4pt>
 File: Figs/ShapeChange/1612.png Graphic file (type png)
 <use Figs/ShapeChange/1612.png>
 Package pdftex.def Info: Figs/ShapeChange/1612.png  used on input line 375.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/ShapeChange/1622.png, id=1118, 1927.2pt x 1445.4pt>
+<Figs/ShapeChange/1622.png, id=1134, 1927.2pt x 1445.4pt>
 File: Figs/ShapeChange/1622.png Graphic file (type png)
 <use Figs/ShapeChange/1622.png>
 Package pdftex.def Info: Figs/ShapeChange/1622.png  used on input line 375.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/ShapeChange/1630.png, id=1119, 1927.2pt x 1445.4pt>
+<Figs/ShapeChange/1630.png, id=1135, 1927.2pt x 1445.4pt>
 File: Figs/ShapeChange/1630.png Graphic file (type png)
 <use Figs/ShapeChange/1630.png>
 Package pdftex.def Info: Figs/ShapeChange/1630.png  used on input line 376.
@@ -1430,84 +1648,105 @@ Underfull \hbox (badness 3148) in paragraph at lines 377--377
 left
  []
 
-<Figs/definition/1123.png, id=1120, 1927.2pt x 1445.4pt>
+<Figs/definition/1123.png, id=1136, 1927.2pt x 1445.4pt>
 File: Figs/definition/1123.png Graphic file (type png)
 <use Figs/definition/1123.png>
 Package pdftex.def Info: Figs/definition/1123.png  used on input line 381.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1173.png, id=1121, 1927.2pt x 1445.4pt>
+<Figs/definition/1173.png, id=1137, 1927.2pt x 1445.4pt>
 File: Figs/definition/1173.png Graphic file (type png)
 <use Figs/definition/1173.png>
 Package pdftex.def Info: Figs/definition/1173.png  used on input line 382.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1223.png, id=1122, 1927.2pt x 1445.4pt>
+<Figs/definition/1223.png, id=1138, 1927.2pt x 1445.4pt>
 File: Figs/definition/1223.png Graphic file (type png)
 <use Figs/definition/1223.png>
 Package pdftex.def Info: Figs/definition/1223.png  used on input line 382.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1273.png, id=1123, 1927.2pt x 1445.4pt>
+<Figs/definition/1273.png, id=1139, 1927.2pt x 1445.4pt>
 File: Figs/definition/1273.png Graphic file (type png)
 <use Figs/definition/1273.png>
 Package pdftex.def Info: Figs/definition/1273.png  used on input line 383.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1323.png, id=1124, 1927.2pt x 1445.4pt>
+<Figs/definition/1323.png, id=1140, 1927.2pt x 1445.4pt>
 File: Figs/definition/1323.png Graphic file (type png)
 <use Figs/definition/1323.png>
 Package pdftex.def Info: Figs/definition/1323.png  used on input line 383.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1406.png, id=1125, 1927.2pt x 1445.4pt>
+<Figs/definition/1406.png, id=1141, 1927.2pt x 1445.4pt>
 File: Figs/definition/1406.png Graphic file (type png)
 <use Figs/definition/1406.png>
 Package pdftex.def Info: Figs/definition/1406.png  used on input line 384.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1407.png, id=1126, 1927.2pt x 1445.4pt>
+<Figs/definition/1407.png, id=1142, 1927.2pt x 1445.4pt>
 File: Figs/definition/1407.png Graphic file (type png)
 <use Figs/definition/1407.png>
 Package pdftex.def Info: Figs/definition/1407.png  used on input line 385.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1408.png, id=1127, 1927.2pt x 1445.4pt>
+<Figs/definition/1408.png, id=1143, 1927.2pt x 1445.4pt>
 File: Figs/definition/1408.png Graphic file (type png)
 <use Figs/definition/1408.png>
 Package pdftex.def Info: Figs/definition/1408.png  used on input line 386.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1409.png, id=1128, 1927.2pt x 1445.4pt>
+<Figs/definition/1409.png, id=1144, 1927.2pt x 1445.4pt>
 File: Figs/definition/1409.png Graphic file (type png)
 <use Figs/definition/1409.png>
 Package pdftex.def Info: Figs/definition/1409.png  used on input line 386.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1410.png, id=1129, 1927.2pt x 1445.4pt>
+<Figs/definition/1410.png, id=1145, 1927.2pt x 1445.4pt>
 File: Figs/definition/1410.png Graphic file (type png)
 <use Figs/definition/1410.png>
 Package pdftex.def Info: Figs/definition/1410.png  used on input line 387.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1411.png, id=1130, 1927.2pt x 1445.4pt>
+<Figs/definition/1411.png, id=1146, 1927.2pt x 1445.4pt>
 File: Figs/definition/1411.png Graphic file (type png)
 <use Figs/definition/1411.png>
 Package pdftex.def Info: Figs/definition/1411.png  used on input line 387.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-<Figs/definition/1412.png, id=1131, 1927.2pt x 1445.4pt>
+<Figs/definition/1412.png, id=1147, 1927.2pt x 1445.4pt>
 File: Figs/definition/1412.png Graphic file (type png)
 <use Figs/definition/1412.png>
 Package pdftex.def Info: Figs/definition/1412.png  used on input line 388.
 (pdftex.def)             Requested size: 69.38078pt x 52.02774pt.
-) [73 <./Figs/Occluded/200.png> <./Figs/Occluded/210.png> <./Figs/Occluded/220.
-png> <./Figs/Occluded/230.png> <./Figs/Occluded/240.png> <./Figs/Occluded/250.p
-ng> <./Figs/Occluded/256.png> <./Figs/Occluded/257.png> <./Figs/Occluded/258.pn
-g> <./Figs/Occluded/259.png> <./Figs/Occluded/260.png> <./Figs/Occluded/261.png
-> <./Figs/Occluded/267.png> <./Figs/Occluded/270.png> <./Figs/Occluded/273.png>
- <./Figs/Occluded/276.png> <./Figs/Occluded/279.png> <./Figs/Occluded/282.png> 
-<./Figs/blur/119.png> <./Figs/blur/120.png> <./Figs/blur/125.png> <./Figs/blur/
-131.png> <./Figs/blur/137.png> <./Figs/blur/143.png> <./Figs/ShapeChange/1582.p
-ng> <./Figs/ShapeChange/1592.png> <./Figs/ShapeChange/1602.png> <./Figs/ShapeCh
-ange/1612.png> <./Figs/ShapeChange/1622.png> <./Figs/ShapeChange/1630.png>]
-[74 <./Figs/definition/1123.png> <./Figs/definition/1173.png> <./Figs/definitio
-n/1223.png> <./Figs/definition/1273.png> <./Figs/definition/1323.png> <./Figs/d
-efinition/1406.png> <./Figs/definition/1407.png> <./Figs/definition/1408.png> <
-./Figs/definition/1409.png> <./Figs/definition/1410.png> <./Figs/definition/141
-1.png> <./Figs/definition/1412.png>]
+) [73pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.77 \include{chap4}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.77 \include{chap4}
+                     <./Figs/Occluded/200.png> <./Figs/Occluded/210.png> <./Fig
+s/Occluded/220.png> <./Figs/Occluded/230.png> <./Figs/Occluded/240.png> <./Figs
+/Occluded/250.png> <./Figs/Occluded/256.png> <./Figs/Occluded/257.png> <./Figs/
+Occluded/258.png> <./Figs/Occluded/259.png> <./Figs/Occluded/260.png> <./Figs/O
+ccluded/261.png> <./Figs/Occluded/267.png> <./Figs/Occluded/270.png> <./Figs/Oc
+cluded/273.png> <./Figs/Occluded/276.png> <./Figs/Occluded/279.png> <./Figs/Occ
+luded/282.png> <./Figs/blur/119.png> <./Figs/blur/120.png> <./Figs/blur/125.png
+> <./Figs/blur/131.png> <./Figs/blur/137.png> <./Figs/blur/143.png>] [74pdfTeX 
+warning (ext4): destination with the same identifier (name{figure.4.4}) has bee
+n already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.77 \include{chap4}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.77 \include{chap4}
+                     <./Figs/ShapeChange/1582.png> <./Figs/ShapeChange/1592.png
+> <./Figs/ShapeChange/1602.png> <./Figs/ShapeChange/1612.png> <./Figs/ShapeChan
+ge/1622.png> <./Figs/ShapeChange/1630.png> <./Figs/definition/1123.png> <./Figs
+/definition/1173.png> <./Figs/definition/1223.png> <./Figs/definition/1273.png>
+ <./Figs/definition/1323.png> <./Figs/definition/1406.png> <./Figs/definition/1
+407.png> <./Figs/definition/1408.png> <./Figs/definition/1409.png> <./Figs/defi
+nition/1410.png> <./Figs/definition/1411.png> <./Figs/definition/1412.png>]
 \openout2 = `chap5.aux'.
 
- (./chap5.tex
+
+(./chap5.tex
 Chapter 5.
 [75
 
@@ -1515,12 +1754,17 @@ Chapter 5.
 
 
 ]
-<Figs/future.png, id=1193, 462.72874pt x 167.62625pt>
+<Figs/future.png, id=1209, 462.72874pt x 167.62625pt>
 File: Figs/future.png Graphic file (type png)
 <use Figs/future.png>
 Package pdftex.def Info: Figs/future.png  used on input line 24.
 (pdftex.def)             Requested size: 325.215pt x 117.81331pt.
- [76]) [77 <./Figs/future.png>]
+ [76]) [77pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.5.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.78 \include{chap5}
+                     <./Figs/future.png>]
 \openout2 = `appa.aux'.
 
  (./appa.tex [78
@@ -1532,152 +1776,167 @@ Package pdftex.def Info: Figs/future.png  used on input line 24.
 Appendix A.
 
 Overfull \hbox (38.33722pt too wide) in paragraph at lines 41--53
-[][] 
+[][]
  []
 
-) [79] [80] [81] [82]
+) [79] [80pdfTeX warning (ext4): destination with the same identifier (name{tab
+le.A.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.80 \include{appa}
+                   ] [81pdfTeX warning (ext4): destination with the same identi
+fier (name{table.A.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.80 \include{appa}
+                   ] [82pdfTeX warning (ext4): destination with the same identi
+fier (name{table.A.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.80 \include{appa}
+                   ]
 \openout2 = `appb.aux'.
 
  (./appb.tex
 Appendix B.
-<Figs/Evaluation/micand26/y3s.png, id=1239, 656.4525pt x 330.48468pt>
+<Figs/Evaluation/micand26/y3s.png, id=1255, 656.4525pt x 330.48468pt>
 File: Figs/Evaluation/micand26/y3s.png Graphic file (type png)
 <use Figs/Evaluation/micand26/y3s.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/y3s.png  used on input line 5
 .
 (pdftex.def)             Requested size: 433.62pt x 218.3021pt.
-<Figs/Evaluation/micand26/y4s.png, id=1240, 649.67719pt x 331.99031pt>
+<Figs/Evaluation/micand26/y4s.png, id=1256, 649.67719pt x 331.99031pt>
 File: Figs/Evaluation/micand26/y4s.png Graphic file (type png)
 <use Figs/Evaluation/micand26/y4s.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/y4s.png  used on input line 9
 .
 (pdftex.def)             Requested size: 433.62pt x 221.58636pt.
-<Figs/Evaluation/micand26/fs.png, id=1241, 653.44125pt x 331.99031pt>
+<Figs/Evaluation/micand26/fs.png, id=1257, 653.44125pt x 331.99031pt>
 File: Figs/Evaluation/micand26/fs.png Graphic file (type png)
 <use Figs/Evaluation/micand26/fs.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/fs.png  used on input line 13
 .
 (pdftex.def)             Requested size: 433.62pt x 220.30472pt.
-<Figs/Evaluation/micand26/ms.png, id=1242, 647.41875pt x 319.94531pt>
+<Figs/Evaluation/micand26/ms.png, id=1258, 647.41875pt x 319.94531pt>
 File: Figs/Evaluation/micand26/ms.png Graphic file (type png)
 <use Figs/Evaluation/micand26/ms.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/ms.png  used on input line 17
 .
 (pdftex.def)             Requested size: 433.62pt x 214.289pt.
-<Figs/Evaluation/micand26/gs.png, id=1243, 676.02562pt x 320.69812pt>
+<Figs/Evaluation/micand26/gs.png, id=1259, 676.02562pt x 320.69812pt>
 File: Figs/Evaluation/micand26/gs.png Graphic file (type png)
 <use Figs/Evaluation/micand26/gs.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/gs.png  used on input line 21
 .
 (pdftex.def)             Requested size: 433.62pt x 205.71097pt.
-<Figs/Evaluation/micand26/y3ds.png, id=1244, 656.4525pt x 320.69812pt>
+<Figs/Evaluation/micand26/y3ds.png, id=1260, 656.4525pt x 320.69812pt>
 File: Figs/Evaluation/micand26/y3ds.png Graphic file (type png)
 <use Figs/Evaluation/micand26/y3ds.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/y3ds.png  used on input line 
 25.
 (pdftex.def)             Requested size: 433.62pt x 211.83757pt.
-<Figs/Evaluation/micand26/y4ds.png, id=1245, 645.16031pt x 331.2375pt>
+<Figs/Evaluation/micand26/y4ds.png, id=1261, 645.16031pt x 331.2375pt>
 File: Figs/Evaluation/micand26/y4ds.png Graphic file (type png)
 <use Figs/Evaluation/micand26/y4ds.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/y4ds.png  used on input line 
 29.
 (pdftex.def)             Requested size: 433.62pt x 222.62546pt.
-<Figs/Evaluation/micand26/fds.png, id=1246, 680.5425pt x 330.48468pt>
+<Figs/Evaluation/micand26/fds.png, id=1262, 680.5425pt x 330.48468pt>
 File: Figs/Evaluation/micand26/fds.png Graphic file (type png)
 <use Figs/Evaluation/micand26/fds.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/fds.png  used on input line 3
 4.
 (pdftex.def)             Requested size: 433.62pt x 210.57655pt.
-<Figs/Evaluation/micand26/mds.png, id=1247, 677.53125pt x 328.22626pt>
+<Figs/Evaluation/micand26/mds.png, id=1263, 677.53125pt x 328.22626pt>
 File: Figs/Evaluation/micand26/mds.png Graphic file (type png)
 <use Figs/Evaluation/micand26/mds.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/mds.png  used on input line 3
 8.
 (pdftex.def)             Requested size: 433.62pt x 210.06909pt.
-<Figs/Evaluation/micand26/rds.png, id=1248, 670.75594pt x 331.2375pt>
+<Figs/Evaluation/micand26/rds.png, id=1264, 670.75594pt x 331.2375pt>
 File: Figs/Evaluation/micand26/rds.png Graphic file (type png)
 <use Figs/Evaluation/micand26/rds.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/rds.png  used on input line 4
 2.
 (pdftex.def)             Requested size: 433.62pt x 214.13428pt.
-<Figs/Evaluation/micand26/gds.png, id=1249, 674.52pt x 320.69812pt>
+<Figs/Evaluation/micand26/gds.png, id=1265, 674.52pt x 320.69812pt>
 File: Figs/Evaluation/micand26/gds.png Graphic file (type png)
 <use Figs/Evaluation/micand26/gds.png>
 Package pdftex.def Info: Figs/Evaluation/micand26/gds.png  used on input line 4
 6.
 (pdftex.def)             Requested size: 433.62pt x 206.16606pt.
-<Figs/Evaluation/micand6/y3s.png, id=1250, 649.67719pt x 106.14656pt>
+<Figs/Evaluation/micand6/y3s.png, id=1266, 649.67719pt x 106.14656pt>
 File: Figs/Evaluation/micand6/y3s.png Graphic file (type png)
 <use Figs/Evaluation/micand6/y3s.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/y3s.png  used on input line 51
 .
 (pdftex.def)             Requested size: 433.62pt x 70.84734pt.
-<Figs/Evaluation/micand6/y4s.png, id=1251, 646.66594pt x 107.65219pt>
+<Figs/Evaluation/micand6/y4s.png, id=1267, 646.66594pt x 107.65219pt>
 File: Figs/Evaluation/micand6/y4s.png Graphic file (type png)
 <use Figs/Evaluation/micand6/y4s.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/y4s.png  used on input line 55
 .
 (pdftex.def)             Requested size: 433.62pt x 72.18571pt.
-<Figs/Evaluation/micand6/fs.png, id=1252, 635.37375pt x 104.64093pt>
+<Figs/Evaluation/micand6/fs.png, id=1268, 635.37375pt x 104.64093pt>
 File: Figs/Evaluation/micand6/fs.png Graphic file (type png)
 <use Figs/Evaluation/micand6/fs.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/fs.png  used on input line 59.
 
 (pdftex.def)             Requested size: 433.62pt x 71.41673pt.
-<Figs/Evaluation/micand6/ms.png, id=1253, 633.86812pt x 104.64093pt>
+<Figs/Evaluation/micand6/ms.png, id=1269, 633.86812pt x 104.64093pt>
 File: Figs/Evaluation/micand6/ms.png Graphic file (type png)
 <use Figs/Evaluation/micand6/ms.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/ms.png  used on input line 63.
 
 (pdftex.def)             Requested size: 433.62pt x 71.58438pt.
-<Figs/Evaluation/micand6/gs.png, id=1254, 636.12656pt x 105.39375pt>
+<Figs/Evaluation/micand6/gs.png, id=1270, 636.12656pt x 105.39375pt>
 File: Figs/Evaluation/micand6/gs.png Graphic file (type png)
 <use Figs/Evaluation/micand6/gs.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/gs.png  used on input line 67.
 
 (pdftex.def)             Requested size: 433.62pt x 71.84207pt.
-<Figs/Evaluation/micand6/y3ds.png, id=1255, 647.41875pt x 105.39375pt>
+<Figs/Evaluation/micand6/y3ds.png, id=1271, 647.41875pt x 105.39375pt>
 File: Figs/Evaluation/micand6/y3ds.png Graphic file (type png)
 <use Figs/Evaluation/micand6/y3ds.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/y3ds.png  used on input line 7
 1.
 (pdftex.def)             Requested size: 433.62pt x 70.58931pt.
-<Figs/Evaluation/micand6/y4ds.png, id=1256, 650.43pt x 104.64093pt>
+<Figs/Evaluation/micand6/y4ds.png, id=1272, 650.43pt x 104.64093pt>
 File: Figs/Evaluation/micand6/y4ds.png Graphic file (type png)
 <use Figs/Evaluation/micand6/y4ds.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/y4ds.png  used on input line 7
 5.
 (pdftex.def)             Requested size: 433.62pt x 69.76256pt.
-<Figs/Evaluation/micand6/fds.png, id=1257, 632.3625pt x 103.88812pt>
+<Figs/Evaluation/micand6/fds.png, id=1273, 632.3625pt x 103.88812pt>
 File: Figs/Evaluation/micand6/fds.png Graphic file (type png)
 <use Figs/Evaluation/micand6/fds.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/fds.png  used on input line 79
 .
 (pdftex.def)             Requested size: 433.62pt x 71.23901pt.
-<Figs/Evaluation/micand6/mds.png, id=1258, 632.3625pt x 92.59593pt>
+<Figs/Evaluation/micand6/mds.png, id=1274, 632.3625pt x 92.59593pt>
 File: Figs/Evaluation/micand6/mds.png Graphic file (type png)
 <use Figs/Evaluation/micand6/mds.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/mds.png  used on input line 83
 .
 (pdftex.def)             Requested size: 433.62pt x 63.49564pt.
-<Figs/Evaluation/micand6/rds.png, id=1259, 638.385pt x 104.64093pt>
+<Figs/Evaluation/micand6/rds.png, id=1275, 638.385pt x 104.64093pt>
 File: Figs/Evaluation/micand6/rds.png Graphic file (type png)
 <use Figs/Evaluation/micand6/rds.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/rds.png  used on input line 87
 .
 (pdftex.def)             Requested size: 433.62pt x 71.07663pt.
-<Figs/Evaluation/micand6/gds.png, id=1260, 631.60968pt x 104.64093pt>
+<Figs/Evaluation/micand6/gds.png, id=1276, 631.60968pt x 104.64093pt>
 File: Figs/Evaluation/micand6/gds.png Graphic file (type png)
 <use Figs/Evaluation/micand6/gds.png>
 Package pdftex.def Info: Figs/Evaluation/micand6/gds.png  used on input line 91
 .
 (pdftex.def)             Requested size: 433.62pt x 71.83986pt.
-<Figs/yoloformat.png, id=1261, 616.3025pt x 494.84875pt>
+<Figs/yoloformat.png, id=1277, 616.3025pt x 494.84875pt>
 File: Figs/yoloformat.png Graphic file (type png)
 <use Figs/yoloformat.png>
 Package pdftex.def Info: Figs/yoloformat.png  used on input line 97.
 (pdftex.def)             Requested size: 216.81pt x 174.0831pt.
-<Figs/yolov5/training_process_yolo.png, id=1262, 1859.94875pt x 967.615pt>
+<Figs/yolov5/training_process_yolo.png, id=1278, 1859.94875pt x 967.615pt>
 File: Figs/yolov5/training_process_yolo.png Graphic file (type png)
 <use Figs/yolov5/training_process_yolo.png>
 Package pdftex.def Info: Figs/yolov5/training_process_yolo.png  used on input l
@@ -1688,51 +1947,184 @@ ine 102.
 
 
 
-] [84 <./Figs/Evaluation/micand26/Y3S.PNG> <./Figs/Evaluation/micand26/Y4S.PNG>
-] [85 <./Figs/Evaluation/micand26/FS.PNG> <./Figs/Evaluation/micand26/MS.PNG>] 
-[86 <./Figs/Evaluation/micand26/GS.PNG> <./Figs/Evaluation/micand26/Y3DS.PNG>] 
-[87 <./Figs/Evaluation/micand26/Y4DS.PNG> <./Figs/Evaluation/micand26/FDS.PNG>]
- [88 <./Figs/Evaluation/micand26/MDS.PNG> <./Figs/Evaluation/micand26/RDS.PNG>]
- [89 <./Figs/Evaluation/micand26/GDS.PNG> <./Figs/Evaluation/micand6/y3s.PNG> <
-./Figs/Evaluation/micand6/y4s.PNG> <./Figs/Evaluation/micand6/FS.PNG>]
-[90 <./Figs/Evaluation/micand6/MS.PNG> <./Figs/Evaluation/micand6/GS.PNG> <./Fi
-gs/Evaluation/micand6/Y3DS.PNG> <./Figs/Evaluation/micand6/y4ds.PNG> <./Figs/Ev
-aluation/micand6/fds.PNG> <./Figs/Evaluation/micand6/MDS.PNG>] [91 <./Figs/Eval
-uation/micand6/RDS.PNG> <./Figs/Evaluation/micand6/GDS.PNG> <./Figs/yoloformat.
-png>] [92 <./Figs/yolov5/training_process_yolo.png>]
+] [84pdfTeX warning (ext4): destination with the same identifier (name{figure.B
+.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand26/Y3S.PNG> <./Figs/Evaluation/mic
+and26/Y4S.PNG>] [85pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand26/FS.PNG> <./Figs/Evaluation/mica
+nd26/MS.PNG>] [86pdfTeX warning (ext4): destination with the same identifier (n
+ame{figure.B.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand26/GS.PNG> <./Figs/Evaluation/mica
+nd26/Y3DS.PNG>] [87pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand26/Y4DS.PNG> <./Figs/Evaluation/mi
+cand26/FDS.PNG>] [88pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.B.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand26/MDS.PNG> <./Figs/Evaluation/mic
+and26/RDS.PNG>] [89pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand26/GDS.PNG> <./Figs/Evaluation/mic
+and6/y3s.PNG> <./Figs/Evaluation/micand6/y4s.PNG> <./Figs/Evaluation/micand6/FS
+.PNG>] [90pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.B.15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.20}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand6/MS.PNG> <./Figs/Evaluation/mican
+d6/GS.PNG> <./Figs/Evaluation/micand6/Y3DS.PNG> <./Figs/Evaluation/micand6/y4ds
+.PNG> <./Figs/Evaluation/micand6/fds.PNG> <./Figs/Evaluation/micand6/MDS.PNG>]
+[91pdfTeX warning (ext4): destination with the same identifier (name{figure.B.2
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.22}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{figure.B.23}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/Evaluation/micand6/RDS.PNG> <./Figs/Evaluation/mica
+nd6/GDS.PNG> <./Figs/yoloformat.png>] [92pdfTeX warning (ext4): destination wit
+h the same identifier (name{figure.B.24}) has been already used, duplicate igno
+red
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.81 \include{appb}
+                    <./Figs/yolov5/training_process_yolo.png>]
 \openout2 = `biblio.aux'.
 
- (./biblio.tex (./main.bbl
-[93
+ (./biblio.tex
+(./main.bbl [93
 
 
 
 
 ] [94]
-Underfull \hbox (badness 4726) in paragraph at lines 159--165
-\T1/cmr/m/n/12 cen-tric hand track and object-based hu-man ac-tion recog-ni-tio
-n.  In
+Underfull \hbox (badness 2932) in paragraph at lines 136--142
+[]\T1/cmr/m/n/12 G. Ka-pidis, R. Poppe, E. Van Dam, L. Noldus, and R. Veltkamp,
+
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 159--165
+Underfull \hbox (badness 2027) in paragraph at lines 136--142
+\T1/cmr/m/n/12 ``Ego-cen-tric hand track and object-based hu-man ac-tion recog-
+ni-tion,'' in
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 136--142
 \T1/cmr/m/it/12 2019 IEEE Smart-World, Ubiq-ui-tous In-tel-li-gence Com-put-ing
 , Ad-vanced
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--165
+Underfull \hbox (badness 10000) in paragraph at lines 136--142
 \T1/cmr/m/it/12 Trusted Com-put-ing, Scal-able Com-put-ing Com-mu-ni-ca-tions, 
 Cloud Big
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 159--165
+Underfull \hbox (badness 1097) in paragraph at lines 136--142
 \T1/cmr/m/it/12 Data Com-put-ing, In-ter-net of Peo-ple and Smart City In-no-va
 -tion (Smart-
  []
 
-[95] [96])) [97] (./main.aux (./cover.aux) (./contents.aux) (./chap1.aux)
+[95]
+Underfull \hbox (badness 1668) in paragraph at lines 250--252
+[]\T1/cmr/m/n/12 N. Wo-jke and A. Be-w-ley, ``Deep co-sine met-ric learn-ing fo
+r per-son re-
+ []
+
+[96])) [97] (./main.aux (./cover.aux) (./contents.aux) (./chap1.aux)
 (./chap2.aux) (./chap3.aux) (./chap4.aux) (./chap5.aux) (./appa.aux)
 (./appb.aux) (./biblio.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
@@ -1742,15 +2134,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \ifx on line 54 was incomplete) 
+(\end occurred when \ifx on line 57 was incomplete) 
 Here is how much of TeX's memory you used:
- 31048 strings out of 479917
- 737543 string characters out of 5886664
- 1180049 words of memory out of 5000000
- 46550 multiletter control sequences out of 15000+600000
+ 31131 strings out of 479917
+ 738961 string characters out of 5886664
+ 1181049 words of memory out of 5000000
+ 46623 multiletter control sequences out of 15000+600000
  552659 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,22n,110p,3145b,2326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,22n,110p,3145b,2328s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2020/texmf-dist/fonts/enc/
 dvips/fontawesome/fontawesometwo.enc}{c:/texlive/2020/texmf-dist/fonts/enc/dvip
@@ -1772,10 +2164,10 @@ type1/public/cm-super/sfrm1440.pfb><c:/texlive/2020/texmf-dist/fonts/type1/publ
 ic/cm-super/sfrm1728.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-supe
 r/sfti1200.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sftt1200
 .pfb>
-Output written on main.pdf (97 pages, 164243955 bytes).
+Output written on main.pdf (97 pages, 165694624 bytes).
 PDF statistics:
- 1493 PDF objects out of 1728 (max. 8388607)
- 1170 compressed objects within 12 object streams
+ 1510 PDF objects out of 1728 (max. 8388607)
+ 1183 compressed objects within 12 object streams
  321 named destinations out of 1000 (max. 500000)
- 1001 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1026 words of extra memory for PDF output out of 10000 (max. 10000000)
 

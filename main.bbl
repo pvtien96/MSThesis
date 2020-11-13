@@ -1,361 +1,296 @@
-\newcommand{\noopsort}[1]{} \newcommand{\printfirst}[2]{#1}
-  \newcommand{\singleletter}[1]{#1} \newcommand{\switchargs}[2]{#2#1}
 \begin{thebibliography}{10}
 
-\bibitem{7410583}
-S.~{Bambach}, S.~{Lee}, D.~J. {Crandall}, and C.~{Yu}.
-\newblock Lending a hand: Detecting hands and recognizing activities in complex
-  egocentric interactions.
-\newblock In {\em 2015 IEEE International Conference on Computer Vision
-  (ICCV)}, pages 1949--1957, 2015.
+\bibitem{DBLP:journals/corr/GirshickDDM13}
+R.~B. Girshick, J.~Donahue, T.~Darrell, and J.~Malik, ``Rich feature
+  hierarchies for accurate object detection and semantic segmentation,'' {\em
+  CoRR}, vol.~abs/1311.2524, 2013.
 
 \bibitem{10.1109/ICCV.2015.226}
-Sven Bambach, Stefan Lee, David~J. Crandall, and Chen Yu.
-\newblock Lending a hand: Detecting hands and recognizing activities in complex
-  egocentric interactions.
-\newblock In {\em Proceedings of the 2015 IEEE International Conference on
-  Computer Vision (ICCV)}, ICCV '15, page 1949–1957, USA, 2015. IEEE Computer
-  Society.
+S.~Bambach, S.~Lee, D.~J. Crandall, and C.~Yu, ``Lending a hand: Detecting
+  hands and recognizing activities in complex egocentric interactions,'' in
+  {\em Proceedings of the 2015 IEEE International Conference on Computer Vision
+  (ICCV)}, ICCV '15, (USA), p.~1949–1957, IEEE Computer Society, 2015.
 
-\bibitem{9064606}
-A.~{Bandini} and J.~{Zariffa}.
-\newblock Analysis of the hands in egocentric vision: A survey.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  pages 1--1, 2020.
-
-\bibitem{DBLP:journals/corr/abs-1806-06157}
-Fabien Baradel, Natalia Neverova, Christian Wolf, Julien Mille, and Greg Mori.
-\newblock Object level visual reasoning in videos.
-\newblock {\em CoRR}, abs/1806.06157, 2018.
-
-\bibitem{DBLP:journals/corr/BertasiusPYS16}
-Gedas Bertasius, Hyun~Soo Park, Stella~X. Yu, and Jianbo Shi.
-\newblock First person action-object detection with egonet.
-\newblock {\em CoRR}, abs/1603.04908, 2016.
-
-\bibitem{6910041}
-A.~{Betancourt}, M.~M. {Lopez}, C.~S. {Regazzoni}, and M.~{Rauterberg}.
-\newblock A sequential classifier for hand detection in the framework of
-  egocentric vision.
-\newblock In {\em 2014 IEEE Conference on Computer Vision and Pattern
-  Recognition Workshops}, pages 600--605, 2014.
-
-\bibitem{10.1016/j.cviu.2016.09.005}
-Alejandro Betancourt, Pietro Morerio, Emilia Barakova, Lucio Marcenaro,
-  Matthias Rauterberg, and Carlo Regazzoni.
-\newblock Left/right hand segmentation in egocentric videos.
-\newblock {\em Comput. Vis. Image Underst.}, 154(C):73–81, January 2017.
-
-\bibitem{DBLP:journals/corr/BewleyGORU16}
-Alex Bewley, ZongYuan Ge, Lionel Ott, Fabio Ramos, and Ben Upcroft.
-\newblock Simple online and realtime tracking.
-\newblock {\em CoRR}, abs/1602.00763, 2016.
-
-\bibitem{bochkovskiy2020yolov4}
-Alexey Bochkovskiy, Chien-Yao Wang, and Hong-Yuan~Mark Liao.
-\newblock Yolov4: Optimal speed and accuracy of object detection.
-\newblock {\em arXiv preprint arXiv:2004.10934}, 2020.
-
-\bibitem{cai2016understanding}
-Minjie Cai, Kris~M Kitani, and Yoichi Sato.
-\newblock Understanding hand-object manipulation with grasp types and object
-  attributes.
-\newblock In {\em Robotics: Science and Systems}, volume~3. Ann Arbor,
-  Michigan;, 2016.
-
-\bibitem{DBLP:journals/corr/abs-1808-07256}
-Karanbir~Singh Chahal and Kuntal Dey.
-\newblock A survey of modern object detection literature using deep learning.
-\newblock {\em CoRR}, abs/1808.07256, 2018.
-
-\bibitem{wearable}
-Aiden Doherty, Steve Hodges, Abby King, Alan Smeaton, Emma Berry, Chris Moulin,
-  Siân Lindley, Paul Kelly, and Charles Foster.
-\newblock Wearable cameras in health: The state of the art and future
-  possibilities.
-\newblock {\em American journal of preventive medicine}, 44:320--3, 03 2013.
-
-\bibitem{9010985}
-K.~{Duan}, S.~{Bai}, L.~{Xie}, H.~{Qi}, Q.~{Huang}, and Q.~{Tian}.
-\newblock Centernet: Keypoint triplets for object detection.
-\newblock In {\em 2019 IEEE/CVF International Conference on Computer Vision
-  (ICCV)}, pages 6568--6577, 2019.
-
-\bibitem{10.1145/3343031.3350535}
-Abhishek Dutta and Andrew Zisserman.
-\newblock The via annotation software for images, audio and video.
-\newblock In {\em Proceedings of the 27th ACM International Conference on
-  Multimedia}, MM '19, page 2276–2279, New York, NY, USA, 2019. Association
-  for Computing Machinery.
-
-\bibitem{5995444}
-A.~{Fathi}, X.~{Ren}, and J.~M. {Rehg}.
-\newblock Learning to recognize objects in egocentric activities.
-\newblock In {\em CVPR 2011}, pages 3281--3288, 2011.
+\bibitem{DBLP:journals/corr/WojkeBP17}
+N.~Wojke, A.~Bewley, and D.~Paulus, ``Simple online and realtime tracking with
+  a deep association metric,'' {\em CoRR}, vol.~abs/1703.07402, 2017.
 
 \bibitem{10.1109/ICCV.2011.6126269}
-Alireza Fathi, Ali Farhadi, and James~M. Rehg.
-\newblock Understanding egocentric activities.
-\newblock In {\em Proceedings of the 2011 International Conference on Computer
-  Vision}, ICCV '11, page 407–414, USA, 2011. IEEE Computer Society.
+A.~Fathi, A.~Farhadi, and J.~M. Rehg, ``Understanding egocentric activities,''
+  in {\em Proceedings of the 2011 International Conference on Computer Vision},
+  ICCV '11, (USA), p.~407–414, IEEE Computer Society, 2011.
 
-\bibitem{fathigaze}
-Alireza Fathi, Yin Li, and James Rehg.
-\newblock Learning to recognize daily actions using gaze.
-\newblock volume 7572, pages 314--327, 10 2012.
-
-\bibitem{DBLP:journals/corr/Girshick15}
-Ross~B. Girshick.
-\newblock Fast {R-CNN}.
-\newblock {\em CoRR}, abs/1504.08083, 2015.
-
-\bibitem{DBLP:journals/corr/GirshickDDM13}
-Ross~B. Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
-\newblock Rich feature hierarchies for accurate object detection and semantic
-  segmentation.
-\newblock {\em CoRR}, abs/1311.2524, 2013.
-
-\bibitem{hastie2009elements}
-T.~Hastie, R.~Tibshirani, and J.H. Friedman.
-\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
-  and Prediction}.
-\newblock Springer series in statistics. Springer, 2009.
-
-\bibitem{DBLP:journals/corr/HeGDG17}
-Kaiming He, Georgia Gkioxari, Piotr Doll{\'{a}}r, and Ross~B. Girshick.
-\newblock Mask {R-CNN}.
-\newblock {\em CoRR}, abs/1703.06870, 2017.
-
-\bibitem{DBLP:journals/corr/HeZR014}
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
-\newblock Spatial pyramid pooling in deep convolutional networks for visual
-  recognition.
-\newblock {\em CoRR}, abs/1406.4729, 2014.
-
-\bibitem{DBLP:journals/corr/HeZRS15}
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
-\newblock Deep residual learning for image recognition.
-\newblock {\em CoRR}, abs/1512.03385, 2015.
-
-\bibitem{8909903}
-X.~{Hou}, Y.~{Wang}, and L.~{Chau}.
-\newblock Vehicle tracking using deep sort with low confidence track filtering.
-\newblock In {\em 2019 16th IEEE International Conference on Advanced Video and
-  Signal Based Surveillance (AVSS)}, pages 1--6, 2019.
-
-\bibitem{DBLP:journals/corr/HuangRSZKFFWSG016}
-Jonathan Huang, Vivek Rathod, Chen Sun, Menglong Zhu, Anoop Korattikara,
-  Alireza Fathi, Ian Fischer, Zbigniew Wojna, Yang Song, Sergio Guadarrama, and
-  Kevin Murphy.
-\newblock Speed/accuracy trade-offs for modern convolutional object detectors.
-\newblock {\em CoRR}, abs/1611.10012, 2016.
-
-\bibitem{10.1115/1.3662552}
-R.~E. Kalman.
-\newblock {A New Approach to Linear Filtering and Prediction Problems}.
-\newblock {\em Journal of Basic Engineering}, 82(1):35--45, 03 1960.
-
-\bibitem{9060114}
-G.~{Kapidis}, R.~{Poppe}, E.~{Van Dam}, L.~{Noldus}, and R.~{Veltkamp}.
-\newblock Egocentric hand track and object-based human action recognition.
-\newblock In {\em 2019 IEEE SmartWorld, Ubiquitous Intelligence Computing,
-  Advanced Trusted Computing, Scalable Computing Communications, Cloud Big Data
-  Computing, Internet of People and Smart City Innovation
-  (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)}, pages 922--929, 2019.
-
-\bibitem{8711887}
-V.~{Kiselev}, M.~{Khlamov}, and K.~{Chuvilin}.
-\newblock Hand gesture recognition with multiple leap motion devices.
-\newblock In {\em 2019 24th Conference of Open Innovations Association
-  (FRUCT)}, pages 163--169, 2019.
-
-\bibitem{VOT_TPAMI}
-Matej Kristan, Jiri Matas, Ale\v{s} Leonardis, Tomas Vojir, Roman Pflugfelder,
-  Gustavo Fernandez, Georg Nebehay, Fatih Porikli, and Luka \v{C}ehovin.
-\newblock A novel performance evaluation methodology for single-target
-  trackers.
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  38(11):2137--2155, Nov 2016.
-
-\bibitem{10.1145/3065386}
-Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E. Hinton.
-\newblock Imagenet classification with deep convolutional neural networks.
-\newblock {\em Commun. ACM}, 60(6):84–90, May 2017.
-
-\bibitem{doi:10.1002/nav.3800020109}
-H.~W. Kuhn.
-\newblock The hungarian method for the assignment problem.
-\newblock {\em Naval Research Logistics Quarterly}, 2(1‐2):83--97, 1955.
+\bibitem{5995444}
+A.~{Fathi}, X.~{Ren}, and J.~M. {Rehg}, ``Learning to recognize objects in
+  egocentric activities,'' in {\em CVPR 2011}, pp.~3281--3288, 2011.
 
 \bibitem{6247820}
-Y.~J. {Lee}, J.~{Ghosh}, and K.~{Grauman}.
-\newblock Discovering important people and objects for egocentric video
-  summarization.
-\newblock In {\em 2012 IEEE Conference on Computer Vision and Pattern
-  Recognition}, pages 1346--1353, 2012.
+Y.~J. {Lee}, J.~{Ghosh}, and K.~{Grauman}, ``Discovering important people and
+  objects for egocentric video summarization,'' in {\em 2012 IEEE Conference on
+  Computer Vision and Pattern Recognition}, pp.~1346--1353, 2012.
 
-\bibitem{10.1145/3041164.3041185}
-Teesid Leelasawassuk, Dima Damen, and Walterio Mayol-Cuevas.
-\newblock Automated capture and delivery of assistive task guidance with an
-  eyewear computer: The glaciar system.
-\newblock In {\em Proceedings of the 8th Augmented Human International
-  Conference}, AH '17, New York, NY, USA, 2017. Association for Computing
-  Machinery.
+\bibitem{7780657}
+R.~{Yonetani}, K.~M. {Kitani}, and Y.~{Sato}, ``Recognizing micro-actions and
+  reactions from paired egocentric videos,'' in {\em 2016 IEEE Conference on
+  Computer Vision and Pattern Recognition (CVPR)}, pp.~2629--2638, 2016.
 
-\bibitem{6619302}
-C.~{Li} and K.~M. {Kitani}.
-\newblock Pixel-level hand detection in ego-centric videos.
-\newblock In {\em 2013 IEEE Conference on Computer Vision and Pattern
-  Recognition}, pages 3570--3577, 2013.
-
-\bibitem{7298625}
-Y.~{Li}, {Zhefan Ye}, and J.~M. {Rehg}.
-\newblock Delving into egocentric actions.
-\newblock In {\em 2015 IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR)}, pages 287--295, 2015.
-
-\bibitem{li2020eye}
-Yin Li, Miao Liu, and James~M Rehg.
-\newblock In the eye of the beholder: Gaze and actions in first person video.
-\newblock {\em arXiv preprint arXiv:2006.00626}, 2020.
-
-\bibitem{8237586}
-T.~{Lin}, P.~{Goyal}, R.~{Girshick}, K.~{He}, and P.~{Dollár}.
-\newblock Focal loss for dense object detection.
-\newblock In {\em 2017 IEEE International Conference on Computer Vision
-  (ICCV)}, pages 2999--3007, 2017.
-
-\bibitem{DBLP:journals/corr/LinDGHHB16}
-Tsung{-}Yi Lin, Piotr Doll{\'{a}}r, Ross~B. Girshick, Kaiming He, Bharath
-  Hariharan, and Serge~J. Belongie.
-\newblock Feature pyramid networks for object detection.
-\newblock {\em CoRR}, abs/1612.03144, 2016.
-
-\bibitem{DBLP:journals/corr/abs-1708-02002}
-Tsung{-}Yi Lin, Priya Goyal, Ross~B. Girshick, Kaiming He, and Piotr
-  Doll{\'{a}}r.
-\newblock Focal loss for dense object detection.
-\newblock {\em CoRR}, abs/1708.02002, 2017.
-
-\bibitem{DBLP:journals/corr/LiuAESR15}
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott~E. Reed,
-  Cheng{-}Yang Fu, and Alexander~C. Berg.
-\newblock {SSD:} single shot multibox detector.
-\newblock {\em CoRR}, abs/1512.02325, 2015.
-
-\bibitem{7780578}
-M.~{Ma}, H.~{Fan}, and K.~M. {Kitani}.
-\newblock Going deeper into first-person activity recognition.
-\newblock In {\em 2016 IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR)}, pages 1894--1903, 2016.
-
-\bibitem{DBLP:journals/corr/MilanL0RS16}
-Anton Milan, Laura Leal{-}Taix{\'{e}}, Ian~D. Reid, Stefan Roth, and Konrad
-  Schindler.
-\newblock {MOT16:} {A} benchmark for multi-object tracking.
-\newblock {\em CoRR}, abs/1603.00831, 2016.
-
-\bibitem{Recognition}
-Thi Nguyen, Jean-Christophe Nebel, and Francisco Flórez-Revuelta.
-\newblock {\em Recognition of Activities of Daily Living from Egocentric Videos
-  Using Hands Detected by a Deep Convolutional Network}, pages 390--398.
-\newblock 06 2018.
-
-\bibitem{DBLP:journals/corr/RedmonDGF15}
-Joseph Redmon, Santosh~Kumar Divvala, Ross~B. Girshick, and Ali Farhadi.
-\newblock You only look once: Unified, real-time object detection.
-\newblock {\em CoRR}, abs/1506.02640, 2015.
-
-\bibitem{DBLP:journals/corr/RedmonF16}
-Joseph Redmon and Ali Farhadi.
-\newblock {YOLO9000:} better, faster, stronger.
-\newblock {\em CoRR}, abs/1612.08242, 2016.
-
-\bibitem{DBLP:journals/corr/abs-1804-02767}
-Joseph Redmon and Ali Farhadi.
-\newblock Yolov3: An incremental improvement.
-\newblock {\em CoRR}, abs/1804.02767, 2018.
-
-\bibitem{DBLP:journals/corr/RenHG015}
-Shaoqing Ren, Kaiming He, Ross~B. Girshick, and Jian Sun.
-\newblock Faster {R-CNN:} towards real-time object detection with region
-  proposal networks.
-\newblock {\em CoRR}, abs/1506.01497, 2015.
-
-\bibitem{DBLP:journals/corr/RussakovskyDSKSMHKKBBF14}
-Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
-  Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael~S. Bernstein,
-  Alexander~C. Berg, and Fei{-}Fei Li.
-\newblock Imagenet large scale visual recognition challenge.
-\newblock {\em CoRR}, abs/1409.0575, 2014.
-
-\bibitem{4651201}
-O.~{Shigeta}, S.~{Kagami}, and K.~{Hashimoto}.
-\newblock Identifying a moving object with an accelerometer in a camera view.
-\newblock In {\em 2008 IEEE/RSJ International Conference on Intelligent Robots
-  and Systems}, pages 3872--3877, 2008.
-
-\bibitem{Simonyan2015VeryDC}
-K.~Simonyan and Andrew Zisserman.
-\newblock Very deep convolutional networks for large-scale image recognition.
-\newblock {\em CoRR}, abs/1409.1556, 2015.
-
-\bibitem{DBLP:journals/corr/abs-1808-01974}
-Chuanqi Tan, Fuchun Sun, Tao Kong, Wenchang Zhang, Chao Yang, and Chunfang Liu.
-\newblock A survey on deep transfer learning.
-\newblock {\em CoRR}, abs/1808.01974, 2018.
-
-\bibitem{tan1911efficientdet}
-M~Tan, R~Pang, and QV~Le.
-\newblock Efficientdet: Scalable and efficient object detection. arxiv 2019.
-\newblock {\em arXiv preprint arXiv:1911.09070}.
+\bibitem{wearable}
+A.~Doherty, S.~Hodges, A.~King, A.~Smeaton, E.~Berry, C.~Moulin, S.~Lindley,
+  P.~Kelly, and C.~Foster, ``Wearable cameras in health: The state of the art
+  and future possibilities,'' {\em American journal of preventive medicine},
+  vol.~44, pp.~320--3, 03 2013.
 
 \bibitem{6091176}
-D.~{Townsend}, F.~{Knoefel}, and R.~{Goubran}.
-\newblock Privacy versus autonomy: A tradeoff model for smart home monitoring
-  technologies.
-\newblock In {\em 2011 Annual International Conference of the IEEE Engineering
-  in Medicine and Biology Society}, pages 4749--4752, 2011.
+D.~{Townsend}, F.~{Knoefel}, and R.~{Goubran}, ``Privacy versus autonomy: A
+  tradeoff model for smart home monitoring technologies,'' in {\em 2011 Annual
+  International Conference of the IEEE Engineering in Medicine and Biology
+  Society}, pp.~4749--4752, 2011.
 
-\bibitem{ultralytics}
-Ultralytics.
-\newblock Yolo pytorch.
-\newblock {\url{https://www.ultralytics.com}}, 2019.
+\bibitem{10.1145/3041164.3041185}
+T.~Leelasawassuk, D.~Damen, and W.~Mayol-Cuevas, ``Automated capture and
+  delivery of assistive task guidance with an eyewear computer: The glaciar
+  system,'' in {\em Proceedings of the 8th Augmented Human International
+  Conference}, AH '17, (New York, NY, USA), Association for Computing
+  Machinery, 2017.
+
+\bibitem{DBLP:journals/corr/RedmonDGF15}
+J.~Redmon, S.~K. Divvala, R.~B. Girshick, and A.~Farhadi, ``You only look once:
+  Unified, real-time object detection,'' {\em CoRR}, vol.~abs/1506.02640, 2015.
+
+\bibitem{DBLP:journals/corr/RenHG015}
+S.~Ren, K.~He, R.~B. Girshick, and J.~Sun, ``Faster {R-CNN:} towards real-time
+  object detection with region proposal networks,'' {\em CoRR},
+  vol.~abs/1506.01497, 2015.
+
+\bibitem{DBLP:journals/corr/HeGDG17}
+K.~He, G.~Gkioxari, P.~Doll{\'{a}}r, and R.~B. Girshick, ``Mask {R-CNN},'' {\em
+  CoRR}, vol.~abs/1703.06870, 2017.
+
+\bibitem{DBLP:journals/corr/BewleyGORU16}
+A.~Bewley, Z.~Ge, L.~Ott, F.~Ramos, and B.~Upcroft, ``Simple online and
+  realtime tracking,'' {\em CoRR}, vol.~abs/1602.00763, 2016.
+
+\bibitem{VOT_TPAMI}
+M.~Kristan, J.~Matas, A.~Leonardis, T.~Vojir, R.~Pflugfelder, G.~Fernandez,
+  G.~Nebehay, F.~Porikli, and L.~\v{C}ehovin, ``A novel performance evaluation
+  methodology for single-target trackers,'' {\em IEEE Transactions on Pattern
+  Analysis and Machine Intelligence}, vol.~38, pp.~2137--2155, Nov 2016.
+
+\bibitem{DBLP:journals/corr/MilanL0RS16}
+A.~Milan, L.~Leal{-}Taix{\'{e}}, I.~D. Reid, S.~Roth, and K.~Schindler,
+  ``{MOT16:} {A} benchmark for multi-object tracking,'' {\em CoRR},
+  vol.~abs/1603.00831, 2016.
+
+\bibitem{7298625}
+Y.~{Li}, {Zhefan Ye}, and J.~M. {Rehg}, ``Delving into egocentric actions,'' in
+  {\em 2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pp.~287--295, 2015.
+
+\bibitem{7780578}
+M.~{Ma}, H.~{Fan}, and K.~M. {Kitani}, ``Going deeper into first-person
+  activity recognition,'' in {\em 2016 IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pp.~1894--1903, 2016.
+
+\bibitem{DBLP:journals/corr/BertasiusPYS16}
+G.~Bertasius, H.~S. Park, S.~X. Yu, and J.~Shi, ``First person action-object
+  detection with egonet,'' {\em CoRR}, vol.~abs/1603.04908, 2016.
+
+\bibitem{cai2016understanding}
+M.~Cai, K.~M. Kitani, and Y.~Sato, ``Understanding hand-object manipulation
+  with grasp types and object attributes.,'' in {\em Robotics: Science and
+  Systems}, vol.~3, Ann Arbor, Michigan;, 2016.
+
+\bibitem{DBLP:journals/corr/abs-1806-06157}
+F.~Baradel, N.~Neverova, C.~Wolf, J.~Mille, and G.~Mori, ``Object level visual
+  reasoning in videos,'' {\em CoRR}, vol.~abs/1806.06157, 2018.
+
+\bibitem{6619302}
+C.~{Li} and K.~M. {Kitani}, ``Pixel-level hand detection in ego-centric
+  videos,'' in {\em 2013 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pp.~3570--3577, 2013.
+
+\bibitem{6910041}
+A.~{Betancourt}, M.~M. {Lopez}, C.~S. {Regazzoni}, and M.~{Rauterberg}, ``A
+  sequential classifier for hand detection in the framework of egocentric
+  vision,'' in {\em 2014 IEEE Conference on Computer Vision and Pattern
+  Recognition Workshops}, pp.~600--605, 2014.
+
+\bibitem{10.1016/j.cviu.2016.09.005}
+A.~Betancourt, P.~Morerio, E.~Barakova, L.~Marcenaro, M.~Rauterberg, and
+  C.~Regazzoni, ``Left/right hand segmentation in egocentric videos,'' {\em
+  Comput. Vis. Image Underst.}, vol.~154, p.~73–81, Jan. 2017.
+
+\bibitem{7410583}
+S.~{Bambach}, S.~{Lee}, D.~J. {Crandall}, and C.~{Yu}, ``Lending a hand:
+  Detecting hands and recognizing activities in complex egocentric
+  interactions,'' in {\em 2015 IEEE International Conference on Computer Vision
+  (ICCV)}, pp.~1949--1957, 2015.
+
+\bibitem{Recognition}
+T.~Nguyen, J.-C. Nebel, and F.~Flórez-Revuelta, {\em Recognition of Activities
+  of Daily Living from Egocentric Videos Using Hands Detected by a Deep
+  Convolutional Network}, pp.~390--398.
+\newblock 06 2018.
+
+\bibitem{9060114}
+G.~{Kapidis}, R.~{Poppe}, E.~{Van Dam}, L.~{Noldus}, and R.~{Veltkamp},
+  ``Egocentric hand track and object-based human action recognition,'' in {\em
+  2019 IEEE SmartWorld, Ubiquitous Intelligence Computing, Advanced Trusted
+  Computing, Scalable Computing Communications, Cloud Big Data Computing,
+  Internet of People and Smart City Innovation
+  (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)}, pp.~922--929, 2019.
+
+\bibitem{tien}
+V.~T. {Pham}, T.~L. {Le}, T.~H. {Tran}, and T.~P. {Nguyen}, ``Hand detection
+  and segmentation using multimodal information from kinect,'' in {\em 2020
+  International Conference on Multimedia Analysis and Pattern Recognition
+  (MAPR)}, pp.~1--6, 2020.
+
+\bibitem{10.1145/3065386}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' {\em Commun. ACM}, vol.~60, p.~84–90,
+  May 2017.
+
+\bibitem{DBLP:journals/corr/abs-1808-07256}
+K.~S. Chahal and K.~Dey, ``A survey of modern object detection literature using
+  deep learning,'' {\em CoRR}, vol.~abs/1808.07256, 2018.
+
+\bibitem{DBLP:journals/corr/abs-1708-02002}
+T.~Lin, P.~Goyal, R.~B. Girshick, K.~He, and P.~Doll{\'{a}}r, ``Focal loss for
+  dense object detection,'' {\em CoRR}, vol.~abs/1708.02002, 2017.
+
+\bibitem{DBLP:journals/corr/HuangRSZKFFWSG016}
+J.~Huang, V.~Rathod, C.~Sun, M.~Zhu, A.~Korattikara, A.~Fathi, I.~Fischer,
+  Z.~Wojna, Y.~Song, S.~Guadarrama, and K.~Murphy, ``Speed/accuracy trade-offs
+  for modern convolutional object detectors,'' {\em CoRR}, vol.~abs/1611.10012,
+  2016.
+
+\bibitem{10.1115/1.3662552}
+R.~E. Kalman, ``{A New Approach to Linear Filtering and Prediction Problems},''
+  {\em Journal of Basic Engineering}, vol.~82, pp.~35--45, 03 1960.
+
+\bibitem{doi:10.1002/nav.3800020109}
+H.~W. Kuhn, ``The hungarian method for the assignment problem,'' {\em Naval
+  Research Logistics Quarterly}, vol.~2, no.~1‐2, pp.~83--97, 1955.
 
 \bibitem{6126456}
 K.~E.~A. {van de Sande}, J.~R.~R. {Uijlings}, T.~{Gevers}, and A.~W.~M.
-  {Smeulders}.
-\newblock Segmentation as selective search for object recognition.
-\newblock In {\em 2011 International Conference on Computer Vision}, pages
-  1879--1886, 2011.
+  {Smeulders}, ``Segmentation as selective search for object recognition,'' in
+  {\em 2011 International Conference on Computer Vision}, pp.~1879--1886, 2011.
 
-\bibitem{tien}
-{Van-Tien Pham}, {Thi-Lan Le}, {Thanh-Hai Tran Thi}, and {Thanh-Phuong Nguyen}.
-\newblock Hand detection and segmentation using multimodal information from
-  kinect.
-\newblock In {\em 2020 3rd IEEE International Conference on Multimedia Analysis
-  and Pattern Recognition (MAPR)}, 10 2020.
+\bibitem{Simonyan2015VeryDC}
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' {\em CoRR}, vol.~abs/1409.1556, 2015.
+
+\bibitem{DBLP:journals/corr/RussakovskyDSKSMHKKBBF14}
+O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
+  A.~Karpathy, A.~Khosla, M.~S. Bernstein, A.~C. Berg, and F.~Li, ``Imagenet
+  large scale visual recognition challenge,'' {\em CoRR}, vol.~abs/1409.0575,
+  2014.
+
+\bibitem{DBLP:journals/corr/abs-1808-01974}
+C.~Tan, F.~Sun, T.~Kong, W.~Zhang, C.~Yang, and C.~Liu, ``A survey on deep
+  transfer learning,'' {\em CoRR}, vol.~abs/1808.01974, 2018.
+
+\bibitem{DBLP:journals/corr/Girshick15}
+R.~B. Girshick, ``Fast {R-CNN},'' {\em CoRR}, vol.~abs/1504.08083, 2015.
+
+\bibitem{DBLP:journals/corr/HeZR014}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Spatial pyramid pooling in deep
+  convolutional networks for visual recognition,'' {\em CoRR},
+  vol.~abs/1406.4729, 2014.
+
+\bibitem{DBLP:journals/corr/RedmonF16}
+J.~Redmon and A.~Farhadi, ``{YOLO9000:} better, faster, stronger,'' {\em CoRR},
+  vol.~abs/1612.08242, 2016.
+
+\bibitem{DBLP:journals/corr/abs-1804-02767}
+J.~Redmon and A.~Farhadi, ``Yolov3: An incremental improvement,'' {\em CoRR},
+  vol.~abs/1804.02767, 2018.
+
+\bibitem{DBLP:journals/corr/LinDGHHB16}
+T.~Lin, P.~Doll{\'{a}}r, R.~B. Girshick, K.~He, B.~Hariharan, and S.~J.
+  Belongie, ``Feature pyramid networks for object detection,'' {\em CoRR},
+  vol.~abs/1612.03144, 2016.
+
+\bibitem{DBLP:journals/corr/HeZRS15}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' {\em CoRR}, vol.~abs/1512.03385, 2015.
+
+\bibitem{bochkovskiy2020yolov4}
+A.~Bochkovskiy, C.~Wang, and H.~Liao, ``Yolov4: Optimal speed and accuracy of
+  object detection. arxiv 2020,'' {\em arXiv preprint arXiv:2004.10934},
+  pp.~1--17, 2020.
+
+\bibitem{hastie2009elements}
+T.~Hastie, R.~Tibshirani, and J.~Friedman, {\em The Elements of Statistical
+  Learning: Data Mining, Inference, and Prediction}.
+\newblock Springer series in statistics, Springer, 2009.
+
+\bibitem{fathigaze}
+A.~Fathi, Y.~Li, and J.~Rehg, ``Learning to recognize daily actions using
+  gaze,'' vol.~7572, pp.~314--327, 10 2012.
+
+\bibitem{li2020eye}
+Y.~Li, M.~Liu, and J.~M. Rehg, ``In the eye of the beholder: Gaze and actions
+  in first person video,'' {\em arXiv preprint arXiv:2006.00626}, 2020.
+
+\bibitem{10.1145/3343031.3350535}
+A.~Dutta and A.~Zisserman, ``The via annotation software for images, audio and
+  video,'' in {\em Proceedings of the 27th ACM International Conference on
+  Multimedia}, MM '19, (New York, NY, USA), p.~2276–2279, Association for
+  Computing Machinery, 2019.
+
+\bibitem{9064606}
+A.~{Bandini} and J.~{Zariffa}, ``Analysis of the hands in egocentric vision: A
+  survey,'' {\em IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, pp.~1--1, 2020.
 
 \bibitem{DBLP:journals/corr/abs-1812-00442}
-Nicolai Wojke and Alex Bewley.
-\newblock Deep cosine metric learning for person re-identification.
-\newblock {\em CoRR}, abs/1812.00442, 2018.
-
-\bibitem{DBLP:journals/corr/WojkeBP17}
-Nicolai Wojke, Alex Bewley, and Dietrich Paulus.
-\newblock Simple online and realtime tracking with a deep association metric.
-\newblock {\em CoRR}, abs/1703.07402, 2017.
+N.~Wojke and A.~Bewley, ``Deep cosine metric learning for person
+  re-identification,'' {\em CoRR}, vol.~abs/1812.00442, 2018.
 
 \bibitem{wu2019detectron2}
-Yuxin Wu, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick.
-\newblock Detectron2.
-\newblock {\url{https://github.com/facebookresearch/detectron2}}, 2019.
+Y.~Wu, A.~Kirillov, F.~Massa, W.-Y. Lo, and R.~Girshick, ``Detectron2.''
+  {\url{https://github.com/facebookresearch/detectron2}}, 2019.
 
-\bibitem{7780657}
-R.~{Yonetani}, K.~M. {Kitani}, and Y.~{Sato}.
-\newblock Recognizing micro-actions and reactions from paired egocentric
-  videos.
-\newblock In {\em 2016 IEEE Conference on Computer Vision and Pattern
-  Recognition (CVPR)}, pages 2629--2638, 2016.
+\bibitem{glenn_jocher_2020_4154370}
+G.~Jocher, A.~Stoken, and J.~Borovec, ``{ultralytics/yolov5: v3.1 - Bug Fixes
+  and Performance Improvements}.''
+  {\url{https://github.com/ultralytics/yolov5}}, 2020.
+
+\bibitem{DBLP:journals/corr/LiuAESR15}
+W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~E. Reed, C.~Fu, and A.~C. Berg,
+  ``{SSD:} single shot multibox detector,'' {\em CoRR}, vol.~abs/1512.02325,
+  2015.
+
+\bibitem{8237586}
+T.~{Lin}, P.~{Goyal}, R.~{Girshick}, K.~{He}, and P.~{Dollár}, ``Focal loss
+  for dense object detection,'' in {\em 2017 IEEE International Conference on
+  Computer Vision (ICCV)}, pp.~2999--3007, 2017.
+
+\bibitem{9010985}
+K.~{Duan}, S.~{Bai}, L.~{Xie}, H.~{Qi}, Q.~{Huang}, and Q.~{Tian}, ``Centernet:
+  Keypoint triplets for object detection,'' in {\em 2019 IEEE/CVF International
+  Conference on Computer Vision (ICCV)}, pp.~6568--6577, 2019.
+
+\bibitem{tan1911efficientdet}
+M.~Tan, R.~Pang, and Q.~Le, ``Efficientdet: Scalable and efficient object
+  detection. arxiv 2019,'' {\em arXiv preprint arXiv:1911.09070}.
+
+\bibitem{8909903}
+X.~{Hou}, Y.~{Wang}, and L.~{Chau}, ``Vehicle tracking using deep sort with low
+  confidence track filtering,'' in {\em 2019 16th IEEE International Conference
+  on Advanced Video and Signal Based Surveillance (AVSS)}, pp.~1--6, 2019.
+
+\bibitem{4651201}
+O.~{Shigeta}, S.~{Kagami}, and K.~{Hashimoto}, ``Identifying a moving object
+  with an accelerometer in a camera view,'' in {\em 2008 IEEE/RSJ International
+  Conference on Intelligent Robots and Systems}, pp.~3872--3877, 2008.
+
+\bibitem{8711887}
+V.~{Kiselev}, M.~{Khlamov}, and K.~{Chuvilin}, ``Hand gesture recognition with
+  multiple leap motion devices,'' in {\em 2019 24th Conference of Open
+  Innovations Association (FRUCT)}, pp.~163--169, 2019.
 
 \end{thebibliography}
