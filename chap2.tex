@@ -27,11 +27,6 @@ Figure \ref{fig:rcnnSche} shows the relation of R-CNN's component. First, the re
 \begin{equation}
 	\hat g_h=p_h \exp{(d_h(p))}
 \end{equation}
-%\begin{figure}
-%	\centerline{\includegraphics[width=0.5\linewidth]{Figs/rcnnTrans.png}}
-%	\caption{Illustration of transformation between predicted and ground truth bounding boxes.}
-%	\label{fig:rcnnTrans}
-%\end{figure}
 An obvious benefit of applying such transformation is that all the bounding box correction functions, \(d_i (p)\) where \( i\in {x,y,w,h}\), can take any value between \([-\infty,+\infty]\). The targets for them to learn are:
 \begin{equation}
 	t_x=(g_x-p_x )/p_w
@@ -159,12 +154,6 @@ In \cite{DBLP:journals/corr/RedmonDGF15}, a novel object detection method is int
 	Pr(Class_i|Object)*Pr(Object)*IoU^{gt}_{pred} = Pr(Class_i)*IoU^{gt}_{pred}
 \end{equation}
 This score not only explains the probability that the box contains class \(i\), \(Pr(Class_i)\), but also how to estimate the predicted box to fit the ground truth box \(Pr(Object)*IoU_{pred}^{gt}\). 
-%Figure \ref{fig:yoloworkflow} shows how to split the image into a grid, and how the cell with the dot as the center predicts different bounding boxes. The predicted bounding box is then combined with the class probabilities also obtained from the image grid to produce the final object detection.
-%\begin{figure}
-%	\centerline{\includegraphics[width=1\linewidth]{Figs/yoloworkflow.png}}
-%	\caption{The workflow of YOLO model.}
-%	\label{fig:yoloworkflow}
-%\end{figure}
 The base model \ref{fig:yolo-network} is similar to GoogLeNet with inception module replaced by 1x1 and 3x3 convolution layers. The final prediction of shape S×S×(5B+K) is produced by two fully connected layers over the whole convolution feature map.
 \begin{figure*}[ht!]
 	\centerline{\includegraphics[width=1\linewidth]{Figs/yolo-network.png}}
@@ -259,11 +248,6 @@ The EgoHand dataset, which is presented in \cite{10.1109/ICCV.2015.226} is a lar
 	\label{fig:egohands}
 \end{figure}
 Post-processing EgoHands for the thesis’s framework is conducted as follow: The original annotations in EgoHands datasets consists of 4 categories: my left, my right, your left, your right. In the scope of this thesis, I just focus the hands appearing in egocentric video, therefore I convert all 4 categories into 1 category, “hand”. From the “.mat” format data, I dumped into “.json” format and feed to the framework.
-%\begin{figure}
-%	\centerline{\includegraphics[width=1\linewidth]{Figs/postegohands.png}}
-%	\caption{Samples from EgoHands dataset after post-processing.}
-%	\label{fig:postegohands}
-%\end{figure}
 \subsection{Micand32 dataset} \label{subsec:micand32}
 As introduced in subsection \ref{subsec:bg}, the NAFOSTED’s project is carried out with the aim of using advanced deep learning techniques to evaluate the healing and surgical research of the patient with a sensor through detection segmentation, tracking, gesture recognition, and correlation of the patient's hand with objects. The members in the project prepare the script and perform data collection at Hanoi Medical Hospital. The experiment was carried out by 10 volunteers, patients aged 20 to 60 years, 5 men and 5 women under the supervision, explanation and help of doctors and instructors. The implementation site consists of 3 areas: the desk area, the sink area and the closet area. Patients will wear 5 sensors including: 1 camera at the head, 1 camera in the shoulder, 1 sensor of kinetics (sensors that will collect and store information about the carrier's position, acceleration) in the left hand, 1 kinematic sensor in the right hand, 1 kinetic sensor in the leg. The patient performs 21 agreed and pre-defined actions, such as taking stairs, practicing hands with objects, brushing hair, opening cabinets, etc. The average number of executions per action is 3. The recorded videos have very high resolution compared to the previous related datasets, is 1920x1440, frequency 30fps. Average time to perform an action is 10 seconds. Thus, in terms of images, the data set consists of 10 people x 2 cameras x 21 actions x 3 times = 1260 videos, so there will be 1260 videos x 10 seconds x 30 fps = 378000 frames.
 \\The Micand32 dataset is a subset of the NAFOSTED's project dataset. In the context of the problem of detecting, partitioning and tracking human hands, this thesis is concerned with only 4/21 types of actions most relevant to the hand: (5) practice with ball, (6) practice with water bottles, (7) practice with wooden blocks, (8) practice with cylinders. Figure \ref{fig:micand32} visualizes random samples of 4 action types extracted from MICAND32.
